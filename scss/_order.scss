@@ -23,3 +23,53 @@
 .line-order{
   padding-right: 40px;
 }
+//.portion-price{
+//  display: flex;
+//}
+.time-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  & .fa{
+    font-size: 18px;
+  }
+  & .selector {
+    &:checked {
+      & + .radio {
+        background-color: transparent;
+        & > label {
+          span,
+          .fa{
+            color: $dark-blue;
+          }
+          &:before {
+            background-color: $dark-blue;
+            border: 1px solid $dark-blue;
+          }
+          & > .time-block {
+            border: 1px solid $dark-blue;
+            color: $dark-blue;
+          }
+        }
+
+      }
+    }
+  }
+  & .radio {
+    display: flex;
+  }
+  & .time-block{
+    padding: 10px 35px;
+    border: 1px solid $grey-border;
+    width: 260px;
+    & .fa{
+      margin-right: 5px;
+    }
+  }
+}
+#order-form{
+  & .input-title{
+    @extend .font-regular;
+    font-weight: normal;
+  }
+}

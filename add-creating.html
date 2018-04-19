@@ -395,22 +395,22 @@
               <div class="row with-padding">
                 <div class="col-xs-12 col-sm-8">
                   <label class="input-wrapper">
-                    <span class="input-title">Benennung eingeben *</span>
                     <input type="text" class="input-body" value="" name="proposal_name">
+                    <span class="input-title">Benennung eingeben *</span>
                   </label>
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <label class="input-wrapper">
-                    <span class="input-title">Preis(€) *</span>
                     <input type="number" class="input-body" value="" name="price">
+                    <span class="input-title">Preis(€) *</span>
                   </label>
                 </div>
                 <div class="col-xs-12 col-sm-6">
                   <div class="input-wrapper">
                     <span class="input-title">Kategorie *</span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body">
-                        <option value="auswählen">auswählen</option>
+                      <select class="input-body" required name="select">
+                        <option value="">auswählen</option>
                         <option value="Kalt">Kalt</option>
                         <option value="Warm">Warm</option>
                         <option value="Lebensmittel">Lebensmittel</option>
@@ -422,8 +422,8 @@
                   <div class="input-wrapper">
                     <span class="input-title">Speisenart * </span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body">
-                        <option value="auswählen">auswählen</option>
+                      <select class="input-body" required name="select">
+                        <option value="">auswählen</option>
                         <option value="Vorspeise">Vorspeise (vorgewählt)</option>
                         <option value="Hauptspeise">Hauptspeise</option>
                         <option value="Suppen">Suppen</option>
@@ -641,8 +641,8 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="select_wrapper fa fa-chevron-down">
-                          <select class="input-body">
-                            <option value="auswählen">auswählen</option>
+                          <select class="input-body" required name="select">
+                            <option value="">auswählen</option>
                             <option value="100">100</option>
                             <option value="150">150</option>
                             <option value="200">200</option>
@@ -688,8 +688,8 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="select_wrapper fa fa-chevron-down">
-                          <select class="input-body" size="1">
-                            <option value="auswählen">auswählen</option>
+                          <select class="input-body" required name="select">
+                            <option value="">auswählen</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -726,8 +726,8 @@
                   <div class="input-wrapper">
                     <span class="input-title">Optionen *</span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body" id="coocked_select_id">
-                        <option value="auswählen">auswählen</option>
+                      <select class="input-body" id="coocked_select_id" required name="select">
+                        <option value="">auswählen</option>
                         <option value="Gekochtam">Gekocht am</option>
                         <option value="Wird-gekocht">Wird gekocht am</option>
                         <option value="Nach-Vorbestellug">Nach Vorbestellug</option>
@@ -992,16 +992,16 @@
   </section><!-- end section /.footer -->
 </div>
 <a href="#" class="scrollup"></a>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
-<script type="text/javascript" src="js/bootstrap.min.js" defer></script>
-<script type="text/javascript" src="js/jquery.validate.min.js" defer></script>
-<script type="text/javascript" src="js/cropper.min.js" defer></script>
-<script type="text/javascript" src="js/moment.js" defer></script>
-<script type="text/javascript" src="js/pikaday.js" defer></script>
-<script type="text/javascript" src="js/time-picker.js" defer></script>
-<script type="text/javascript" src="js/jquery-cropper.min.js" defer></script>
-<script type="text/javascript" src="js/header.js" defer></script>
-<script type="text/javascript" src="js/validation.js" defer></script>
-<script type="text/javascript" src="js/add-creating.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/cropper.min.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/pikaday.js"></script>
+<script type="text/javascript" src="js/time-picker.js"></script>
+<script type="text/javascript" src="js/jquery-cropper.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/add-creating.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 function setValidator(id) {
     id.validate({
         rules: {
+            select: "required",
             login: "required",
             pswd: "required",
             email_address: {
@@ -61,6 +62,9 @@ function setValidator(id) {
             description: "required"
         },
         messages: {
+            select: {
+                required: "Dieses Feld muss ausgefüllt werden."
+            },
             login: {
                 required: "Bitte geben Sie Ihren Benutzernamen oder E-Mail Adresse ein."
             },

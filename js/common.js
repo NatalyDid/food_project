@@ -57,13 +57,14 @@ $(document).ready(function () {
 
 
     $('.dropdown.multi-selected .dropdown-toggle.multiple').on('click', function (event) {
+
         $(this).parent().toggleClass('open');
     });
 
     $('body').on('click', function (e) {
         if (!$('.dropdown.multi-selected').is(e.target)
             && $('.dropdown.multi-selected').has(e.target).length === 0
-            && $('.open').has(e.target).length === 0
+            && $('.dropdown.multi-selected.open').has(e.target).length === 0
         ) {
             $('.dropdown.multi-selected').removeClass('open');
         }
