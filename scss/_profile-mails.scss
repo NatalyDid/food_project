@@ -1,0 +1,318 @@
+.mails {
+  & .title-main {
+    margin-bottom: 40px;
+  }
+  & .input-wrapper {
+    & .input-title {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
+  .inactive {
+    & .input-wrapper {
+      & .input-title {
+        color: $light-grey;
+      }
+    }
+    & .fa-times{
+      color: $light-grey;
+    }
+  }
+}
+
+.card-mail {
+  display: flex;
+  border: 1px solid $grey-border;
+  margin-bottom: 20px;
+}
+
+.mail-img {
+  width: 160px;
+  background-color: $grey-bg;
+  border-right: 1px solid $grey-border;
+  & .item-best-food {
+    padding: 10px;
+  }
+}
+
+.mail-author {
+  border-bottom: 1px solid $grey-border;
+  padding: 10px;
+  font-weight: bold;
+  color: $grey;
+}
+
+.mail-author-header {
+  display: flex;
+  align-items: center;
+  & .star-small {
+    margin: 0 10px 0 5px;
+  }
+}
+
+.mail-author-footer {
+  display: flex;
+  align-items: center;
+  & .food-author-img {
+    width: 60px;
+    margin-right: 10px;
+  }
+}
+
+.portions {
+  color: $green;
+  font-weight: bold;
+  & .fa {
+    color: $orange;
+  }
+}
+
+.mail-text {
+  width: 0;
+  flex: 1 1 auto;
+  padding: 10px 20px 20px 20px;
+  color: $grey;
+  .mail-date {
+    color: $light-grey;
+    font-size: 12px;
+    font-style: italic;
+  }
+  input[type=checkbox]:disabled + label {
+    background-color: transparent !important;
+  }
+  .pre-orders {
+    margin: 5px 0 0 0;
+  }
+}
+
+.incoming {
+  border-bottom: 1px solid $grey-border;
+  padding: 5px 0 15px 0;
+}
+
+.message {
+  border-bottom: 1px solid $grey-border;
+  padding: 10px 0 20px 0;
+}
+
+.buttons-row {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.evaluation {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.big-input {
+  width: 75%;
+}
+
+.inactive {
+  & .input-wrapper {
+    & .input-title {
+      color: $light-grey;
+    }
+    & .input-body {
+      color: $light-grey;
+    }
+  }
+}
+
+.user-mails {
+  & .btn-orange {
+    padding: 7px 20px;
+  }
+  & .btn-green {
+    margin-top: 10px;
+  }
+}
+
+.response {
+  & .btn-common {
+    width: 125px;
+  }
+}
+
+.response,
+.request,
+.chef-confirmation,
+.chef-expand,
+.user-confirmation-info {
+  & .mail-text {
+    background-color: $orange-bg;
+  }
+  & .incoming {
+    font-family: $robotomedium;
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.chef-expand{
+  & .btn-orange{
+    margin-top: 45%;
+  }
+}
+
+.confirmation,
+.evaluation-informing,
+.order-info {
+  & .mail-text {
+    background-color: $green-bg;
+  }
+  & .incoming {
+    font-family: $robotoregular;
+    font-weight: bold;
+  }
+}
+
+.assess {
+  display: flex;
+  font-family: $robotomedium;
+  margin-top: 10px;
+  & .food-author-assessment {
+    margin: 0 10px;
+  }
+}
+
+.rating-info,
+.general-info {
+  & .mail-text {
+    background-color: $white;
+  }
+  & .incoming {
+    font-family: $robotomedium;
+  }
+  & .message {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.rating-info {
+  & .incoming {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.chef-confirmation {
+  & .btn-transparent {
+    width: 200px;
+    padding: 7px 0;
+    margin-top: 20px;
+  }
+}
+
+.expand-offer {
+  padding: 10px 0;
+  border-bottom: 1px solid $grey-border;
+  border-top: 1px solid $grey-border;
+}
+
+.user-data {
+  display: flex;
+  margin-top: 20px;
+  & .user-number {
+    margin-left: 60px;
+    padding-top: 0;
+    line-height: 1.7;
+  }
+}
+
+.user-number {
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 10px;
+  & span {
+    color: $dark-orange;
+  }
+}
+
+.map {
+  width: 400px;
+}
+
+#modal-approve,
+#modal-discard{
+  .modal-dialog{
+    width: 400px;
+  }
+  & .input-wrapper{
+    margin-top: 20px;
+  }
+  & .modal-footer{
+    & .btn-common{
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .buttons-row{
+    flex-direction: column;
+    margin-top: 0;
+    & .btn-common{
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-mail {
+    display: flex;
+    flex-direction: column;
+  }
+  .mail-img {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid $grey-border;
+    border-right: none;
+    & .item-best-food {
+      position: relative;
+      min-width: 70%;
+      & > img {
+        width: 130px;
+      }
+      & .food-price {
+        position: absolute;
+        top: 40px;
+        margin-left: 140px;
+      }
+    }
+  }
+  .mail-author {
+    width: 100px;
+    border-right: 1px solid $grey-border;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mail-author-header,
+  .mail-author-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mail-text {
+    width: 100%;
+  }
+  .chef-expand{
+    & .btn-orange{
+      margin-top: 20px;
+    }
+  }
+}
+
+

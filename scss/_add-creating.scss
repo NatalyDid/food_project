@@ -1,0 +1,215 @@
+.add-create-block-styles {
+  padding: 15px;
+  .margin-top-titles {
+    margin-top: 35px;
+    & + .preview-wrapper {
+      margin-top: 10px;
+    }
+  }
+  .underlined {
+    font-size: 12px;
+  }
+  .add-files {
+    color: $blue;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    &:hover {
+      .underlined {
+        text-decoration: underline;
+      }
+    }
+  }
+  .icon-modify {
+    font-size: 22px;
+    margin-right: 5px;
+  }
+  .make-main {
+    position: absolute;
+    top: -30px;
+    left: 8px;
+    padding: 5px 10px;
+    color: white;
+    background-color: $grey;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .preview-wrapper {
+    width: 195px;
+    height: 110px;
+    border: 1px solid $light-grey;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    .fa {
+      @extend .make-main;
+      left: auto;
+      right: 8px;
+      font-size: 17px;
+    }
+    &:hover {
+      .make-main {
+        animation: image-menu-down forwards $main-transition;
+      }
+    }
+    &:not(:hover) {
+      .make-main {
+        animation: image-menu-up forwards $main-transition;
+      }
+    }
+    &.main-image {
+      .make-main {
+        display: none;
+      }
+      .fa {
+        display: block;
+      }
+    }
+  }
+  @keyframes image-menu-down {
+    0% {
+      top: -30px;
+    }
+    50% {
+      top: 12px;
+    }
+    75% {
+      top: 6px;
+    }
+    100% {
+      top: 8px;
+    }
+  }
+  @keyframes image-menu-up {
+    0% {
+      top: 8px;
+    }
+    100% {
+      top: -30px;
+    }
+  }
+  .previews {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .scrollable-block {
+    padding: 10px 0;
+    max-height: 130px;
+    overflow-y: auto;
+  }
+  .button-wrapper {
+    padding: 13px 30px;
+    background-color: $grey-bg;
+    text-align: right;
+  }
+  .select-description {
+    font-size: 12px;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+  .date-input {
+    max-width: 130px;
+    padding-left: 50px;
+    margin: 0 5px 5px 0;
+  }
+  .time-input {
+    max-width: 90px;
+    text-align: center;
+  }
+  .prefix {
+    font-size: 12px;
+    color: $grey;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .date-input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .calendar {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    padding: 8px;
+    color: $orange;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  .move-string {
+    display: none;
+  }
+  .cropper-body-wrapp {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .cropper-body {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  .modal-dialog {
+    width: auto;
+    max-width: 660px;
+  }
+  .modal-body {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  @media screen and (max-width: 1230px) {
+    .with-padding {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .reordering {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .order-1 {
+      order: 1;
+    }
+    .order-2 {
+      order: 2;
+    }
+    .order-3 {
+      order: 3;
+    }
+    .previews-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      & > h3:first-child {
+        width: 100%;
+      }
+    }
+    .previews {
+      width: 275px;
+      height: 155px;
+    }
+    .margin-top-titles {
+      & + .preview-wrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .custom-width-100 {
+      width: 100%;
+      margin-top: 5px;
+    }
+    .move-string {
+      display: block;
+      width: 100%;
+    }
+    .btn-modify {
+      width: 100%;
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+.order{
+  & .order-img-small{
+    margin-top: 10px;
+    & img{
+      width: 24%;
+    }
+  }
+  & .map-wrapper{
+    width: 100%;
+  }
+  .line{
+    margin-top: 20px;
+  }
+}
+.key-value{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 7px;
+  & .font-regular{
+    margin-left: 10px;
+  }
+}
+.line-order{
+  padding-right: 40px;
+}

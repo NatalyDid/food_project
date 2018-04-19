@@ -1,0 +1,30 @@
+.sorting {
+  text-align: right;
+  .fa {
+    color: #7f8c8d;
+    font-size: 18px;
+  }
+  .dropdown{
+    width: 170px;
+    display: inline-block;
+  }
+  button.btn-dropdown{
+    width: 100%;
+    border: 1px solid $grey;
+    .caret {
+      margin-left: 65px;
+    }
+  }
+  .dropdown-menu{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .sorting{
+    padding: 15px 30px 0 30px;
+    .dropdown{
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  & .input-wrapper{
+    width: 45%;
+  }
+}
+
+.profile-edit{
+  & .title-main,
+  & .title-normal{
+    margin-bottom: 30px;
+  }
+  .coupon{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper-row{
+    flex-direction: column;
+    & .input-wrapper{
+      width: 100%;
+    }
+  }
+}

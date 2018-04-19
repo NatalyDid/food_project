@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "../libs/bootstrap.min.css";
+@import "../libs/cropper.min.css";
+@import "../libs/pikaday.css";
+@import "../libs/time-picker.css";
+@import "../libs/simplePagination.css";
+@import "../libs/slick.css";
+@import "../fonts/stylesheet.css";
+@import "../icons/font-awesome.min.css";
+@import "variables";
+@import "common";
+@import "header";
+@import "footer";
+
+@import "add-creating";
+@import "filtration";
+@import "content-pagination";
+@import "sorting";
+@import "result-item";
+@import "author-wrapper";
+@import "best-item";
+@import "login-password";
+@import "registration";
+@import "profile-proposals";
+@import "profile-edit";
+@import "profile-expand_account";
+@import "profile-mails";
+@import "profile-saved";
+@import "user";
+@import "order";
+@import "impressum";
+

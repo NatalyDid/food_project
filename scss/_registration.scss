@@ -1,0 +1,175 @@
+.main-registration {
+  padding: 100px 0 70px 0;
+  min-height: calc(100vh - 220px);
+  .title-normal {
+    margin-bottom: 50px;
+  }
+  .radio {
+    label {
+      font-size: 14px;
+    }
+  }
+  .flex-left-center {
+    align-items: flex-start;
+  }
+  .selector{
+    display: block;
+    visibility: hidden;
+    &:checked {
+      & ~ .radio {
+        @extend %checkable-styles;
+      }
+    }
+    &.for-woman {
+      &:checked {
+        & ~ .radio-wrapper > .radio.for-woman {
+          @extend %checkable-styles;
+        }
+      }
+    }
+    &.for-man {
+      &:checked {
+        & ~ .radio-wrapper > .radio.for-man {
+          @extend %checkable-styles;
+        }
+      }
+    }
+  }
+  .checkable{
+    display: block;
+    visibility: hidden;
+    &:checked ~ .checkable-toggler {
+      color: $blue;
+      background-color: $active-filter;
+      & > .fa-check {
+        display: flex;
+      }
+      & > .fa-square-o {
+        display: none;
+      }
+    }
+    &:not(:checked) ~ .checkable-toggler {
+      & > .fa-check {
+        display: none;
+      }
+      & > .fa-square-o {
+        display: flex;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.form-registration-footer-button {
+  margin: 30px 0 0 280px;
+}
+
+.download-photo {
+  margin: 178px 0 70px 0;
+  display: flex;
+}
+
+.profile-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  .fa {
+    color: $white;
+    font-size: 30px;
+  }
+}
+
+.sign-in {
+  @extend .font-regular;
+  padding-top: 10px;
+  color: $grey;
+}
+
+.gender {
+  margin: 50px 0 !important;
+  position: relative;
+  & .input-title {
+    margin-bottom: -15px;
+  }
+  & label {
+    &.error {
+      position: absolute;
+      top: 60px;
+    }
+  }
+}
+
+.coupon {
+  margin-top: 66px;
+  .input-body {
+    border-color: $light-grey;
+  }
+}
+
+.with-padding-reg {
+  padding: 0 80px;
+}
+
+.photo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.photo-wrapper {
+  padding: 0 !important;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1229px) {
+  .with-padding-reg {
+    padding: 0 60px;
+  }
+  .form-registration-footer-button {
+    margin-left: 206px;
+  }
+}
+
+@media (max-width: 991px) {
+  .with-padding-reg {
+    padding: 0 40px;
+  }
+  .form-registration-footer-button {
+    margin-left: 136px;
+  }
+  .download-photo {
+    margin: 53px 0 261px 0;
+  }
+  .coupon {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-registration {
+    padding-top: 50px;
+  }
+  .with-padding-reg {
+    padding: 0 20px;
+  }
+  .download-photo {
+    margin: 50px 0 50px 0;
+  }
+  .gender {
+    margin-bottom: 30px !important;
+    margin-top: 30px;
+  }
+  .form-registration-footer-button {
+    margin-left: 0;
+    .btn-orange {
+      width: 100%;
+    }
+  }
+}

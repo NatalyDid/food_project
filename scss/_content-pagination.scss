@@ -1,0 +1,33 @@
+.content-pagination {
+  .light-theme.simple-pagination {
+    nav {
+      padding-top: 10px;
+    }
+    ul {
+      li:first-child > a,
+      li:last-child > a {
+        color: $white;
+        padding: 0 10px;
+        background-color: $blue;
+        border-radius: 2px;
+        display: block;
+      }
+      li.disabled > span > .fa, li.disabled > span > .fa:hover,
+      li.disabled > span > .fa:focus {
+        color: $white;
+        background-color: $grey-inactive;
+        border-color: $grey-inactive;
+        cursor: default;
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-top: 5px;
+        border-radius: 2px;
+      }
+
+    }
+  }
+}
+.pagination-bottom{
+  margin: 30px 0 70px 0;
+}

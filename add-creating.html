@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodoria24</title>
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+  <section class="header ">
+    <div class="topLogo">
+      <div class="container ">
+        <div class="row rowLogo">
+          <div class="col-sm-12">
+            <div class="row logo">
+              <img src="img/logo.png">
+            </div>
+            <div class="slogan text-right">
+              Speisenvielfalt der ganzen Welt in deiner Umgebung.
+            </div>
+            <div class="links">
+              <a href="#" class="blue">Einloggen</a>
+              <a href="#" class="blue">Registrieren</a>
+            </div>
+          </div>
+        </div><!-- end div /.rowLogo -->
+      </div><!-- end div /.container -->
+    </div><!-- end div /.topLogo -->
+    <div class="topMenu ">
+      <div class="container ">
+        <div class="row">
+          <div class="row searchForm mobile-hidden col-lg-7 col-xs-12" id="searchForm">
+            <div class="searchForm__wrapper">
+              <div class="clearfix">
+                <div class="searchForm__close" id="searchForm__close"><i class="fa fa-times"></i></div>
+                <div class="arrow"></div>
+                <input class="searchForm__input" placeholder="PLZ oder Ort">
+
+                <div class="dropdown single perimeter ">
+                  <button class="btn btn-dropdown dropdown-toggle searchForm__input" type="button"
+                          id="dropdownMenu1"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Umkreis
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu single-menu ul-dropdown" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">1,5 km</a></li>
+                    <li><a href="#">2,5 km</a></li>
+                    <li><a href="#">3,5 km</a></li>
+                    <li><a href="#">5 km</a></li>
+                    <li><a href="#">7,5 km</a></li>
+                    <li><a href="#">10 km</a></li>
+                    <li><a href="#">15 km</a></li>
+                    <li><a href="#">20 km</a></li>
+                    <li><a href="#">25 km</a></li>
+                    <li><a href="#">35 km</a></li>
+                    <li><a href="#">50 km</a></li>
+                  </ul>
+                </div><!-- end div /.perimeter -->
+
+                <div class="searchForm__line visible-xs-block"></div>
+                <button class="searchForm__more" id="showMore">Suchoptionen<i
+                        class="fa fa-cogs searchForm__moreIcon"></i></button>
+                <div class="searchForm__submit ">
+                  <button type="submit" class="btn-common btn-orange">SUCHEN</button>
+                </div>
+              </div><!-- end div /.clearfix -->
+            </div><!-- end div /.searchForm__wrapper -->
+          </div><!-- end div /.searchForm -->
+          <div class="col-xs-6 col-sm-5">
+            <button class="topMenu__searchButton hidden-lg btn-common btn-orange" id="searchButton">SUCHEN
+              <div class="topMenu__searchButtonIcon"><i class="fa fa-search"></i></div>
+            </button>
+          </div><!-- end div /.col-xs-6 -->
+          <div class="col-sm-4 hidden-xs col-lg-3">
+            <div class="row">
+              <div class="topMenu__angebot"><a href="" class="white"> <i class="fa fa-plus">&nbsp;</i>Angebot
+                erstellen</a></div>
+              <div class="topMenu__basket"><a href="" class="white"><span>Shop</span></a>&nbsp;&nbsp;&nbsp;<i
+                      class="fa fa-shopping-basket"></i><span>2</span></div>
+            </div>
+          </div><!-- end div /.col-sm-4 -->
+          <div class="col-xs-6 col-sm-3 col-lg-2">
+            <div class="row">
+              <div class="visible-xs-block">
+                <div class="topMenu__icon" id="showMenu"><i class="fa fa-bars"></i></div>
+              </div>
+              <div class="visible-xs-block">
+                <div class="topMenu__icon" id="hideMenu"><i class="fa fa-times"></i></div>
+              </div>
+              <div class="topMenu__mailbox">
+                <div class="topMenu__mailboxicon"><i class="fa fa-envelope"></i></div>
+                <div class="topMenu__mailboxcount">7</div>
+              </div><!-- end div /.topMenu__mailbox -->
+              <div class="topMenu__account hidden-xs clearfix">
+                <div class="dropdown user-img">
+                  <a href="#" class="dropdown-toggle white" id="dropdownMenu10"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="topMenu__accountPhoto"></div>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </a>
+                  <ul class="dropdown-menu ul-dropdown" aria-labelledby="dropdownMenu10">
+                    <li><a href="#" class="afterLogin">Profil</a></li>
+                    <li><a href="#" class="afterLogin">Merkliste</a></li>
+                    <li><a href="#" class="afterLogin">Meine Angebote</a></li>
+                    <li><a href="#" class="afterLogin">Konto erweitern</a></li>
+                    <li><a href="#" class="afterLogin">Mails</a></li>
+                    <li><a href="#" class="afterLogin">Ausloggen</a></li>
+                    <li><a href="#" class="beforeLogin">Einloggen</a></li>
+                    <li><a href="#" class="beforeLogin">Registrieren</a></li>
+                  </ul>
+                </div><!-- end div /.user-img -->
+                <div class="topMenu__accountLabel">Willkommen, <br> Daniel</div>
+              </div><!-- end div /.topMenu__account -->
+            </div><!-- end div /.row -->
+          </div><!-- end div /.col-xs-6 -->
+        </div><!-- end div /.row -->
+        <div class="menu" id="Menu">
+          <div class="menu__wrapper">
+            <div class="arrow"></div>
+            <nav>
+              <a href="" class="afterLogin">
+                <div class="menu__wrapperAccount">
+                  <div class="menu__wrapperPhoto"></div>
+                  <div class="menu__wrapperLabel">Willkommen, Daniel</div>
+                </div>
+              </a>
+              <a href=""><i class="fa fa-plus">&nbsp;</i>Angebot erstellen</a>
+              <a href="">Shop</a>
+              <a href="">My cart &nbsp;<span><i class="fa fa-shopping-basket"></i> 2</span></a>
+              <a href="#" class="afterLogin">Profil</a>
+              <a href="#" class="afterLogin">Merkliste</a>
+              <a href="#" class="afterLogin">Meine Angebote</a>
+              <a href="#" class="afterLogin">Konto erweitern</a>
+              <a href="#" class="afterLogin">Mails &nbsp; <span class="topMenu__mailboxcount">7</span></a>
+              <a href="#" class="afterLogin">Ausloggen</a>
+              <a href="" class="beforeLogin">Einloggen</a>
+              <a href="" class="beforeLogin">Registrieren</a>
+            </nav>
+          </div><!-- end div /.menu__wrapper -->
+        </div><!-- end div /.menu -->
+        <div class="searchMore" id="searchMore">
+          <div class="searchMore__wrapper clearfix">
+            <div class="arrow"></div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="selection">
+                <div class="title-small">Kategorie</div>
+                <input type="radio" name="optionsRadios1" class="selector"
+                       id="optionsRadios1" value="option1">
+                <div class="radio">
+                  <label for="optionsRadios1"><span>Kalt</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios1" class="selector"
+                       id="optionsRadios2" value="option2">
+                <div class="radio">
+                  <label for="optionsRadios2"> <span>Warm</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios1" class="selector"
+                       id="optionsRadios3" value="option3">
+                <div class="radio">
+                  <label for="optionsRadios3"><span>Lebensmittel</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios1" class="selector"
+                       id="optionsRadios4" value="option4" checked>
+                <div class="radio">
+                  <label for="optionsRadios4"><span>Nicht ausgewählt</span></label>
+                </div>
+              </div><!-- end div /.selection -->
+              <div class="selection">
+                <div class="title-small">Speisenart</div>
+                <input type="radio" name="optionsRadios2" class="selector"
+                       id="optionsRadios5" value="option5">
+                <div class="radio">
+                  <label for="optionsRadios5"><span>Vorspeise (vorgewählt)</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios2" class="selector"
+                       id="optionsRadios6" value="option6">
+                <div class="radio">
+                  <label for="optionsRadios6"><span>Hauptspeise</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios2" class="selector"
+                       id="optionsRadios7" value="option7">
+                <div class="radio">
+                  <label for="optionsRadios7"><span>Suppen</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios2" class="selector"
+                       id="optionsRadios8" value="option8">
+                <div class="radio">
+                  <label for="optionsRadios8"><span>Nachtisch</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios2" class="selector"
+                       id="optionsRadios9" value="option9" checked>
+                <div class="radio">
+                  <label for="optionsRadios9"><span>Nicht ausgewählt</span></label>
+                </div>
+              </div><!-- end div /.selection -->
+              <div class="selection">
+                <div class="title-small">Anbieterbewertung größer als</div>
+                <input type="radio" name="optionsRadios3" class="selector"
+                       id="optionsRadios10" value="option10">
+                <div class="radio">
+                  <label for="optionsRadios10"><span>3 (vorgewählt)</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios3" class="selector"
+                       id="optionsRadios11" value="option11">
+                <div class="radio">
+                  <label for="optionsRadios11"><span>4</span></label>
+                </div>
+
+                <input type="radio" name="optionsRadios3" class="selector"
+                       id="optionsRadios12" value="option12" checked>
+                <div class="radio">
+                  <label for="optionsRadios12"><span>Nicht ausgewählt</span></label>
+                </div>
+              </div><!-- end div /.selection -->
+            </div><!-- end div /.col-xs-12 -->
+            <div class="col-xs-12 col-sm-4">
+              <div class="selection">
+                <h4 class="title-small">Fleischgerichte / Vegetarisch</h4>
+
+                <input type="checkbox" class="checkable hidden" id="ch11">
+                <label for="ch11" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>kein Schwein</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch12">
+                <label for="ch12" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>kein Rind</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch13">
+                <label for="ch13" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>kein Geflügel</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch14">
+                <label for="ch14" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>kein Fisch und Meeresfrüchte</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch15">
+                <label for="ch15" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Vegetarisch</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch16">
+                <label for="ch16" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Vegan</span>
+                </label>
+              </div><!-- end div /.selection -->
+              <div class="selection">
+                <h4 class="title-small">Ohne Zusatz von</h4>
+
+                <input type="checkbox" class="checkable hidden" id="ch21">
+                <label for="ch21" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>alles auswählen</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch22">
+                <label for="ch22" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Zucker</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch23">
+                <label for="ch23" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Zuckerersatz</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch24">
+                <label for="ch24" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Geschmacksverstärker</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="ch25">
+                <label for="ch25" class="checkable-toggler flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>künstliche Aromen</span>
+                </label>
+
+              </div><!-- end div /.selection -->
+            </div><!-- end div /.col-xs-12 -->
+            <div class="col-xs-12 col-sm-4">
+              <div class="selection">
+                <input type="checkbox" class="checkable hidden" id="a1">
+                <label for="a1" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Fertiggepackt</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="a2">
+                <label for="a2" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Bio</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="a3">
+                <label for="a3" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Halal</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="a4">
+                <label for="a4" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Kaschrut</span>
+                </label>
+
+                <input type="checkbox" class="checkable hidden" id="a5">
+                <label for="a5" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>ohne Vorbestellung <br>
+                        (nur bereits fertiges <br>
+                        Essen anzeigen)</span>
+                </label>
+
+              </div><!-- end div /.selection -->
+            </div><!-- end div /.col-xs-12 -->
+            <div class="searchMore__submit">
+              <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN</button>
+            </div><!-- end div /.searchMore__submit -->
+          </div><!-- end div /.searchMore__wrapper -->
+        </div><!-- end div /.searchMore -->
+      </div><!-- end div /.container -->
+    </div><!-- end div /.topMenu -->
+  </section><!-- end div /.header -->
+  <section class="main profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-9 add-create-block-styles">
+          <h2 class="title-main">Angebot erstellen</h2>
+          <form class="row margin-top-titles reordering" id="form-creating">
+            <div class="col-xs-12 col-sm-4 col-lg-3 order-2">
+              <div class="flex-left-center">
+                <input type="file" class="hidden" id="add-new-image-id">
+                <label for="add-new-image-id" class="add-files flex-left-center">
+                  <span class="fa fa-picture-o icon-modify"></span>
+                  <span class="underlined">Foto einfügen</span>
+                </label>
+                <span class="left-files font-regular-italic">(Max. 4)</span>
+              </div>
+
+              <div class="previews-container">
+                <h3 class="title-normal margin-top-titles">Galeriebild</h3>
+                <div class="preview-wrapper main-image" data-index="0"></div>
+                <h3 class="title-normal margin-top-titles hidden-xs">weitere Bilder</h3>
+                <div class="preview-wrapper" data-index="1"></div>
+                <div class="preview-wrapper" data-index="2"></div>
+                <div class="preview-wrapper" data-index="3"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg filters-margin-top">
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-lg-9 order-1">
+              <div class="row with-padding">
+                <div class="col-xs-12 col-sm-8">
+                  <label class="input-wrapper">
+                    <span class="input-title">Benennung eingeben *</span>
+                    <input type="text" class="input-body" value="" name="proposal_name">
+                  </label>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <label class="input-wrapper">
+                    <span class="input-title">Preis(€) *</span>
+                    <input type="number" class="input-body" value="" name="price">
+                  </label>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="input-wrapper">
+                    <span class="input-title">Kategorie *</span>
+                    <div class="select_wrapper fa fa-chevron-down">
+                      <select class="input-body">
+                        <option value="auswählen">auswählen</option>
+                        <option value="Kalt">Kalt</option>
+                        <option value="Warm">Warm</option>
+                        <option value="Lebensmittel">Lebensmittel</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="input-wrapper">
+                    <span class="input-title">Speisenart * </span>
+                    <div class="select_wrapper fa fa-chevron-down">
+                      <select class="input-body">
+                        <option value="auswählen">auswählen</option>
+                        <option value="Vorspeise">Vorspeise (vorgewählt)</option>
+                        <option value="Hauptspeise">Hauptspeise</option>
+                        <option value="Suppen">Suppen</option>
+                        <option value="Nachtisch">Nachtisch</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <label class="input-wrapper">
+                    <span class="input-title">Beschreibung eingeben *</span>
+                    <textarea type="text" class="input-body" name="description">Einfaches, aber bestechendes Gericht passt es hervorragend zu j</textarea>
+                  </label>
+                </div>
+                <div class="col-xs-12">
+                  <span class="line"></span>
+                </div>
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title">Fleischgerichte / Vegetarisch *</span>
+                    <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+
+                      <div class="input-body dropdown-toggle btn-multiple">
+                        <span>auswählen</span>
+                      </div>
+
+                      <div class="dropdown-menu dropdown-menu-modify">
+                        <div class="scrollable-block">
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_1">
+                          <label for="fleischgericht_checkable_1" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Fleischgericht</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_2">
+                          <label for="fleischgericht_checkable_2" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Vegetarisch</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_3">
+                          <label for="fleischgericht_checkable_3" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Vegan</span>
+                          </label>
+                        </div>
+                        <div class="button-wrapper">
+                          <button type="button" class="btn-common btn-orange" id="fleischgericht_button_id">übernehmen</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 hidden" id="cutting_block_fleischgericht">
+                  <div class="input-wrapper">
+                    <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+
+                      <div class="input-body dropdown-toggle btn-multiple">
+                        <span>ausgewählte Produkte</span>
+                      </div>
+
+                      <div class="dropdown-menu dropdown-menu-modify">
+                        <div class="scrollable-block">
+                          <input type="checkbox" class="checkable hidden" data-name="Schwein" id="producte_checkable_1">
+                          <label for="producte_checkable_1" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Schwein</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Rind" id="producte_checkable_2">
+                          <label for="producte_checkable_2" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Rind</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Geflügel" id="producte_checkable_3">
+                          <label for="producte_checkable_3" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Geflügel</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Fisch und/oder" id="producte_checkable_4">
+                          <label for="producte_checkable_4" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Fisch und/oder</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Meeresfrüchte" id="producte_checkable_5">
+                          <label for="producte_checkable_5" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Meeresfrüchte</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Sonstiges" id="producte_checkable_6">
+                          <label for="producte_checkable_6" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Sonstiges</span>
+                          </label>
+                        </div>
+                        <div class="button-wrapper">
+                          <button type="button" class="btn-common btn-orange" id="cutting_block_fleischgericht_button_id">übernehmen</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 hidden" id="chips_first_block"></div>
+
+                <div class="col-xs-12 filters-margin-top" id="zusatz_inputs_block_id">
+                  <div class="input-wrapper">
+                    <span class="input-title">ohne Zusatz von * </span>
+                    <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+
+                      <div class="input-body dropdown-toggle btn-multiple">
+                        <span>auswählen</span>
+                      </div>
+
+                      <div class="dropdown-menu dropdown-menu-modify">
+                        <div class="scrollable-block">
+                          <input type="checkbox" class="checkable hidden" data-name="alles auswählen" id="wahlen_checkable_1">
+                          <label for="wahlen_checkable_1" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>alles auswählen</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Zucker" id="wahlen_checkable_2">
+                          <label for="wahlen_checkable_2" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Zucker</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Zuckerersatz" id="wahlen_checkable_3">
+                          <label for="wahlen_checkable_3" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Zuckerersatz</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="Geschmacksvers tärker" id="wahlen_checkable_4">
+                          <label for="wahlen_checkable_4" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>Geschmacksvers tärker</span>
+                          </label>
+
+                          <input type="checkbox" class="checkable hidden" data-name="künstliche Aromen" id="wahlen_checkable_5">
+                          <label for="wahlen_checkable_5" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span>künstliche Aromen</span>
+                          </label>
+                        </div>
+                        <div class="button-wrapper">
+                          <button type="button" class="btn-common btn-orange" id="zusatz_inputs_block_button_id">übernehmen</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12" id="chips_second_block_id"></div>
+
+                  <div class="col-xs-12 filters-margin-top">
+                    <input type="checkbox" class="checkable hidden" id="checkable_fertiggepackt">
+                    <label for="checkable_fertiggepackt" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                      <span class="fa fa-square-o"></span>
+                      <span class="fa fa-check"></span>
+                      <span>Fertiggepackt</span>
+                    </label>
+                  </div>
+                <div class="col-xs-12">
+                  <input type="checkbox" class="checkable hidden" id="checkable_bio">
+                  <label for="checkable_bio" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                    <span class="fa fa-square-o"></span>
+                    <span class="fa fa-check"></span>
+                    <span>BIO</span>
+                  </label>
+                </div>
+                <div class="col-xs-12">
+                  <input type="checkbox" class="checkable hidden" id="checkable_halal">
+                  <label for="checkable_halal" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                  <span class="fa fa-square-o"></span>
+                  <span class="fa fa-check"></span>
+                  <span>Halal</span>
+                  </label>
+                </div>
+                <div class="col-xs-12">
+                  <input type="checkbox" class="checkable hidden" id="checkable_kaschrut">
+                  <label for="checkable_kaschrut" class="checkable-toggler checkable-toggler-bold flex-left-center">
+                    <span class="fa fa-square-o"></span>
+                    <span class="fa fa-check"></span>
+                    <span>Kaschrut</span>
+                  </label>
+                </div>
+                <div class="col-xs-12 filters-margin-top">
+                  <span class="line"></span>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title">Portionsgröße *</span>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="select_wrapper fa fa-chevron-down">
+                          <select class="input-body">
+                            <option value="auswählen">auswählen</option>
+                            <option value="100">100</option>
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                            <option value="250">250</option>
+                            <option value="300">300</option>
+                            <option value="350">350</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="750">750</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="flex-left-center">
+                          <input type="radio" name="optionsRadios1" class="selector hidden" id="portion_radios_1" value="option1">
+                          <div class="radio">
+                            <label for="portion_radios_1"><span>Ml/L</span></label>
+
+                          </div>
+
+                          <input type="radio" name="optionsRadios1" class="selector hidden"
+                                 id="portion_radios_2" value="option1">
+                          <div class="radio">
+                            <label for="portion_radios_2"><span>g/Kg</span></label>
+
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title">Portionen *</span>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="select_wrapper fa fa-chevron-down">
+                          <select class="input-body" size="1">
+                            <option value="auswählen">auswählen</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 custom-width-100">
+                        <div class="select-description">Ihrem Benutzerkonto können Sie bis zu 3(bei BK)/5(bei EK)/50(bei PK) Portionen einstellen</div>
+                        <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <label class="input-wrapper">
+                    <span class="input-title">Zutaten *</span>
+                    <textarea type="text" class="input-body">vorwiegend festkochende Kartoffeln, durchwachsener Räucherspeck</textarea>
+                  </label>
+                </div>
+                <div class="col-xs-12">
+                  <span class="line"></span>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title">Optionen *</span>
+                    <div class="select_wrapper fa fa-chevron-down">
+                      <select class="input-body" id="coocked_select_id">
+                        <option value="auswählen">auswählen</option>
+                        <option value="Gekochtam">Gekocht am</option>
+                        <option value="Wird-gekocht">Wird gekocht am</option>
+                        <option value="Nach-Vorbestellug">Nach Vorbestellug</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title" id="coockedTitleId">Gekocht *</span>
+                    <div class="date-input-wrapper">
+                      <span class="calendar fa fa-calendar"></span>
+                      <span class="prefix">am:</span>
+                      <input type="text" readonly="readonly" data-date="true" class="input-body date-input" value="12.05.2018">
+                      <span class="prefix">um:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="input-wrapper">
+                    <span class="input-title">Kann abgeholt werden *</span>
+                    <div class="date-input-wrapper">
+                      <span class="calendar fa fa-calendar"></span>
+                      <span class="prefix">am:</span>
+                      <input type="text" readonly="readonly" data-date="true" class="input-body date-input" value="12.05.2018">
+                      <i class="move-string filters-margin-top"></i>
+                      <span class="prefix">von:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                      <span class="prefix">bis:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                    </div>
+
+                    <div class="date-input-wrapper filters-margin-top">
+                      <span class="calendar fa fa-calendar"></span>
+                      <span class="prefix">am:</span>
+                      <input type="text" readonly="readonly" data-date="true" class="input-body date-input" value="12.05.2018">
+                      <i class="move-string filters-margin-top"></i>
+                      <span class="prefix">von:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                      <span class="prefix">bis:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                    </div>
+
+                    <div class="date-input-wrapper filters-margin-top">
+                      <span class="calendar fa fa-calendar"></span>
+                      <span class="prefix">am:</span>
+                      <input type="text" readonly="readonly" data-date="true" class="input-body date-input" value="12.05.2018">
+                      <i class="move-string filters-margin-top"></i>
+                      <span class="prefix">von:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                      <span class="prefix">bis:</span>
+                      <input type="text" data-time="true" class="input-body time-input" value="12:00">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 order-3">
+              <div class="with-padding text-right form-footer-button">
+                <button class="btn-common btn-orange">Angebot einstellen</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="modal fade" tabindex="-1" role="dialog" id="cropper_modal_id">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Add photo</h4>
+                </div>
+                <div class="modal-body" id="">
+
+                  <div class="cropper-body-wrapp" >
+                    <img src="" alt="" class="cropper-body" id="cropper-body-id">
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-common btn-orange" id="get-cropped-data-button">Angebot einstellen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12 sidebar">
+          <div class="row sidebar-body">
+            <div class="col-xs-12">
+              <div class="best-item-wrapper">
+                <h3 class="title-normal">Beste Anbieter in der Umgebung</h3>
+                <div class="row">
+                  <div class="col-lg-12 col-sm-4 best-item-col">
+                    <div class="best-item ">
+                      <div class="author-wrapper">
+                        <div class="star-small hidden-xs"></div>
+                        <div class="star-big visible-xs"></div>
+                        <div class="main-info">
+                          <div class="item-author-name text-center">BigMummy Lorem</div>
+                          <div class="item-author-img">
+                            <img src="img/user-photo.jpg" class="author-face">
+                            <img src="img/medal-gold.png" class="author-medal">
+                          </div>
+                          <div class="item-author-assessment">
+                            <i class="fa fa-thumbs-o-up"
+                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                          </div>
+                          <div class="item-author-distance font-regular">
+                            entfernt: 1,2 Km
+                          </div>
+                        </div><!-- end div /.main-info -->
+                      </div><!-- end div /.author-wrapper -->
+
+                      <div class="best-food">
+                        <div class="item-best-food">
+                          <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                            Ipsum
+                          </div>
+                          <img src="img/food-image.jpg"
+                               class="img-responsive item-best-food-img">
+                          <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                  class="price-text">&nbsp;/ Portion</span>
+                          </div>
+                        </div><!-- end div /.item-best-food -->
+                        <div class="item-best-food">
+                          <div class="title-card">Marinierte Aubergine
+                          </div>
+                          <img src="img/food-image.jpg"
+                               class="img-responsive item-best-food-img">
+                          <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                  class="price-text">&nbsp;/ Portion</span>
+                          </div>
+                        </div><!-- end div /.item-best-food -->
+                      </div><!-- end div /.best-food -->
+                    </div><!-- end div /.best-item -->
+                  </div><!-- end div /.col-lg-12 -->
+                  <div class="col-lg-12 col-sm-4 best-item-col">
+                    <div class="best-item ">
+                      <div class="author-wrapper">
+                        <div class="star-small hidden-xs"></div>
+                        <div class="star-big visible-xs"></div>
+                        <div class="main-info">
+                          <div class="item-author-name text-center">BigMummy Lorem</div>
+                          <div class="item-author-img">
+                            <img src="img/user-photo.jpg" class="author-face">
+                            <img src="img/medal-silver.png" class="author-medal">
+                          </div>
+                          <div class="item-author-assessment">
+                            <i class="fa fa-thumbs-o-up"
+                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                          </div>
+                          <div class="item-author-distance font-regular">
+                            entfernt: 1,2 Km
+                          </div>
+                        </div><!-- end div /.main-info -->
+                      </div><!-- end div /.author-wrapper -->
+
+                      <div class="best-food">
+                        <div class="item-best-food">
+                          <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                            Ipsum
+                          </div>
+                          <img src="img/food-image.jpg"
+                               class="img-responsive item-best-food-img">
+                          <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                  class="price-text">&nbsp;/ Portion</span>
+                          </div>
+                        </div><!-- end div /.item-best-food -->
+                      </div><!-- end div /.best-food -->
+                    </div><!-- end div /.best-item -->
+                  </div><!-- end div /.col-lg-12 -->
+                  <div class="col-lg-12 col-sm-4 best-item-col">
+                    <div class="best-item ">
+                      <div class="author-wrapper">
+                        <div class="star-small hidden-xs"></div>
+                        <div class="star-big visible-xs"></div>
+                        <div class="main-info">
+                          <div class="item-author-name text-center">BigMummy Lorem</div>
+                          <div class="item-author-img">
+                            <img src="img/user-photo.jpg" class="author-face">
+                            <img src="img/medal-bronze.png" class="author-medal">
+                          </div>
+                          <div class="item-author-assessment">
+                            <i class="fa fa-thumbs-o-up"
+                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                          </div>
+                          <div class="item-author-distance font-regular">
+                            entfernt: 1,2 Km
+                          </div>
+                        </div><!-- end div /.main-info -->
+                      </div><!-- end div /.author-wrapper -->
+
+                      <div class="best-food">
+                        <div class="item-best-food">
+                          <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                            Ipsum
+                          </div>
+                          <img src="img/food-image.jpg"
+                               class="img-responsive item-best-food-img">
+                          <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                  class="price-text">&nbsp;/ Portion</span>
+                          </div>
+                        </div><!-- end div /.item-best-food -->
+                        <div class="item-best-food">
+                          <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                            Ipsum
+                          </div>
+                          <img src="img/food-image.jpg"
+                               class="img-responsive item-best-food-img">
+                          <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                  class="price-text">&nbsp;/ Portion</span>
+                          </div>
+                        </div><!-- end div /.item-best-food -->
+                      </div><!-- end div /.best-food -->
+                    </div><!-- end div /.best-item -->
+                  </div><!-- end div /.col-lg-12 -->
+
+                </div><!-- end div /.row -->
+              </div><!-- end div /.best-item-wrapper -->
+              <img src="http://placehold.it/250x250" alt="250x250"
+                   class="img-responsive banner-small ">
+            </div><!-- end div /.col-sm-12 -->
+          </div><!-- end div /.sidebar-body -->
+        </div><!-- end div /.sidebar -->
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-sm-7 col-sm-push-5 footer-menu text-right">
+              <a href="useTerms.html" class="blue">Nutzungsbedingungen</a>
+              <a href="privacy.html" class="blue">Datenschutzerklärung</a>
+              <a href="info.html" class="blue">Info</a>
+              <a href="output.html" class="blue">Impressum</a>
+            </div>
+            <div class="col-sm-5 col-sm-pull-7 copyright">
+              &copy; Copyright 2018 Foodoria24. Alle Rechte vorbehalten.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- end section /.footer -->
+</div>
+<a href="#" class="scrollup"></a>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+<script type="text/javascript" src="js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" defer></script>
+<script type="text/javascript" src="js/cropper.min.js" defer></script>
+<script type="text/javascript" src="js/moment.js" defer></script>
+<script type="text/javascript" src="js/pikaday.js" defer></script>
+<script type="text/javascript" src="js/time-picker.js" defer></script>
+<script type="text/javascript" src="js/jquery-cropper.min.js" defer></script>
+<script type="text/javascript" src="js/header.js" defer></script>
+<script type="text/javascript" src="js/validation.js" defer></script>
+<script type="text/javascript" src="js/add-creating.js" defer></script>
+</body>
+</html>

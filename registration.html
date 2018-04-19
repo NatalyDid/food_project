@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Foodoria24</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-registration">
+        <form class="container" id="reg-form">
+            <div class="row form-registration">
+                <div class="col-sm-6 with-padding-reg">
+                    <h2 class="title-main">Registrieren</h2>
+                    <span class="error-mess">Registrierung fehlgeschlagen. Bitte korrigieren Sie die unten markierte
+Felder.</span>
+                </div>
+                <div class="col-sm-6 with-padding-reg">
+                    <div class="sign-in">Sind Sie schon registriert? <a href="login.html" class="blue">einloggen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-registration">
+                <div class="col-sm-6 with-padding-reg">
+                    <fieldset class="input-wrapper gender">
+                        <input type="radio" name="optionsGender" class="selector for-woman"
+                               id="optionsWoman" value="woman">
+                        <input type="radio" name="optionsGender" class="selector for-man"
+                               id="optionsMan" value="man">
+                        <legend class="input-title">Anrede *</legend>
+                        <div class="flex-end-center radio-wrapper">
+                            <div class="radio for-woman">
+                                <label for="optionsWoman"><span>Frau</span></label>
+                            </div>
+                            <div class="radio for-man">
+                                <label for="optionsMan"><span>Herr</span></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <label class="input-wrapper">
+                        <input type="text" class="input-body" name="firstName">
+                        <span class="input-title">Vorname *</span>
+                        <span class="error-mess">Bitte geben Sie Ihren Vornamen ein.</span>
+                    </label>
+                    <label class="input-wrapper ">
+                        <input type="text" class="input-body" name="surname">
+                        <span class="input-title">Nachname *</span>
+                        <span class="error-mess">Bitte geben Sie Ihren Nachnamen ein.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="email" class="input-body" name="email">
+                        <span class="input-title">E-Mail Adresse *</span>
+                        <span class="error-mess">Bitte geben Sie Ihre E-Mail Adresse ein.</span>
+                        <span class="error-mess">Die Angabe ist nicht korrekt.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="text" class="input-body" name="nick">
+                        <span class="input-title">Benutzername <span>(nur den Namen sehen andere Benutzer)</span>
+                            *</span>
+                        <span class="error-mess">Bitte geben Sie Ihren Benutzernamen ein.</span>
+                        <span class="error-mess">Dieser Benutzername ist schon belegt.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="tel" class="input-body" name="tel" placeholder="0XXX XXXXXXX oder 0XXXX XXXXXXX">
+                        <span class="input-title">Rufnummer *</span>
+                        <span class="error-mess">Bitte geben Sie Ihren Rufnummer ein.</span>
+                        <span class="error-mess">Die Angabe ist nicht korrekt.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="password" class="input-body" name="pswd_reg" id="pswd_reg">
+                        <span class="input-title">Passwort *</span>
+                        <span class="error-mess">Das Passwort muss mindestens 8 Zeichen lang
+sein, Zahlen und Großbuchstaben beinhalten.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="password" class="input-body" name="pswd_reg_rep" id="pswd_reg_rep">
+                        <span class="input-title">Passwort wiederholen *</span>
+                        <span class="error-mess">Die Angaben stimmen nicht überein.</span>
+                    </label>
+                </div><!-- end div /.col-sm-6 -->
+
+                <div class="col-sm-6 with-padding-reg">
+                    <div class="download-photo">
+                        <input type="file" class="hidden" id="add-photo-id" accept="image/x-png,image/gif,image/jpeg">
+                        <label for="add-photo-id" class="add-files flex-left-center">
+                            <img src="img/default-photo.png" alt="" id="avatar_preview" class="profile-photo ">
+                            <span class="blue">Profilbild hochladen</span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="title-normal">Felder für ein Anbieterkonto:</h3>
+                    <label class="input-wrapper">
+                        <input type="text" class="input-body" name="address">
+                        <span class="input-title">Adresse *</span>
+                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
+                    </label>
+                    <label class="input-wrapper">
+                        <input type="text" class="input-body" name="zip">
+                        <span class="input-title">PLZ *</span>
+                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
+                    </label>
+                    <label class="input-wrapper ">
+                        <input type="text" class="input-body" name="place">
+                        <span class="input-title">Ort *</span>
+                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
+                    </label>
+                    <label class="input-wrapper coupon">
+                        <input type="text" class="input-body">
+                        <span class="input-title">Gutscheincode eingeben</span>
+                        <span class="error-mess">Gutscheincode nicht gültig.</span>
+                    </label>
+
+                </div><!-- end div /.col-sm-6 -->
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 with-padding-reg form-footer">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkable" id="accept" name="accept">
+                        <label for="accept" class="checkable-toggler flex-left-center">
+                            <span class="fa fa-square-o"></span>
+                            <span class="fa fa-check"></span>
+                            <span class="font-regular">Ich erkläre mich einverstanden mit den <a href="" class="blue">Nutzungsbedingungen</a> und <a href="" class="blue">Datenschutzerklärung</a> von Foodoria24 und willige ein, durch Foodoria24 per E-Mail kontaktiert werden zu dürfen (z.B. Benachrichtigungen oder Aktionen).</span>
+                            <span class="error-mess">Bitte bestätigen Sie die Datenschutzerklärung und Nutzungsbedingungen.</span>
+                        </label>
+                    </div>
+                    <div class="form-registration-footer-button ">
+                        <button type="submit" class="btn-common btn-orange">Registrieren</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </form><!-- end div /.container -->
+    </section><!-- end section /.main-login -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="cropper_modal_id">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Profilbild hochladen</h4>
+                </div>
+                <div class="modal-body" id="">
+
+                    <div class="cropper-body-wrapp">
+                        <img src="" alt="" class="cropper-body" id="cropper-body-id">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-common btn-orange" id="get-cropped-data-button">Angebot einstellen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end div /.wrapper.main-page-after-login -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+<script type="text/javascript" src="js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" defer></script>
+<script type="text/javascript" src="js/cropper.min.js" defer></script>
+<script type="text/javascript" src="js/jquery-cropper.min.js" defer></script>
+<script type="text/javascript" src="js/validation.js" defer></script>
+<script type="text/javascript" src="js/registration.js" defer></script>
+</body>
+</html>

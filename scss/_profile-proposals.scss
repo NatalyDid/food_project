@@ -1,0 +1,393 @@
+.profile-proposals {
+  .result-item {
+    height: 340px;
+  }
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.profile-body {
+  padding-top: 8px;
+}
+
+.user-profile {
+  img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 30px 0 10px 0;
+  }
+  h3 {
+    color: $green;
+  }
+}
+
+.profile-menu {
+  list-style: none;
+  padding: 30px;
+  border: 1px solid $grey-border;
+  background-color: $grey-bg;
+  margin: 30px 0;
+  a {
+    display: block;
+    padding-bottom: 20px;
+  }
+  li:last-child a {
+    padding-bottom: 0;
+  }
+  span {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: $orange;
+    display: inline-block;
+    padding: 3px 0 0 7px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.rating {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  div:first-child {
+    padding-top: 2px;
+    padding-right: 0;
+    @extend .font-regular;
+  }
+  div:last-child {
+    color: $green;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.basic-acc {
+  padding: 15px 30px;
+  border: 1px solid $grey-border;
+  background-color: $grey-bg;
+  margin: 30px 0 5px 0;
+  color: $grey;
+}
+
+.first-link {
+  border-right: 1px solid #000;
+  padding-right: 10px;
+}
+
+.second-link {
+  margin-left: 8px;
+}
+
+.card-food {
+  width: 100%;
+  border: 1px solid $grey-border;
+  height: 340px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.food-img {
+  padding: 20px 0 15px 10px;
+  width: 200px;
+  font-weight: 700;
+  @extend .font-regular;
+  > img {
+    margin-bottom: 15px;
+  }
+}
+
+.author-slider {
+  margin-top: 10px;
+  padding: 0 20px;
+  .aaa {
+    text-align: center;
+  }
+  .slick-arrow {
+    background: transparent;
+    border: none;
+    color: $green;
+    font-size: 18px;
+    position: absolute;
+    z-index: 100;
+    outline: none;
+    line-height: 0;
+    top: 45%;
+    display: block;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-initialized .slick-slide {
+    width: 75px;
+  }
+}
+
+.food-author {
+  padding: 7px 15px 0 15px;
+  > div {
+    text-align: center;
+  }
+}
+
+.food-author-img {
+  img {
+    width: 70px;
+    border-radius: 50%;
+    margin: 5px 0;
+    border: 1px solid $grey-border;
+  }
+}
+
+.food-author-assessment {
+  margin-bottom: 3px;
+  .fa {
+    color: $orange;
+    font-size: 16px;
+  }
+  span {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.food-text {
+  @extend .font-regular;
+  padding: 20px 15px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 0;
+}
+
+.food-text-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-terms {
+  span {
+    font-weight: 700;
+  }
+}
+
+.food-edit {
+  a {
+    color: $grey;
+    display: inline-block;
+    margin-left: 14px;
+    .fa {
+      font-size: 18px;
+    }
+  }
+}
+
+.food-description {
+  .title-normal-green {
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  .btn-orange {
+    padding: 7px 20px;
+  }
+}
+
+.food-price {
+  margin: 10px 0;
+  .price-value {
+    color: $orange;
+    font-size: 24px;
+  }
+  .price-text {
+    @extend .font-regular;
+    color: $grey;
+  }
+}
+
+.pre-orders {
+  margin: 10px 0 25px 0;
+  & .checkable-toggler {
+    padding-left: 0;
+  }
+  & .checkable {
+    display: none;
+    &:checked {
+      + .checkable-toggler {
+        color: $green;
+        background-color: transparent;
+        & .font-regular {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.expired {
+  & .card-food {
+    & .food-description h3,
+    & .food-price .price-value {
+      color: $light-grey;
+    }
+    & .termination,
+    & .fa-pencil {
+      visibility: hidden;
+    }
+    & .author-slider {
+      & .slick-arrow {
+        color: $light-grey;
+      }
+      .btn-bright-green {
+        background-color: $light-grey;
+      }
+    }
+  }
+}
+
+.profile {
+  padding-top: 55px;
+}
+
+.slider_item {
+  text-align: center;
+}
+
+.limit {
+  display: none;
+  position: absolute;
+  bottom: 68px;
+  width: 45%;
+  padding: 7px;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  @media screen and (max-width: 1229px) {
+    bottom: 52px;
+  }
+  @media screen and (max-width: 767px) {
+    bottom: 207px;
+    width: 56%;
+  }
+  @media screen and (max-width: 529px) {
+    width: 85%;
+    left:10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    padding-top: 10px;
+  }
+  .user-info {
+    position: relative;
+    & .title-normal-green {
+      position: absolute;
+      top: 10px;
+      left: 120px;
+    }
+    & .statistic {
+      position: absolute;
+      top: 60px;
+      left: 120px;
+      width: 70%;
+      & .filtr-dropdown {
+        width: calc(145%);
+        margin-left: -110px;
+      }
+    }
+  }
+  .profile-header {
+    display: block;
+    & .offer-links {
+      text-align: right;
+      margin-top: 25px;
+    }
+  }
+  .card-food {
+    position: relative;
+    height: 480px;
+    flex-direction: column;
+  }
+  .food-img {
+    width: 100%;
+    position: absolute;
+    top: 165px;
+    left: 5px;
+    padding-top: 0;
+    & > img{
+      width: 200px;
+    }
+    & .author-slider{
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+  .food-text {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .food-description {
+    .title-normal-green {
+      margin: 10px 0;
+    }
+  }
+  .food-text-footer {
+    margin-left: 230px;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .pre-orders {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .card-food {
+    height: 520px;
+  }
+  .food-img {
+    padding-left: 0;
+    top: 145px;
+    left: 10px;
+    & > img {
+      margin-bottom: 40px;
+      width: 160px;
+    }
+  }
+  .food-text {
+    padding: 10px 10px 70px 10px;
+    & .pre-orders {
+      position: absolute;
+      left: 10px;
+      top: 230px;
+    }
+  }
+  .food-text-footer {
+    margin-left: 180px;
+    margin-top: 0;
+  }
+  .button-food-order {
+    position: absolute;
+    top: 89%;
+    left: 20px;
+    width: 90%;
+    .btn-orange {
+      width: 100%;
+    }
+  }
+  .statistic {
+    & .btn-green-bg {
+      font-size: 12px;
+    }
+  }
+}

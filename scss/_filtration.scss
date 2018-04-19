@@ -1,0 +1,36 @@
+
+.filtration {
+  padding-top: 30px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $grey-border;
+}
+
+.filtration-head {
+  padding-bottom: 20px;
+}
+
+.selected-options-title {
+  color: $grey;
+  font-size: 16px;
+  font-family: $robotomedium;
+}
+
+.queries {
+  div {
+    display: inline-block;
+    margin-left: 33px;
+  }
+}
+
+.filtr-dropdown{
+  padding: 30px 10px 20px 10px;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  .filtr-dropdown-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .queries{
+    margin-top: 10px;
+  }
+}

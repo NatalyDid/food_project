@@ -1,0 +1,195 @@
+.user-body {
+  padding-top: 8px;
+  & .title-main-green {
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      left: 45%;
+      top: 25px;
+    }
+  }
+  & .main-info {
+    font-weight: bold;
+    align-items: flex-start;
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+  }
+  & .item-author-img {
+    & .author-face {
+      width: 100px;
+      height: 100px;
+    }
+    & .author-medal {
+      top: 70px;
+      left: 0;
+    }
+  }
+  & .item-author-params {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      margin: 60px 0 0 30px;
+    }
+  }
+  & .btn-green {
+    margin-top: 20px;
+  }
+}
+
+.assessment-block {
+  & .title-normal {
+    margin: 50px 0 20px 0;
+  }
+}
+
+.assessment {
+  display: flex;
+  flex-direction: column;
+  color: $grey;
+  border: 1px solid $grey-border;
+  padding: 10px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  & .food-author-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-weight: bold;
+    & .food-author-assessment {
+      font-size: 12px;
+      & .fa {
+        font-size: 12px;
+      }
+    }
+  }
+  & .assessment-content {
+    & .food-author-assessment {
+      font-size: 18px;
+    }
+    & .message {
+      border-bottom: none;
+      padding: 5px 0 0 0;
+    }
+  }
+}
+.assessment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    width: 47%;
+  }
+}
+
+.assessment-block-visible {
+  margin-bottom: 20px;
+}
+
+/*****************estimations*****************/
+.estimations,
+.proposals {
+  & .profile-header {
+    margin-bottom: 40px;
+  }
+}
+
+.card-estimation {
+  border: 1px solid $grey-border;
+  padding: 10px;
+  margin-bottom: 20px;
+  & .item-text-description-title {
+    margin-top: 0;
+  }
+  & .estimation-content {
+    display: flex;
+    padding: 10px 20px 0 20px;
+  }
+  & .content-img {
+    width: 240px;
+  }
+  & .assessment {
+    border: none;
+    flex: 1;
+    padding: 0 20px;
+    position: relative;
+  }
+  & .food-author-img {
+    & img {
+      margin: 0;
+    }
+  }
+  & .assessment-content {
+    & .food-author-assessment {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      @media screen and (max-width: 991px) {
+        top: 8px;
+        right: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-estimation {
+    & .estimation-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      & .assessment {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0;
+      }
+    }
+  }
+  .assessment {
+    & .assessment-header {
+      flex-direction: column;
+    }
+    & .assessment-content {
+      margin-left: 20px;
+      & .message {
+        margin-top: 30px;
+      }
+      & .food-author-assessment {
+        right: 56%;
+        top: 0;
+      }
+    }
+    .food-author-name {
+      margin: 5px 0 0 0;
+      align-items: center;
+    }
+  }
+}
+
+/*****************proposals*****************/
+.proposals {
+  & .result-item {
+    @media screen and (max-width: 991px) {
+      height: 275px;
+
+    }
+    @media screen and (max-width: 767px) {
+      height: 300px;
+
+    }
+    @media screen and (max-width: 499px) {
+      height: 340px;
+      & .button-order {
+        bottom: 20px;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: $orange-bg;
+    }
+  }
+}
+

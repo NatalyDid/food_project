@@ -1,0 +1,136 @@
+.best-item {
+  border: 1px solid #d9e2e4;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  .author-wrapper {
+    border-left: none;
+    border-right: 1px solid $grey-border;
+    padding: 5px 0;
+  }
+}
+
+.best-food {
+  padding: 10px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  .item-best-food {
+    padding-bottom: 12px;
+
+  }
+  .item-best-food:last-child {
+    padding-bottom: 0;
+  }
+}
+.item-best-food-img {
+  border: 1px solid $grey;
+  margin: 8px 0;
+}
+
+.price-value {
+  color: $orange;
+  font-size: 18px;
+  font-family: $robotomedium;
+  .fa {
+    font-size: 16px;
+  }
+}
+.price-text {
+  @extend .font-regular;
+  color: $grey;
+}
+
+.item-best-food-mob{
+  width: 45%;
+}
+.best-item-mobile{
+  border: 1px solid $grey-border;
+  margin-bottom: 20px;
+}
+
+.best-food-mob{
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+
+@media screen and (max-width: 1229px){
+  .best-item-wrapper{
+    & .title-normal{
+      color: $white;
+      margin-bottom: 20px !important;
+    }
+    background: $light-green;
+    padding: 25px 15px 30px 15px;
+  }
+  .best-item-col{
+    padding: 0 5px;
+  }
+  .best-item-col:first-child{
+    padding-left: 10px;
+  }
+  .best-item-col:last-child{
+    padding-right: 10px;
+  }
+  .best-item{
+    height: 380px;
+  }
+  .price-value {
+    font-size: 16px;
+    & .fa {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .best-item{
+    height: auto;
+    flex-direction: column;
+    & .author-wrapper{
+      border-right: none;
+      border-bottom: 1px solid $grey-border;
+    }
+  }
+  .best-food{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    & .item-best-food{
+      width: 45%;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .best-item .author-wrapper{
+    height: 380px;
+  }
+  .item-best-food{
+    height: 180px;
+  }
+
+  @media screen and (max-width: 767px){
+    .best-item .author-wrapper{
+      height: auto;
+    }
+    .best-food {
+      height: 250px;
+      flex: 1 0 auto;
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 460px){
+    .best-food {
+      height: 220px;
+    }
+  }
+}
