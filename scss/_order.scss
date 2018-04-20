@@ -12,6 +12,30 @@
     margin-top: 20px;
   }
 }
+.order-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  & .item-text-header{
+    flex-direction: column;
+    margin-right: 50px;
+  }
+  & .assessment-header{
+    margin-bottom: 0;
+  }
+  & .food-author-img{
+    & img{
+      margin: 0;
+    }
+  }
+  & .food-author-name{
+    color: $grey;
+  }
+  & .order-name{
+    display: flex;
+    align-items: center;
+  }
+}
 .key-value{
   display: flex;
   align-items: flex-end;
@@ -23,9 +47,7 @@
 .line-order{
   padding-right: 40px;
 }
-//.portion-price{
-//  display: flex;
-//}
+
 .time-wrapper{
   display: flex;
   flex-direction: column;

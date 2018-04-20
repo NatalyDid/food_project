@@ -18,6 +18,9 @@
   .links {
     display: none;
   }
+  & .beforeLogin {
+    display: none;
+  }
   @media (min-width: 650px) {
     .slogan {
       display: block;
@@ -594,3 +597,5 @@
     display: block;
   }
 }
+
+
