@@ -13,7 +13,6 @@
     <![endif]-->
 </head>
 <body>
-
 <div class="wrapper ">
     <section class="header ">
         <div class="topLogo">
@@ -27,8 +26,8 @@
                             Speisenvielfalt der ganzen Welt in deiner Umgebung.
                         </div>
                         <div class="links">
-                            <a href="login.html" class="blue">Einloggen</a>
-                            <a href="registration.html" class="blue">Registrieren</a>
+                            <a href="#" class="blue">Einloggen</a>
+                            <a href="#" class="blue">Registrieren</a>
                         </div>
                     </div>
                 </div><!-- end div /.rowLogo -->
@@ -358,294 +357,470 @@
                             </div><!-- end div /.selection -->
                         </div><!-- end div /.col-xs-12 -->
                         <div class="searchMore__submit">
-                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN</button>
+                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN
+                            </button>
                         </div><!-- end div /.searchMore__submit -->
                     </div><!-- end div /.searchMore__wrapper -->
                 </div><!-- end div /.searchMore -->
             </div><!-- end div /.container -->
         </div><!-- end div /.topMenu -->
     </section><!-- end div /.header -->
-    <section class="profile profile-edit">
+    <section class="profile user">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-9 profile-content">
-                    <div class="row profile-body">
-                        <div class="col-xs-12 col-sm-4 col-lg-3 user-profile">
-                            <h2 class="title-main">Mein Profil</h2>
+                <div class="col-md-12 col-lg-9 user-content">
+                    <div class="row user-body">
+                        <div class="col-xs-12 col-sm-4 col-lg-3 client-profile">
                             <div class="user-info">
-                                <img src="img/user-photo.jpg" class="img-responsive">
-                                <h3 class="title-normal-green">Daniel Robertson</h3>
-                                <div class="row visible-xs-block statistic">
-                                    <div class="col-xs-12 dropdown multi-selected">
-                                        <button class="btn-green-bg text-center dropdown-toggle multiple" type="button"
-                                                id="dropdownMenu12"
-                                                aria-haspopup="true" aria-expanded="false">Meine Statistiken &nbsp;&nbsp;
-                                            <i
-                                                    class="fa fa-pencil" aria-hidden="true"></i>
-                                        </button>
-                                        <div class="dropdown-menu filtr-dropdown" aria-labelledby="dropdownMenu12">
-                                            <div class="filtr-dropdown-inner">
-                                                <div class="rating">
-                                                    <div>
-                                                        Anbieterbewertung
-                                                    </div>
-                                                    <div>
-                                                        4,34
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Käuferbewertung
-                                                    </div>
-                                                    <div>
-                                                        3,82
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Aktivitätspunkte (AP)
-                                                    </div>
-                                                    <div>
-                                                        25
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Premiumpunkte (PP)
-                                                    </div>
-                                                    <div>
-                                                        0
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Toplistenplatz in Ihrer PLZ
-                                                    </div>
-                                                    <div>
-                                                        14
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Angebote dieser Monat
-                                                    </div>
-                                                    <div>
-                                                        3/8
-                                                    </div>
-                                                </div>
-                                                <div class="rating">
-                                                    <div>
-                                                        Angebote für Vorbestellungen
-                                                    </div>
-                                                    <div>
-                                                        1/1
-                                                    </div>
-                                                </div>
+                                <h2 class="title-main-green">Alenka</h2>
+                                <div class="main-info">
 
-                                                <div class="basic-acc ">Basiskonto (BK)</div>
-
-                                                <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
-                                            </div>
-                                        </div><!-- end div /.filtr-dropdown -->
-                                    </div><!-- end div /.col-xs-12 -->
-                                </div><!-- end div /.row -->
+                                    <div class="item-author-img">
+                                        <img src="img/user-photo.jpg" class="author-face">
+                                        <img src="img/medal-gold.png" class="author-medal">
+                                    </div>
+                                    <div class="item-author-params">
+                                        <div class="item-author-assessment">
+                                            <i class="fa fa-thumbs-o-up"
+                                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                        </div>
+                                        <div class="item-author-distance font-regular">
+                                            entfernt: 1,2 Km
+                                        </div>
+                                    </div>
+                                    <button class="btn-green btn-green-reverse hidden-xs" data-toggle="modal"
+                                            data-target="#map">
+                                        <i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp; Auf Karte zeigen
+                                    </button>
+                                </div><!-- end div /.main-info -->
                                 <div class="row visible-xs-block">
                                     <div class="col-xs-12">
                                         <span class="line"></span>
                                     </div>
                                 </div>
+                                <div class="row visible-xs-block assessment-block-visible">
+                                    <div class="col-xs-12 dropdown multi-selected">
+                                        <button class="btn-green-bg text-center dropdown-toggle multiple" type="button"
+                                                id="dropdownMenu13"
+                                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-thumbs-o-up"
+                                                                                              aria-hidden="true"></i>&nbsp;&nbsp;Bewertungen
+                                        </button>
+                                        <div class="dropdown-menu filtr-dropdown" aria-labelledby="dropdownMenu13">
+                                            <div class="assessment">
+                                                <div class="assessment-header">
+                                                    <div class="food-author-img">
+                                                        <img src="img/user-photo.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="food-author-name">
+                                                        <div class="text-center">BigMummy</div>
+                                                        <div class="food-author-assessment">
+                                                            <i class="fa fa-thumbs-o-up"
+                                                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="assessment-content">
+                                                    <div class="food-author-assessment">
+                                                        <i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i>&nbsp;<span>4</span>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Kommentar:
+                                                        </div>
+                                                        <div class="font-regular">Hat sehr gut geschmeckt
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Über:
+                                                        </div>
+                                                        <div class="font-regular">Pasta Napoli
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="assessment">
+                                                <div class="assessment-header">
+                                                    <div class="food-author-img">
+                                                        <img src="img/user-photo.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="food-author-name">
+                                                        <div class="text-center">BigMummy</div>
+                                                        <div class="food-author-assessment">
+                                                            <i class="fa fa-thumbs-o-up"
+                                                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="assessment-content">
+                                                    <div class="food-author-assessment">
+                                                        <i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i>&nbsp;<span>4</span>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Kommentar:
+                                                        </div>
+                                                        <div class="font-regular">Hat sehr gut geschmeckt
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Über:
+                                                        </div>
+                                                        <div class="font-regular">Pasta Napoli
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="assessment">
+                                                <div class="assessment-header">
+                                                    <div class="food-author-img">
+                                                        <img src="img/user-photo.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="food-author-name">
+                                                        <div class="text-center">BigMummy</div>
+                                                        <div class="food-author-assessment">
+                                                            <i class="fa fa-thumbs-o-up"
+                                                               aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="assessment-content">
+                                                    <div class="food-author-assessment">
+                                                        <i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i>&nbsp;<span>4</span>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Kommentar:
+                                                        </div>
+                                                        <div class="font-regular">Hat sehr gut geschmeckt
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="message">
+                                                        <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                                          aria-hidden="true"></i>&nbsp;
+                                                            Über:
+                                                        </div>
+                                                        <div class="font-regular">Pasta Napoli
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="user-estimations.html" class="btn-green btn-green-reverse">
+                                                Weitere Bewertungen
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="assessment-block hidden-xs">
+                                <h3 class="title-normal">Bewertungen</h3>
+                                <div class="assessment">
+                                    <div class="assessment-header">
+                                        <div class="food-author-img">
+                                            <img src="img/user-photo.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="food-author-name">
+                                            <div class="text-center">BigMummy</div>
+                                            <div class="food-author-assessment">
+                                                <i class="fa fa-thumbs-o-up"
+                                                   aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessment-content">
+                                        <div class="food-author-assessment">
+                                            <i class="fa fa-thumbs-o-up"
+                                               aria-hidden="true"></i>&nbsp;<span>4</span>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Kommentar:
+                                            </div>
+                                            <div class="font-regular">Hat sehr gut geschmeckt
+                                            </div>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Über:
+                                            </div>
+                                            <div class="font-regular">Pasta Napoli
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assessment">
+                                    <div class="assessment-header">
+                                        <div class="food-author-img">
+                                            <img src="img/user-photo.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="food-author-name">
+                                            <div class="text-center">BigMummy</div>
+                                            <div class="food-author-assessment">
+                                                <i class="fa fa-thumbs-o-up"
+                                                   aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessment-content">
+                                        <div class="food-author-assessment">
+                                            <i class="fa fa-thumbs-o-up"
+                                               aria-hidden="true"></i>&nbsp;<span>4</span>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Kommentar:
+                                            </div>
+                                            <div class="font-regular">Hat sehr gut geschmeckt
+                                            </div>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Über:
+                                            </div>
+                                            <div class="font-regular">Pasta Napoli
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assessment">
+                                    <div class="assessment-header">
+                                        <div class="food-author-img">
+                                            <img src="img/user-photo.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="food-author-name">
+                                            <div class="text-center">BigMummy</div>
+                                            <div class="food-author-assessment">
+                                                <i class="fa fa-thumbs-o-up"
+                                                   aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessment-content">
+                                        <div class="food-author-assessment">
+                                            <i class="fa fa-thumbs-o-up"
+                                               aria-hidden="true"></i>&nbsp;<span>4</span>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-comment"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Kommentar:
+                                            </div>
+                                            <div class="font-regular">Hat sehr gut geschmeckt
+                                            </div>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="font-regular-bold"><i class="fa fa-cutlery"
+                                                                              aria-hidden="true"></i>&nbsp;
+                                                Über:
+                                            </div>
+                                            <div class="font-regular">Pasta Napoli
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="user-estimations.html" class="btn-green btn-green-reverse">
+                                    Weitere Bewertungen
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 proposals">
+                            <div class="profile-header">
+                                <div>
+                                    <h2 class="title-main">Gerichte</h2>
+                                </div>
+                                <div class="offer-links">
+                                    <a href="#results-orders" class="blue first-link">Bestellen</a>
+                                    <a href="#results-pre-orders" class="blue second-link">Vorbestellen</a>
+                                </div>
                             </div>
 
-                            <div class="hidden-xs">
-                                <ul class="profile-menu">
-                                    <li><a href="#" class="blue-big">Profilbild hochladen/ bearbeiten</a></li>
-                                    <li><a href="#" class="blue-big">Profil bearbeiten</a></li>
-                                    <li><a href="#" class="blue-big">Merkliste</a></li>
-                                    <li><a href="#" class="blue-big">Meine Angebote</a></li>
-                                    <li><a href="#" class="blue-big">Mails <span>7</span></a></li>
-                                </ul>
-
-                                <div class="rating">
-                                    <div>
-                                        Anbieterbewertung
-                                    </div>
-                                    <div>
-                                        4,34
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Käuferbewertung
-                                    </div>
-                                    <div>
-                                        3,82
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Aktivitätspunkte (AP)
-                                    </div>
-                                    <div>
-                                        25
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Premiumpunkte (PP)
-                                    </div>
-                                    <div>
-                                        0
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Toplistenplatz in Ihrer PLZ
-                                    </div>
-                                    <div>
-                                        14
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Angebote dieser Monat
-                                    </div>
-                                    <div>
-                                        3/8
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <div>
-                                        Angebote für Vorbestellungen
-                                    </div>
-                                    <div>
-                                        1/1
-                                    </div>
+                            <div class="results-orders">
+                                <div class="title-wrapper">
+                                    <h3 class="title-normal" id="results-orders">Bestellen</h3>
                                 </div>
 
-                                <div class="basic-acc ">Basiskonto (BK)</div>
+                                <div class="result-item">
+                                    <div class="item-img">
+                                        <div class="single-item">
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img1"
+                                                      alt="food-img1"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img2"
+                                                      alt="food-img2"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img3"
+                                                      alt="food-img3"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img4"
+                                                      alt="food-img4"></div>
+                                        </div><!-- end div /.single-item -->
 
-                                <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
+                                        <div class="dropdown ">
+                                            <button class="btn-green dropdown-toggle" type="button"
+                                                    id="dropdownMenu9"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;Zutaten
+                                            </button>
+                                            <div class="dropdown-menu ingredients" aria-labelledby="dropdownMenu9">
+                                                <ul>
+                                                    <li>vorwiegend festkochende Kartoffeln</li>
+                                                    <li>durchwachsener Räucherspeck (in dünnen Scheiben)</li>
+                                                    <li>Zwiebel</li>
+                                                    <li>Schnittlauch</li>
+                                                    <li>Salz</li>
+                                                    <li>Pfeffer</li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end div /.dropdown -->
+
+                                    </div><!-- end div /.item-img -->
+                                    <div class="item-text">
+                                        <div class="item-text-header">
+                                            <div>Entfernung: <span>1,2 Km</span></div>
+                                            <div>Aktualität: <span>Vor 2 Minuten</span></div>
+                                            <div>Portionen: <span>5 Port.</span></div>
+                                            <div>Portionsgröße: <span>200 ml</span></div>
+
+                                        </div><!-- end div /.item-text-header -->
+                                        <div class="item-text-description-title">
+                                            <div class="star-big" data-toggle="tooltip" data-placement="bottom"
+                                                 title="Von der Merkliste entfernen"></div>
+
+                                            &nbsp;&nbsp;
+                                            <h3 class="title-normal-green">Marinierte Aubergine Marinierte Lorem Ipsum
+                                                Marinierte Aubergine Marinierte Lorem Ipsum
+                                            </h3>
+                                        </div><!-- end div /.item-text-description-title -->
+                                        <div class="item-text-description-content font-regular">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Accusantium doloribus explicabo hic ipsum laborum natus nesciunt
+                                            nihil obcaecati praesentium soluta. Ad consectetur consequatur
+                                            cumque, facere impedit nulla odit reprehenderit voluptas. Lorem
+                                            ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                            doloribus explicabo hic ipsum laborum natus nesciunt nihil obcaecati
+                                            praesentium soluta. Ad consectetur consequatur cumque, facere
+                                            impedit nulla odit reprehenderit voluptas.
+                                        </div><!-- end div /.item-text-description-content -->
+                                        <div class="item-text-footer">
+                                            <div class="price">
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                                    class="price-text">&nbsp;/ Portion</span>
+                                            </div>
+
+                                            <div class="button-order">
+                                                <button type="button" class="btn-common btn-orange">Bestellen</button>
+                                            </div>
+                                        </div><!-- end div /.item-text-footer -->
+                                    </div><!-- end div /.item-text -->
+                                </div><!-- end div /.result-item -->
                             </div>
-                        </div><!-- end div /.col-sm-3 -->
-                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 editing">
-                            <h2 class="title-main">Profil bearbeiten</h2>
-                            <form id="edit-form">
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="text" class="input-body" name="firstName">
-                                        <span class="input-title">Vorname *</span>
-                                        <span class="error-mess">Bitte geben Sie Ihren Vornamen ein.</span>
-                                    </label>
-                                    <label class="input-wrapper ">
-                                        <input type="text" class="input-body" name="surname">
-                                        <span class="input-title">Nachname *</span>
-                                        <span class="error-mess">Bitte geben Sie Ihren Nachnamen ein.</span>
-                                    </label>
+
+                            <div class="results-pre-orders">
+                                <div class="title-wrapper">
+                                    <h3 class="title-normal" id="results-pre-orders">Vorbestellen</h3>
                                 </div>
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="email" class="input-body" name="email">
-                                        <span class="input-title">E-Mail Adresse *</span>
-                                        <span class="error-mess">Bitte geben Sie Ihre E-Mail Adresse ein.</span>
-                                        <span class="error-mess">Die Angabe ist nicht korrekt.</span>
-                                    </label>
-                                    <label class="input-wrapper">
-                                        <input type="text" class="input-body" name="nick">
-                                        <span class="input-title">Benutzername <span>(nur den Namen sehen andere Benutzer)</span>
-                            *</span>
-                                        <span class="error-mess">Bitte geben Sie Ihren Benutzernamen ein.</span>
-                                        <span class="error-mess">Dieser Benutzername ist schon belegt.</span>
-                                    </label>
-                                </div>
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="tel" class="input-body" name="tel"
-                                               placeholder="0XXX XXXXXXX oder 0XXXX XXXXXXX">
-                                        <span class="input-title">Rufnummer *</span>
-                                        <span class="error-mess">Bitte geben Sie Ihren Rufnummer ein.</span>
-                                        <span class="error-mess">Die Angabe ist nicht korrekt.</span>
-                                    </label>
-                                </div>
+                                <div class="result-item item-pre-order">
+                                    <div class="item-img">
+                                        <div class="single-item">
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img1"
+                                                      alt="food-img1"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img2"
+                                                      alt="food-img2"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img3"
+                                                      alt="food-img3"></div>
+                                            <div><img src="img/food-image.jpg" class="img-responsive" id="food_img4"
+                                                      alt="food-img4"></div>
+                                        </div><!-- end div /.single-item -->
 
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <span class="line"></span>
-                                    </div>
-                                </div>
+                                        <div class="dropdown ">
+                                            <button class="btn-green dropdown-toggle" type="button"
+                                                    id="dropdownMenu9"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;Zutaten
+                                            </button>
+                                            <div class="dropdown-menu ingredients" aria-labelledby="dropdownMenu9">
+                                                <ul>
+                                                    <li>vorwiegend festkochende Kartoffeln</li>
+                                                    <li>durchwachsener Räucherspeck (in dünnen Scheiben)</li>
+                                                    <li>Zwiebel</li>
+                                                    <li>Schnittlauch</li>
+                                                    <li>Salz</li>
+                                                    <li>Pfeffer</li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end div /.dropdown -->
 
-                                <h3 class="title-normal">Passwort ändern:</h3>
+                                    </div><!-- end div /.item-img -->
+                                    <div class="item-text">
+                                        <div class="item-text-header">
+                                            <div>Entfernung: <span>1,2 Km</span></div>
+                                            <div>Aktualität: <span>Vor 2 Minuten</span></div>
+                                            <div>Portionen: <span>5 Port.</span></div>
+                                            <div>Portionsgröße: <span>200 ml</span></div>
 
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="password" class="input-body" name="pswd">
-                                        <span class="input-title">Altes Passwort *</span>
-                                        <span class="error-mess"></span>
-                                    </label>
-                                    <label class="input-wrapper">
-                                        <input type="password" class="input-body" name="new_pswd" id="new_pswd">
-                                        <span class="input-title">Neues Passwort anlegen *</span>
-                                        <span class="error-mess"></span>
-                                    </label>
-                                </div>
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="password" class="input-body" name="new_pswd_rep" id="new_pswd_rep">
-                                        <span class="input-title">Passwort wiederholen *</span>
-                                        <span class="error-mess"></span>
-                                    </label>
-                                </div>
+                                        </div><!-- end div /.item-text-header -->
+                                        <div class="item-text-description-title">
+                                            <div class="star-big" data-toggle="tooltip" data-placement="bottom"
+                                                 title="Von der Merkliste entfernen"></div>
 
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <span class="line"></span>
-                                    </div>
-                                </div>
+                                            &nbsp;&nbsp;
+                                            <h3 class="title-normal-green">Marinierte Aubergine Marinierte Lorem Ipsum
+                                                Marinierte Aubergine Marinierte Lorem Ipsum
+                                            </h3>
+                                        </div><!-- end div /.item-text-description-title -->
+                                        <div class="item-text-description-content font-regular">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Accusantium doloribus explicabo hic ipsum laborum natus nesciunt
+                                            nihil obcaecati praesentium soluta. Ad consectetur consequatur
+                                            cumque, facere impedit nulla odit reprehenderit voluptas. Lorem
+                                            ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                            doloribus explicabo hic ipsum laborum natus nesciunt nihil obcaecati
+                                            praesentium soluta. Ad consectetur consequatur cumque, facere
+                                            impedit nulla odit reprehenderit voluptas.
+                                        </div><!-- end div /.item-text-description-content -->
+                                        <div class="item-text-footer">
+                                            <div class="price">
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                                    class="price-text">&nbsp;/ Portion</span>
+                                            </div>
 
+                                            <div class="button-order">
+                                                <button type="button" class="btn-common btn-orange">Vorbestellen
+                                                </button>
+                                            </div>
+                                        </div><!-- end div /.item-text-footer -->
+                                    </div><!-- end div /.item-text -->
+                                </div><!-- end div /.result-item -->
+                            </div>
+                        </div>
 
-                                <h3 class="title-normal">Felder für ein Anbieterkonto:</h3>
-
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper">
-                                        <input type="text" class="input-body" name="address">
-                                        <span class="input-title">Adresse *</span>
-                                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
-                                    </label>
-                                    <label class="input-wrapper">
-                                        <input type="text" class="input-body" name="zip">
-                                        <span class="input-title">PLZ *</span>
-                                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
-                                    </label>
-                                </div>
-                                <div class="wrapper-row">
-                                    <label class="input-wrapper ">
-                                        <input type="text" class="input-body" name="place">
-                                        <span class="input-title">Ort *</span>
-                                        <span class="error-mess">Die Adresse wurde nicht gefunden. Bitte prüfen Sie Ihre Angabe.</span>
-                                    </label>
-                                    <label class="input-wrapper coupon">
-                                        <input type="text" class="input-body">
-                                        <span class="input-title">Gutscheincode eingeben</span>
-                                        <span class="error-mess">Gutscheincode nicht gültig.</span>
-                                    </label>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <span class="line"></span>
-                                    </div>
-                                </div>
-
-                                <div class="text-right form-footer-button">
-                                    <button type="submit" class="btn-common btn-orange">Änderungen speichern</button>
-                                </div>
-
-                            </form>
-
-                        </div><!-- end div /.col-sm-9 -->
-
-                    </div><!-- end div /.content-body -->
-                </div><!-- end div /.content -->
+                    </div><!-- end div /.col-sm-3 -->
+                </div><!-- end div /.content-body -->
 
                 <div class="col-lg-3 col-md-12 sidebar">
                     <div class="row sidebar-body">
@@ -787,7 +962,6 @@
                                             </div><!-- end div /.best-food -->
                                         </div><!-- end div /.best-item -->
                                     </div><!-- end div /.col-lg-12 -->
-
                                 </div><!-- end div /.row -->
                             </div><!-- end div /.best-item-wrapper -->
                             <img src="http://placehold.it/250x250" alt="250x250"
@@ -795,9 +969,10 @@
                         </div><!-- end div /.col-sm-12 -->
                     </div><!-- end div /.sidebar-body -->
                 </div><!-- end div /.sidebar -->
-            </div><!-- end div /.row -->
-        </div><!-- end div /.container -->
-    </section><!-- end section /.main -->
+
+
+            </div><!-- end div /.col-sm-9 -->
+    </section><!-- end section /.profile -->
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -817,14 +992,29 @@
             </div>
         </div>
     </section><!-- end section /.footer -->
-</div><!-- end div /.wrapper.main-page-after-login -->
+</div><!-- end div /.wrapper -->
+<div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/map.png" class="map">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <a href="#" class="scrollup"></a>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/validation.js"></script>
-<script src="js/common.js"></script>
-<script type="text/javascript" src="js/header.js"></script>
-<script src="js/profile_edit.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js " defer></script>
+<script src="js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src="js/slick.js" defer></script>
+<script src="js/common.js" defer></script>
+<script type="text/javascript" src="js/header.js" defer></script>
 </body>
 </html>

@@ -1,12 +1,39 @@
 .order{
-  & .order-img-small{
-    margin-top: 10px;
-    & img{
-      width: 24%;
+  & .item-text-description-title{
+    margin: 0 0 30px 20px;
+  }
+  & .order-img{
+    margin-bottom: 20px;
+    & .image-big,
+    & .image-small{
+      & img{
+        border: 1px solid $grey;
+      }
     }
+  }
+  & .img-small-switcher{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .order-text{
+    margin-top: 20px;
+  }
+  & .item-text-footer{
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+  .timing{
+    margin: 10px 0 20px 0;
   }
   & .map-wrapper{
     width: 100%;
+  }
+  & .with-padding{
+    @media screen and (max-width: 991px) {
+      padding: 0 20px;
+    }
   }
   .line{
     margin-top: 20px;
@@ -16,16 +43,27 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
   & .item-text-header{
     flex-direction: column;
-    margin-right: 50px;
+    margin-right: 40px;
+    @media screen and (max-width: 1229px) {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+      order: 0;
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
   & .assessment-header{
     margin-bottom: 0;
   }
   & .food-author-img{
     & img{
-      margin: 0;
+      margin: 0 20px 0 0;
     }
   }
   & .food-author-name{
@@ -34,20 +72,41 @@
   & .order-name{
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
+    & .title-small{
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
   }
 }
 .key-value{
   display: flex;
   align-items: flex-end;
-  margin-bottom: 7px;
-  & .font-regular{
-    margin-left: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  & .title-small-green,
+  & .title-small-orange{
+    margin-right: 10px;
   }
 }
 .line-order{
   padding-right: 40px;
 }
-
+.portion-price{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  & .input-wrapper{
+    width: 107px;
+  }
+  & .order-price{
+    margin-left: 20px;
+    color: #ffab40;
+    font-size: 24px;
+    font-family: $robotomedium;
+  }
+}
 .time-wrapper{
   display: flex;
   flex-direction: column;
@@ -93,5 +152,18 @@
   & .input-title{
     @extend .font-regular;
     font-weight: normal;
+  }
+  & .order-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .button-order{
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+    }
+    @media screen and (max-width: 499px) {
+      bottom: -45px;
+    }
   }
 }

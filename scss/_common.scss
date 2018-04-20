@@ -30,6 +30,9 @@ h6 {
 
 .sidebar {
   padding-top: 15px;
+  @media screen and (max-width: 1229px) {
+    padding-top: 65px;
+  }
   .title-normal {
     margin-bottom: 40px;
   }
