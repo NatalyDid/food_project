@@ -25,7 +25,7 @@
       already: "Gekocht",
       willBe: "Wird gekocht"
     };
-
+    var pickers = [];
     runDropdowns();
     runInputs();
     runTimeInputs();
@@ -240,7 +240,7 @@
     }
     
     function runInputs() {
-      dateInputs.each(function (index, item) {
+        dateInputs.each(function (index, item) {
         item.value =  moment().format("DD-MM-YYYY");
         var picker = new Pikaday(
           {
@@ -248,9 +248,9 @@
             format: 'DD-MM-YYYY',
             firstDay: 1,
             minDate: new Date(),
-            maxDate: new Date(2020, 12, 31),
-            yearRange: [2018,2020]
+            maxDate: new Date(moment().add(1, 'y').format('YYYY-MM-DD'))
           });
+          pickers.push({picker: picker, isChangable: item.hasAttribute('id')})
       })
     }
     
@@ -269,10 +269,49 @@
     function coockSelectChanged(event) {
         var currentValue = event.target.value;
         var title = $('#coockedTitleId');
+        $('.hidden-when-reserve').show();
         if (currentValue === 'Wird-gekocht') {
-          title.text(coockedTitle.willBe)
-        } else {
-            title.text(coockedTitle.already)
+            title.text(coockedTitle.willBe);
+            updateDatePicker(true);
+        }
+        if (currentValue === 'Gekochtam') {
+            title.text(coockedTitle.already);
+            updateDatePicker(false);
+        }
+        if (currentValue === 'Nach-Vorbestellug') {
+          $('.hidden-when-reserve').hide();
+        }
+
+        function updateDatePicker(flag) {
+            for (var i = 0; i < pickers.length; i++) {
+                if (pickers[i].isChangable) {
+                  pickers[i].picker.destroy();
+                  var dateInput = document.getElementById('reverseDateId');
+                  dateInput.value =  moment().format("DD-MM-YYYY");
+                  var picker;
+// flag === true - from now to future, flag === false - from now to past
+                  if (flag) {
+                      picker = new Pikaday(
+                          {
+                              field: dateInput,
+                              format: 'DD-MM-YYYY',
+                              firstDay: 1,
+                              minDate: new Date(),
+                              maxDate: new Date(moment().add(1, 'y').format('YYYY-MM-DD'))
+                          });
+                  } else {
+                      picker = new Pikaday(
+                          {
+                              field: dateInput,
+                              format: 'DD-MM-YYYY',
+                              firstDay: 1,
+                              minDate: new Date(moment().subtract(1, 'y').format('YYYY-MM-DD')),
+                              maxDate: new Date()
+                          });
+                  }
+                    pickers[i].picker = picker;
+                }
+            }
         }
     }
   }
