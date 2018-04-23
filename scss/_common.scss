@@ -684,6 +684,12 @@ label.error {
   }
 }
 
+.text-decor-none{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .scrollup{
   width:80px;
   height:80px;
