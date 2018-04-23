@@ -200,6 +200,7 @@ h6 {
   font-size: 12px;
   padding: 3px 7px;
   box-shadow: none;
+  border: 1px solid transparent;
 }
 
 .btn-bright-green:hover,
@@ -207,52 +208,7 @@ h6 {
 .btn-bright-green:focus {
   color: $white;
   background-color: $light-green;
-}
-
-.btn-grey {
-  border-radius: 10px;
-  background-color: $light-grey;
-  font-size: 12px;
-  cursor: default;
-}
-
-.btn-grey:hover,
-.btn-grey:active,
-.btn-grey:focus {
-  color: $white;
-}
-
-.btn-white {
-  padding: 6px 25px;
-  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 18px;
-  border: 2px solid $orange;
-  background-color: $white;
-  color: $orange;
-  @extend .title-small;
-  text-transform: uppercase;
-}
-
-.btn-white:hover,
-.btn-white:active,
-.btn-white:focus {
-  color: $white;
-  background-color: $orange;
-}
-
-.btn-light-green {
-  padding: 7px 20px;
-  border-radius: 18px;
-  background-color: $light-green;
-  color: $white;
-  text-transform: uppercase;
-}
-
-.btn-light-green:hover,
-.btn-light-green:active,
-.btn-light-green:focus {
-  color: $white;
-  background-color: $green;
+  border: 1px solid transparent;
 }
 
 .btn-green-bg {
@@ -676,7 +632,6 @@ label.error {
   &:before{
     font-family: FontAwesome;
     content: '\f105';
-    //content: '>';
     margin-right: 10px;
     margin-left: -17px;
     text-decoration: none;
