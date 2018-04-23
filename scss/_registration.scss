@@ -12,29 +12,6 @@
   .flex-left-center {
     align-items: flex-start;
   }
-  .selector{
-    display: block;
-    visibility: hidden;
-    &:checked {
-      & ~ .radio {
-        @extend %checkable-styles;
-      }
-    }
-    &.for-woman {
-      &:checked {
-        & ~ .radio-wrapper > .radio.for-woman {
-          @extend %checkable-styles;
-        }
-      }
-    }
-    &.for-man {
-      &:checked {
-        & ~ .radio-wrapper > .radio.for-man {
-          @extend %checkable-styles;
-        }
-      }
-    }
-  }
   .checkable{
     display: block;
     visibility: hidden;
@@ -88,11 +65,8 @@
 }
 
 .gender {
-  margin: 50px 0 !important;
+  margin: 55px 0;
   position: relative;
-  & .input-title {
-    margin-bottom: -15px;
-  }
   & label {
     &.error {
       position: absolute;

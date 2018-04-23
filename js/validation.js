@@ -1,7 +1,16 @@
 function setValidator(id) {
     id.validate({
         rules: {
-            select: "required",
+            select_kat: "required",
+            select_type: "required",
+            select_portion: "required",
+            select_number: "required",
+            select_opt: "required",
+            food_sort: "required",
+            food_params: {
+                required: true,
+                minlength: 1
+            },
             login: "required",
             pswd: "required",
             email_address: {
@@ -59,30 +68,24 @@ function setValidator(id) {
             place: "required",
             proposal_name: "required",
             price: "required",
-            description: "required"
+            description: "required",
+            ingredients: "required",
+            conf_pswd: "required"
         },
         messages: {
-            select: {
-                required: "Dieses Feld muss ausgefüllt werden."
-            },
-            login: {
-                required: "Bitte geben Sie Ihren Benutzernamen oder E-Mail Adresse ein."
-            },
-            pswd: {
-                required: "Bitte geben Sie Ihren Passwort ein."
-            },
-            email_address: {
-                required: "Bitte geben Sie Ihre E-Mail Adresse ein."
-            },
-            optionsGender: {
-                required: "Bitte wählen Sie die Anrede aus."
-            },
-            firstName: {
-                required: "Bitte geben Sie Ihren Vornamen ein."
-            },
-            surname: {
-                required: "Bitte geben Sie Ihren Nachnamen ein."
-            },
+            select_kat:"Dieses Feld muss ausgefüllt werden.",
+            select_type: "Dieses Feld muss ausgefüllt werden.",
+            select_portion: "Dieses Feld muss ausgefüllt werden.",
+            select_number: "Dieses Feld muss ausgefüllt werden.",
+            select_opt: "Dieses Feld muss ausgefüllt werden.",
+            food_sort: "Dieses Feld muss ausgefüllt werden.",
+            food_params: "Dieses Feld muss ausgefüllt werden.",
+            login: "Bitte geben Sie Ihren Benutzernamen oder E-Mail Adresse ein.",
+            pswd: "Bitte geben Sie Ihren Passwort ein.",
+            email_address: "Bitte geben Sie Ihre E-Mail Adresse ein.",
+            optionsGender: "Bitte wählen Sie die Anrede aus.",
+            firstName: "Bitte geben Sie Ihren Vornamen ein.",
+            surname: "Bitte geben Sie Ihren Nachnamen ein.",
             email: {
                 required: "Bitte geben Sie Ihre E-Mail Adresse ein.",
                 email: "Die Angabe ist nicht korrekt."
@@ -114,27 +117,15 @@ function setValidator(id) {
                 required: "Bitte geben Sie Ihren Passwort ein.",
                 equalTo: "Die Angaben stimmen nicht überein."
             },
-            accept: {
-                required: "Bitte bestätigen Sie die Datenschutzerklärung und Nutzungsbedingungen."
-            },
-            address: {
-                required: "Bitte geben Sie hier Ihre Straße und Hausnummer ein."
-            },
-            zip: {
-                required: "Bitte geben Sie Ihre Postleitzahl ein."
-            },
-            place: {
-                required: "Bitte geben Sie Ihren Wohnort ein."
-            },
-            proposal_name: {
-                required: "Dieses Feld muss ausgefüllt werden"
-            },
-            price: {
-                required: "Dieses Feld muss ausgefüllt werden"
-            },
-            description : {
-                required: "Dieses Feld muss ausgefüllt werden"
-            }
+            accept: "Bitte bestätigen Sie die Datenschutzerklärung und Nutzungsbedingungen.",
+            address: "Bitte geben Sie hier Ihre Straße und Hausnummer ein.",
+            zip: "Bitte geben Sie Ihre Postleitzahl ein.",
+            place:  "Bitte geben Sie Ihren Wohnort ein.",
+            proposal_name: "Dieses Feld muss ausgefüllt werden",
+            price: "Dieses Feld muss ausgefüllt werden",
+            description: "Dieses Feld muss ausgefüllt werden",
+            ingredients: "Dieses Feld muss ausgefüllt werden",
+            conf_pswd: "Dieses Feld muss ausgefüllt werden"
         }
     });
 }

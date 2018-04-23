@@ -16,7 +16,7 @@
         <div class="row rowLogo">
           <div class="col-sm-12">
             <div class="row logo">
-              <img src="img/logo.png">
+              <a href="main_page.html"> <img src="img/logo.png"></a>
             </div>
             <div class="slogan text-right">
               Speisenvielfalt der ganzen Welt in deiner Umgebung.
@@ -229,7 +229,7 @@
               <div class="selection">
                 <h4 class="title-small">Fleischgerichte / Vegetarisch</h4>
 
-                <input type="checkbox" class="checkable hidden" id="ch11">
+                <input type="checkbox" class="checkable hidden" id="ch11" >
                 <label for="ch11" class="checkable-toggler flex-left-center">
                   <span class="fa fa-square-o"></span>
                   <span class="fa fa-check"></span>
@@ -409,7 +409,7 @@
                   <div class="input-wrapper">
                     <span class="input-title">Kategorie *</span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body" required name="select">
+                      <select class="input-body" required name="select_kat">
                         <option value="">auswählen</option>
                         <option value="Kalt">Kalt</option>
                         <option value="Warm">Warm</option>
@@ -422,7 +422,7 @@
                   <div class="input-wrapper">
                     <span class="input-title">Speisenart * </span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body" required name="select">
+                      <select class="input-body" required name="select_type">
                         <option value="">auswählen</option>
                         <option value="Vorspeise">Vorspeise (vorgewählt)</option>
                         <option value="Hauptspeise">Hauptspeise</option>
@@ -435,7 +435,7 @@
                 <div class="col-xs-12">
                   <label class="input-wrapper">
                     <span class="input-title">Beschreibung eingeben *</span>
-                    <textarea type="text" class="input-body" name="description">Einfaches, aber bestechendes Gericht passt es hervorragend zu j</textarea>
+                    <textarea type="text" class="input-body" required name="description"></textarea>
                   </label>
                 </div>
                 <div class="col-xs-12">
@@ -452,21 +452,21 @@
 
                       <div class="dropdown-menu dropdown-menu-modify">
                         <div class="scrollable-block">
-                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_1">
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_1" name="food_sort">
                           <label for="fleischgericht_checkable_1" class="checkable-toggler flex-left-center">
                             <span class="fa fa-square-o"></span>
                             <span class="fa fa-check"></span>
                             <span>Fleischgericht</span>
                           </label>
 
-                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_2">
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_2" name="food_sort">
                           <label for="fleischgericht_checkable_2" class="checkable-toggler flex-left-center">
                             <span class="fa fa-square-o"></span>
                             <span class="fa fa-check"></span>
                             <span>Vegetarisch</span>
                           </label>
 
-                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_3">
+                          <input type="checkbox" class="checkable hidden" id="fleischgericht_checkable_3" name="food_sort">
                           <label for="fleischgericht_checkable_3" class="checkable-toggler flex-left-center">
                             <span class="fa fa-square-o"></span>
                             <span class="fa fa-check"></span>
@@ -600,7 +600,7 @@
                 <div class="col-xs-12" id="chips_second_block_id"></div>
 
                   <div class="col-xs-12 filters-margin-top">
-                    <input type="checkbox" class="checkable hidden" id="checkable_fertiggepackt">
+                    <input type="checkbox" class="checkable hidden" id="checkable_fertiggepackt" name="food_params" required>
                     <label for="checkable_fertiggepackt" class="checkable-toggler checkable-toggler-bold flex-left-center">
                       <span class="fa fa-square-o"></span>
                       <span class="fa fa-check"></span>
@@ -608,7 +608,7 @@
                     </label>
                   </div>
                 <div class="col-xs-12">
-                  <input type="checkbox" class="checkable hidden" id="checkable_bio">
+                  <input type="checkbox" class="checkable hidden" id="checkable_bio" name="food_params" required>
                   <label for="checkable_bio" class="checkable-toggler checkable-toggler-bold flex-left-center">
                     <span class="fa fa-square-o"></span>
                     <span class="fa fa-check"></span>
@@ -616,7 +616,7 @@
                   </label>
                 </div>
                 <div class="col-xs-12">
-                  <input type="checkbox" class="checkable hidden" id="checkable_halal">
+                  <input type="checkbox" class="checkable hidden" id="checkable_halal" name="food_params" required>
                   <label for="checkable_halal" class="checkable-toggler checkable-toggler-bold flex-left-center">
                   <span class="fa fa-square-o"></span>
                   <span class="fa fa-check"></span>
@@ -624,7 +624,7 @@
                   </label>
                 </div>
                 <div class="col-xs-12">
-                  <input type="checkbox" class="checkable hidden" id="checkable_kaschrut">
+                  <input type="checkbox" class="checkable hidden" id="checkable_kaschrut" name="food_params" required>
                   <label for="checkable_kaschrut" class="checkable-toggler checkable-toggler-bold flex-left-center">
                     <span class="fa fa-square-o"></span>
                     <span class="fa fa-check"></span>
@@ -641,7 +641,7 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="select_wrapper fa fa-chevron-down">
-                          <select class="input-body" required name="select">
+                          <select class="input-body" required name="select_portion">
                             <option value="">auswählen</option>
                             <option value="100">100</option>
                             <option value="150">150</option>
@@ -688,7 +688,7 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="select_wrapper fa fa-chevron-down">
-                          <select class="input-body" required name="select">
+                          <select class="input-body" required name="select_number">
                             <option value="">auswählen</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -715,7 +715,7 @@
                 <div class="col-xs-12">
                   <label class="input-wrapper">
                     <span class="input-title">Zutaten *</span>
-                    <textarea type="text" class="input-body">vorwiegend festkochende Kartoffeln, durchwachsener Räucherspeck</textarea>
+                    <textarea type="text" class="input-body" required name="ingredients"></textarea>
                   </label>
                 </div>
                 <div class="col-xs-12">
@@ -726,7 +726,7 @@
                   <div class="input-wrapper">
                     <span class="input-title">Optionen *</span>
                     <div class="select_wrapper fa fa-chevron-down">
-                      <select class="input-body" id="coocked_select_id" required name="select">
+                      <select class="input-body" id="coocked_select_id" required name="select_opt">
                         <option value="">auswählen</option>
                         <option value="Gekochtam">Gekocht am</option>
                         <option value="Wird-gekocht">Wird gekocht am</option>
