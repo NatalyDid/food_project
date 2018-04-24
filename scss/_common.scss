@@ -305,7 +305,7 @@ h6 {
 }
 
 .star-small {
-  background: url('../img/SpriteFoodoria.png') no-repeat -413px -17px;
+  background: url('../img/sprite_Foodoria.png') no-repeat -326px -24px;
   //background-size: 100%;
   width: 22px;
   height: 22px;
@@ -315,12 +315,12 @@ h6 {
 .star-small:hover,
 .star-small:active,
 .star-small:focus {
-  background: url('../img/SpriteFoodoria.png') no-repeat -380px -17px;
+  background: url('../img/sprite_Foodoria.png') no-repeat -291px -24px;
   //background-size: 100%;
 }
 
 .star-big {
-  background: url('../img/SpriteFoodoria.png') no-repeat -412px -12px;
+  background: url('../img/sprite_Foodoria.png') no-repeat -326px -24px;
   //background-size: 100%;
   width: 30px;
   height: 30px;
@@ -329,7 +329,7 @@ h6 {
 .star-big:hover,
 .star-big:active,
 .star-big:focus {
-  background: url('../img/SpriteFoodoria.png') no-repeat -379px -12px;
+  background: url('../img/sprite_Foodoria.png') no-repeat -291px -24px;
   //background-size: 100%;
   cursor: pointer;
 }
@@ -664,7 +664,7 @@ label.error {
   bottom: 100px;
   right: 200px;
   display: none;
-  background: url('../img/SpriteFoodoria.png') no-repeat 0 0;
+  background: url('../img/sprite_Foodoria.png') no-repeat 0 0;
   @media screen and (max-width: 1229px) {
     right: 40px;
   }
@@ -714,7 +714,7 @@ label.error {
   display: flex;
   .checkmark {
     margin-right: 15px;
-    background: url('../img/SpriteFoodoria.png') no-repeat -93px 0;
+    background: url('../img/sprite_Foodoria.png') no-repeat -93px 0;
     width: 50px;
     height: 59px;
   }
