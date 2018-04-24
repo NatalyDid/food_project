@@ -13,6 +13,7 @@
     <![endif]-->
 </head>
 <body>
+
 <div class="wrapper ">
     <section class="header ">
         <div class="topLogo">
@@ -107,14 +108,14 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </a>
                                     <ul class="dropdown-menu ul-dropdown" aria-labelledby="dropdownMenu10">
-                                        <li><a href="profile-edit.html" class="afterLogin">Profil</a></li>
-                                        <li><a href="profile-saved.html" class="afterLogin">Merkliste</a></li>
-                                        <li><a href="profile-proposals.html" class="afterLogin">Meine Angebote</a></li>
-                                        <li><a href="profile-expand_account.html" class="afterLogin">Konto erweitern</a></li>
-                                        <li><a href="profile-mails.html" class="afterLogin">Mails</a></li>
+                                        <li><a href="#" class="afterLogin">Profil</a></li>
+                                        <li><a href="#" class="afterLogin">Merkliste</a></li>
+                                        <li><a href="#" class="afterLogin">Meine Angebote</a></li>
+                                        <li><a href="#" class="afterLogin">Konto erweitern</a></li>
+                                        <li><a href="#" class="afterLogin">Mails</a></li>
                                         <li><a href="#" class="afterLogin">Ausloggen</a></li>
-                                        <li><a href="login.html" class="beforeLogin">Einloggen</a></li>
-                                        <li><a href="registration.html" class="beforeLogin">Registrieren</a></li>
+                                        <li><a href="#" class="beforeLogin">Einloggen</a></li>
+                                        <li><a href="#" class="beforeLogin">Registrieren</a></li>
                                     </ul>
                                 </div><!-- end div /.user-img -->
                                 <div class="topMenu__accountLabel">Willkommen, <br> Daniel</div>
@@ -135,14 +136,14 @@
                             <a href=""><i class="fa fa-plus">&nbsp;</i>Angebot erstellen</a>
                             <a href="">Shop</a>
                             <a href="">My cart &nbsp;<span><i class="fa fa-shopping-basket"></i> 2</span></a>
-                            <a href="profile-edit.html" class="afterLogin">Profil</a>
-                            <a href="profile-saved.html" class="afterLogin">Merkliste</a>
-                            <a href="profile-proposals.html" class="afterLogin">Meine Angebote</a>
-                            <a href="profile-expand_account.html" class="afterLogin">Konto erweitern</a>
-                            <a href="profile-mails.html" class="afterLogin">Mails &nbsp; <span class="topMenu__mailboxcount">7</span></a>
+                            <a href="#" class="afterLogin">Profil</a>
+                            <a href="#" class="afterLogin">Merkliste</a>
+                            <a href="#" class="afterLogin">Meine Angebote</a>
+                            <a href="#" class="afterLogin">Konto erweitern</a>
+                            <a href="#" class="afterLogin">Mails &nbsp; <span class="topMenu__mailboxcount">7</span></a>
                             <a href="#" class="afterLogin">Ausloggen</a>
-                            <a href="login.html" class="beforeLogin">Einloggen</a>
-                            <a href="registration.html" class="beforeLogin">Registrieren</a>
+                            <a href="" class="beforeLogin">Einloggen</a>
+                            <a href="" class="beforeLogin">Registrieren</a>
                         </nav>
                     </div><!-- end div /.menu__wrapper -->
                 </div><!-- end div /.menu -->
@@ -364,7 +365,7 @@
             </div><!-- end div /.container -->
         </div><!-- end div /.topMenu -->
     </section><!-- end div /.header -->
-    <section class="profile profile-proposals">
+    <section class="profile profile-edit">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-9 profile-content">
@@ -379,9 +380,10 @@
                                         <button class="btn-green-bg text-center dropdown-toggle multiple" type="button"
                                                 id="dropdownMenu12"
                                                 aria-haspopup="true" aria-expanded="false">Meine Statistiken &nbsp;&nbsp;
-                                            <i class="fa fa-pencil"></i>
+                                            <i
+                                                    class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
-                                        <div class="dropdown-menu filtr-dropdown">
+                                        <div class="dropdown-menu filtr-dropdown" aria-labelledby="dropdownMenu12">
                                             <div class="filtr-dropdown-inner">
                                                 <div class="rating">
                                                     <div>
@@ -444,9 +446,9 @@
 
                                                 <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </div><!-- end div /.filtr-dropdown -->
+                                    </div><!-- end div /.col-xs-12 -->
+                                </div><!-- end div /.row -->
                                 <div class="row visible-xs-block">
                                     <div class="col-xs-12">
                                         <span class="line"></span>
@@ -456,11 +458,11 @@
 
                             <div class="hidden-xs">
                                 <ul class="profile-menu">
-                                    <li><a href="profile-photo-edit.html" class="blue-big"><span class="link-title">Profilbild hochladen/ bearbeiten</span></a></li>
-                                    <li><a href="profile-edit.html" class="blue-big"><span class="link-title">Profil bearbeiten</span></a></li>
-                                    <li><a href="profile-saved.html" class="blue-big"><span class="link-title">Merkliste</span></a></li>
-                                    <li><a href="profile-proposals.html" class="blue-big active-link"><span class="link-title">Meine Angebote</span></a></li>
-                                    <li><a href="profile-mails.html" class="blue-big"><span class="link-title">Mails <span class="mails-number">7</span></span></a></li>
+                                    <li><a href="#" class="blue-big">Profilbild hochladen/ bearbeiten</a></li>
+                                    <li><a href="profile-edit.html" class="blue-big active-link">Profil bearbeiten</a></li>
+                                    <li><a href="profile-saved.html" class="blue-big">Merkliste</a></li>
+                                    <li><a href="profile-proposals.html" class="blue-big">Meine Angebote</a></li>
+                                    <li><a href="profile-mails.html" class="blue-big">Mails <span>7</span></a></li>
                                 </ul>
 
                                 <div class="rating">
@@ -524,285 +526,22 @@
 
                                 <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
                             </div>
-                        </div>
+                        </div><!-- end div /.col-sm-3 -->
+                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 editing">
+                            <h2 class="title-main">Profilbild hochladen/ bearbeiten</h2>
 
-                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 offer" id="offer">
-                            <div class="profile-header">
-                                <div>
-                                    <h2 class="title-main">Meine Angebote</h2>
-                                </div>
-                                <div class="offer-links">
-                                    <a href="#active-offers" class="blue first-link">Aktive Anzeigen</a>
-                                    <a href="#expired-offers" class="blue second-link">Abgelaufen</a>
-                                </div>
+                            <div class="download-photo edit-photo">
+                                <input type="file" class="hidden" id="add-photo-id" accept="image/x-png,image/gif,image/jpeg">
+                                <label for="add-photo-id" class="add-files flex-left-center">
+                                    <img src="img/default-photo.png" alt="" id="avatar_preview" class="profile-photo ">
+                                    <span class="blue">Profilbild hochladen/ bearbeiten</span>
+                                </label>
+
                             </div>
-                            <div class="active-offer">
-                                <div class="title-wrapper">
-                                    <h3 class="title-normal" id="active-offers">Aktive Anzeigen</h3>
-                                </div>
+                        </div><!-- end div /.col-sm-9 -->
 
-                                <div class="card-food">
-                                    <div class="food-img">
-                                        <img src="img/food-image.jpg" class="img-responsive">
-                                        <div>Gekauft von:</div>
-
-                                        <div class="author-slider">
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewerten
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewerten
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewerten
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewerten
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewerten
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="food-text">
-                                        <div class="food-text-header">
-                                            <div class="food-terms">
-                                                <div>Erstellt am <span>18.03.2018</span></div>
-                                                <div class="termination">Gültig bis: <span>20.03.2018</span></div>
-                                            </div>
-                                            <div class="food-edit">
-                                                <a href="add-creating.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                                <a href="" class="fa fa-times" data-id="191981291"></a>
-                                            </div>
-                                        </div>
-                                        <div class="food-description">
-                                            <h3 class="title-normal-green">Marinierte Aubergine Marinierte Lorem
-                                                Ipsum</h3>
-
-                                            <div class="food-content">Einfaches, aber bestechendes
-                                                Gericht passt es hervorragend zu jeder Mezze-Platte (zum Beispiel in
-                                                Verbindung mit Klassikern wie Hummus Einfaches, aber bestechendes
-                                                Gericht passt es hervorragend zu jeder Mezze-Platte (zum Beispiel in
-                                                Verbindung mit Klassikern wie Hummus
-                                            </div>
-                                        </div>
-                                        <div class="food-text-footer">
-                                            <div class="food-price">
-                                                <span class="price-value">3,96&nbsp;<i class="fa fa-eur"
-                                                                                       aria-hidden="true"></i></span><span
-                                                    class="price-text">&nbsp;/ Portion</span>
-                                            </div>
-
-                                            <div class="checkbox-wrapper pre-orders">
-                                                <input type="checkbox" class="checkable" id="activate1" name="">
-                                                <label for="activate1"
-                                                       class="checkable-toggler checkable-toggler-bold flex-left-center">
-                                                    <span class="fa fa-square-o"></span>
-                                                    <span class="fa fa-check"></span>
-                                                    <span class="font-regular">Für die Vorbestellungen aktivieren</span>
-                                                    <span class="error-mess">Bitte bestätigen Sie die Datenschutzerklärung und Nutzungsbedingungen.</span>
-                                                </label>
-                                            </div>
-
-                                            <div class="button-food-order">
-                                                <button type="button" class="btn-common btn-orange">Angebot wiederholen
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="active-offer expired">
-                                <div class="title-wrapper">
-                                    <h3 class="title-normal" id="expired-offers">Abgelaufen</h3>
-                                </div>
-                                <div class="card-food">
-                                    <div class="food-img">
-                                        <img src="img/food-image.jpg" class="img-responsive">
-                                        <div>Gekauft von:</div>
-
-                                        <div class="author-slider">
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewertet
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewertet
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewertet
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewertet
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="slider_item">
-                                                <div>BigMummy</div>
-                                                <div class="food-author-img">
-                                                    <img src="img/user-photo.jpg" class="img-responsive">
-                                                </div>
-                                                <div class="food-author-assessment">
-                                                    <i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                </div>
-                                                <div>
-                                                    <button type="button" class="btn-common btn-bright-green">Bewertet
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="food-text">
-                                        <div class="food-text-header">
-                                            <div class="food-terms">
-                                                <div>Erstellt am <span>18.03.2018</span></div>
-                                                <div class="termination">Gültig bis: <span>20.03.2018</span></div>
-                                            </div>
-                                            <div class="food-edit">
-                                                <a href="add-creating.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                                <a href="" data-toggle="modal" data-target="#modal-confirm"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="food-description">
-
-                                            <h3 class="title-normal-green">Marinierte Aubergine Marinierte Lorem
-                                                Ipsum</h3>
-
-                                            <div class="food-content">Einfaches, aber bestechendes
-                                                Gericht passt es hervorragend zu jeder Mezze-Platte (zum Beispiel in
-                                                Verbindung mit Klassikern wie Hummus Einfaches, aber bestechendes
-                                                Gericht passt es hervorragend zu jeder Mezze-Platte (zum Beispiel in
-                                                Verbindung mit Klassikern wie Hummus
-                                            </div>
-                                        </div>
-                                        <div class="food-text-footer">
-                                            <div class="food-price">
-                                                <span class="price-value">3,96&nbsp;<i class="fa fa-eur"
-                                                                                       aria-hidden="true"></i></span><span
-                                                    class="price-text">&nbsp;/ Portion</span>
-                                            </div>
-                                            <div class="checkbox-wrapper pre-orders">
-                                                <input type="checkbox" class="checkable" id="activate2" name="" disabled>
-                                                <label for="activate2" class="checkable-toggler checkable-toggler-bold flex-left-center">
-                                                    <span class="fa fa-square-o"></span>
-                                                    <span class="fa fa-check"></span>
-                                                    <span class="font-regular" id="showLimit">Für die Vorbestellungen aktivieren</span>
-                                                </label>
-                                            </div>
-                                            <div class="button-food-order">
-                                                <button type="button" class="btn-common btn-orange">Angebot wiederholen
-                                                </button>
-                                            </div>
-                                            <div class="limit" id="limit">
-                                                Sie Haben das Limit für die Vorbestellungen ausgeschöpft
-                                                <a href="" class="blue">Limit erhöhen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </div><!-- end div /.content-body -->
+                </div><!-- end div /.content -->
 
                 <div class="col-lg-3 col-md-12 sidebar">
                     <div class="row sidebar-body">
@@ -944,6 +683,7 @@
                                             </div><!-- end div /.best-food -->
                                         </div><!-- end div /.best-item -->
                                     </div><!-- end div /.col-lg-12 -->
+
                                 </div><!-- end div /.row -->
                             </div><!-- end div /.best-item-wrapper -->
                             <img src="http://placehold.it/250x250" alt="250x250"
@@ -951,9 +691,9 @@
                         </div><!-- end div /.col-sm-12 -->
                     </div><!-- end div /.sidebar-body -->
                 </div><!-- end div /.sidebar -->
-            </div><!-- end div /.content -->
-        </div><!-- end div /.row -->
-    </section><!-- end section /.profile -->
+            </div><!-- end div /.row -->
+        </div><!-- end div /.container -->
+    </section><!-- end section /.main -->
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -973,40 +713,68 @@
             </div>
         </div>
     </section><!-- end section /.footer -->
-</div><!-- end div /.wrapper-->
+    <!-- Modal -->
+    <div id="confModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="modal_confirm_pswd">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="title-main" id="confModalLabel">Änderungen bestätigen</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="font-regular confModal-text">
+                            Bitte geben Sie Ihr
+                            aktuelles Passwort, um die
+                            Änderungen zu bestätigen.
+                        </div>
+                        <label class="input-wrapper ">
+                            <input type="password" class="input-body" name="conf_pswd">
+                            <span class="input-title">Passwort:</span>
+                            <span class="error-mess">Die Angaben stimmen nicht überein</span>
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn-common btn-orange">Änderungen bestätigen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- end Modal -->
+</div><!-- end div /.wrapper.main-page-after-login -->
 <a href="#" class="scrollup"></a>
-<div id="delete-confirm-modal-id" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+<div class="modal fade" tabindex="-1" role="dialog" id="cropper_modal_id">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div>
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Profilbild hochladen</h4>
+            </div>
+            <div class="modal-body" id="">
 
-                    <div class="font-regular">
-                        Möchten Sie das Angebot unwiderruflich löschen?
-                    </div>
-
-
+                <div class="cropper-body-wrapp">
+                    <img src="" alt="" class="cropper-body" id="cropper-body-id">
                 </div>
-                <div class="modal-footer">
-                    <div class="buttons-row">
-                        <button class="btn-common btn-orange" id="delete-confirm-button-modal-id">ja</button>
-                        <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
-                    </div>
-                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn-common btn-orange" id="get-cropped-data-button">Angebot einstellen</button>
             </div>
         </div>
     </div>
-</div><!-- end Modal -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/slick.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/cropper.min.js"></script>
+<script type="text/javascript" src="js/jquery-cropper.min.js"></script>
+<script src="js/common.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
-<script type="text/javascript" src="js/profile-proposals.js"></script>
+<script src="js/profile_edit.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
 </body>
 </html>

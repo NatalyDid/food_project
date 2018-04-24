@@ -44,12 +44,12 @@ h6 {
   color: $grey;
 }
 
-.font-regular-big{
+.font-regular-big {
   @extend .font-regular;
   font-size: 14px;
 }
 
-.font-regular-bold{
+.font-regular-bold {
   @extend .font-regular;
   font-weight: bold;
 }
@@ -60,7 +60,7 @@ h6 {
   color: $grey;
 }
 
-.title-banner{
+.title-banner {
   font-family: $blackjack;
   font-size: 36px;
 }
@@ -148,11 +148,11 @@ h6 {
 .btn-common:focus, .btn-common:active:focus, .btn-common.active:focus,
 .btn-common.focus, .btn-common:active.focus, .btn-common.active.focus,
 .btn-green:focus, .btn-green:active:focus, .btn-green.active:focus,
-.btn-green.focus, .btn-green:active.focus, .btn-green.active.focus{
+.btn-green.focus, .btn-green:active.focus, .btn-green.active.focus {
   outline: none;
 }
 
-.btn-common{
+.btn-common {
   @extend .title-small;
   padding: 7px 20px;
   box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.1);
@@ -175,7 +175,7 @@ h6 {
   border: 1px solid $light-orange;
 }
 
-.btn-grey-big{
+.btn-grey-big {
   @extend .btn-orange;
   background-color: $light-grey;
 }
@@ -187,7 +187,7 @@ h6 {
   border: 1px solid $light-grey;
 }
 
-.btn-transparent{
+.btn-transparent {
   @extend .btn-orange;
   background: transparent;
   color: $orange;
@@ -195,7 +195,7 @@ h6 {
 }
 
 .btn-bright-green {
-  @extend  .btn-orange;
+  @extend .btn-orange;
   background-color: $green;
   font-size: 12px;
   padding: 3px 7px;
@@ -258,7 +258,7 @@ h6 {
 }
 
 .banner-big,
-.banner-small{
+.banner-small {
   margin: 20px auto;
 }
 
@@ -305,8 +305,8 @@ h6 {
 }
 
 .star-small {
-  background: url("../img/star-default.png") center no-repeat;
-  background-size: 100%;
+  background: url('../img/SpriteFoodoria.png') no-repeat -413px -17px;
+  //background-size: 100%;
   width: 22px;
   height: 22px;
   margin: 0 auto;
@@ -315,13 +315,13 @@ h6 {
 .star-small:hover,
 .star-small:active,
 .star-small:focus {
-  background: url("../img/star-active.png") center no-repeat;
-  background-size: 100%;
+  background: url('../img/SpriteFoodoria.png') no-repeat -380px -17px;
+  //background-size: 100%;
 }
 
 .star-big {
-  background: url("../img/star-default.png") center no-repeat;
-  background-size: 100%;
+  background: url('../img/SpriteFoodoria.png') no-repeat -412px -12px;
+  //background-size: 100%;
   width: 30px;
   height: 30px;
 }
@@ -329,8 +329,8 @@ h6 {
 .star-big:hover,
 .star-big:active,
 .star-big:focus {
-  background: url("../img/star-active.png") center no-repeat;
-  background-size: 100%;
+  background: url('../img/SpriteFoodoria.png') no-repeat -379px -12px;
+  //background-size: 100%;
   cursor: pointer;
 }
 
@@ -607,8 +607,8 @@ label.error {
   padding: 30px;
 }
 
-.visible-xs-block{
-  .btn-green-bg{
+.visible-xs-block {
+  .btn-green-bg {
     width: 100%;
     color: $white;
   }
@@ -626,10 +626,13 @@ label.error {
   color: $orange;
 }
 
-.active-link{
-  text-decoration: underline;
+.active-link {
+  text-decoration: none;
   font-weight: bold;
-  &:before{
+  & > .active-link {
+    text-decoration: underline;
+  }
+  &:before {
     font-family: FontAwesome;
     content: '\f105';
     margin-right: 10px;
@@ -639,27 +642,35 @@ label.error {
   }
 }
 
-.text-decor-none{
-  &:hover{
+.text-decor-none {
+  &:hover {
     text-decoration: none;
   }
 }
 
-.scrollup{
-  width:80px;
-  height:80px;
-  opacity:0.8;
-  position:fixed;
-  bottom:100px;
-  right:200px;
-  display:none;
-  background: url('../img/arrow.png') no-repeat;
+.target-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.scrollup {
+  width: 80px;
+  height: 80px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 100px;
+  right: 200px;
+  display: none;
+  background: url('../img/SpriteFoodoria.png') no-repeat 0 0;
   @media screen and (max-width: 1229px) {
-    right:40px;
+    right: 40px;
   }
   @media screen and (max-width: 767px) {
-    right:20px;
-    opacity:0.6;
+    right: 20px;
+    opacity: 0.6;
   }
 }
 
@@ -674,3 +685,90 @@ label.error {
   }
 }
 
+/******************main-banner***************/
+
+//.banner-section{
+//  display: none;
+//}
+
+.banner-row {
+  padding: 30px 0;
+}
+
+.banner {
+  background: url('../img/bg_banner.jpg') 15px 0 no-repeat;
+  padding: 35px 230px 30px 70px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner-text {
+  margin: 25px 0;
+  width: 45%;
+  display: flex;
+  .checkmark {
+    margin-right: 15px;
+    background: url('../img/SpriteFoodoria.png') no-repeat -93px 0;
+    width: 50px;
+    height: 59px;
+  }
+}
+
+@media screen and (max-width: 1229px) {
+  .banner {
+    padding-right: 100px;
+  }
+  .banner-text {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    padding-top: 30px;
+    padding-right: 30px;
+    background: url('../img/bg_banner.jpg') -300px 0 no-repeat;
+  }
+  .banner-text {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+  .title-banner {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .banner-row {
+    padding: 15px 0;
+  }
+  .banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../img/bg_banner.jpg') -530px 0 no-repeat;
+  }
+  .banner-text-wrapper {
+    flex-direction: column;
+  }
+  .banner-text {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .checkmark {
+    & img {
+      width: 30px;
+    }
+  }
+}

@@ -30,6 +30,17 @@
     position: absolute;
     top: 35px;
     left: -5px;
+    width: 30px;
+    height: 34px;
+  }
+  .medal-gold{
+    background: url('../img/SpriteFoodoria.png') no-repeat -281px -13px;
+  }
+  .medal-silver{
+    background: url('../img/SpriteFoodoria.png') no-repeat -330px -14px;
+  }
+  .medal-bronze{
+    background: url('../img/SpriteFoodoria.png') no-repeat -234px -14px;
   }
 }
 
@@ -52,6 +63,7 @@
   margin-top: 10px;
   cursor: pointer;
   width: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {

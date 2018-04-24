@@ -21,6 +21,13 @@
   margin-bottom: 20px;
 }
 
+.edit-photo{
+  & .profile-photo{
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .wrapper-row{
     flex-direction: column;

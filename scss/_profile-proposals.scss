@@ -38,7 +38,7 @@
   li:last-child a {
     padding-bottom: 0;
   }
-  span {
+  .mails-number {
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -260,6 +260,7 @@
 
 .slider_item {
   text-align: center;
+  outline: none;
 }
 
 .limit {
@@ -348,6 +349,15 @@
   }
   .pre-orders {
     margin-bottom: 5px;
+  }
+}
+
+#modal-confirm{
+  & .modal-dialog{
+    width: 300px;
+  }
+  & .btn-common{
+    width: 100px;
   }
 }
 
