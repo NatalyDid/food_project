@@ -4,7 +4,6 @@ $(function () {
     });
 
     $('#offer').on('click', function (ev) {
-        ev.preventDefault();
         var id = ev.target.dataset.id;
         if (id) {
             var modal = $('#delete-confirm-modal-id');

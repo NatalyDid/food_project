@@ -183,12 +183,15 @@
   a {
     color: $grey;
     display: inline-block;
-    margin-left: 14px;
+    margin-right: 14px;
     &:hover,
     &:active,
     &:focus{
       text-decoration: none;
     }
+  }
+  & .edit-buttons{
+    cursor: pointer;
   }
 }
 

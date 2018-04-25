@@ -151,9 +151,12 @@
   }
   .item-img{
     position: absolute;
-    top: 125px;
+    top: 128px;
     left: 20px;
     padding-top: 0;
+    .btn-green{
+      margin-top: 22px;
+    }
   }
   .item-text{
     width: 100%;
@@ -197,7 +200,7 @@
   }
   .item-text-footer{
     margin-left: 180px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .button-order{
     position: absolute;

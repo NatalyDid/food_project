@@ -518,6 +518,11 @@ label.error {
 .edit-buttons {
   font-size: 18px; }
 
+@media screen and (max-width: 499px) {
+  .block-center {
+    display: block;
+    text-align: center; } }
+
 .scrollup {
   width: 80px;
   height: 80px;
@@ -1432,9 +1437,11 @@ label.error {
     flex-direction: column; }
   .item-img {
     position: absolute;
-    top: 125px;
+    top: 128px;
     left: 20px;
     padding-top: 0; }
+    .item-img .btn-green {
+      margin-top: 22px; }
   .item-text {
     width: 100%;
     padding-top: 0; }
@@ -1466,7 +1473,7 @@ label.error {
     padding: 0 10px 70px 10px; }
   .item-text-footer {
     margin-left: 180px;
-    margin-top: 30px; }
+    margin-top: 20px; }
   .button-order {
     position: absolute;
     bottom: 103px;
@@ -1931,9 +1938,12 @@ label.error {
 .food-edit a {
   color: #7f8c8d;
   display: inline-block;
-  margin-left: 14px; }
+  margin-right: 14px; }
   .food-edit a:hover, .food-edit a:active, .food-edit a:focus {
     text-decoration: none; }
+
+.food-edit .edit-buttons {
+  cursor: pointer; }
 
 .food-description .title-normal-green {
   margin: 20px 0;

@@ -655,6 +655,13 @@ label.error {
 
 }
 
+.block-center {
+  @media screen and (max-width: 499px) {
+    display: block;
+    text-align: center;
+  }
+}
+
 .scrollup {
   width: 80px;
   height: 80px;
