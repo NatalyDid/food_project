@@ -358,7 +358,8 @@
                             </div><!-- end div /.selection -->
                         </div><!-- end div /.col-xs-12 -->
                         <div class="searchMore__submit">
-                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN</button>
+                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN
+                            </button>
                         </div><!-- end div /.searchMore__submit -->
                     </div><!-- end div /.searchMore__wrapper -->
                 </div><!-- end div /.searchMore -->
@@ -380,10 +381,9 @@
                                         <button class="btn-green-bg text-center dropdown-toggle multiple" type="button"
                                                 id="dropdownMenu12"
                                                 aria-haspopup="true" aria-expanded="false">Meine Statistiken &nbsp;&nbsp;
-                                            <i
-                                                    class="fa fa-pencil" aria-hidden="true"></i>
+                                            <i class="fa fa-pencil"></i>
                                         </button>
-                                        <div class="dropdown-menu filtr-dropdown" aria-labelledby="dropdownMenu12">
+                                        <div class="dropdown-menu filtr-dropdown">
                                             <div class="filtr-dropdown-inner">
                                                 <div class="rating">
                                                     <div>
@@ -444,11 +444,12 @@
 
                                                 <div class="basic-acc ">Basiskonto (BK)</div>
 
-                                                <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
+                                                <a href="profile-expand_account.html" class="blue-big">Konto
+                                                    erweitern</a>
                                             </div>
-                                        </div><!-- end div /.filtr-dropdown -->
-                                    </div><!-- end div /.col-xs-12 -->
-                                </div><!-- end div /.row -->
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row visible-xs-block">
                                     <div class="col-xs-12">
                                         <span class="line"></span>
@@ -458,11 +459,16 @@
 
                             <div class="hidden-xs">
                                 <ul class="profile-menu">
-                                    <li><a href="#" class="blue-big">Profilbild hochladen/ bearbeiten</a></li>
-                                    <li><a href="profile-edit.html" class="blue-big active-link">Profil bearbeiten</a></li>
-                                    <li><a href="profile-saved.html" class="blue-big">Merkliste</a></li>
-                                    <li><a href="profile-proposals.html" class="blue-big">Meine Angebote</a></li>
-                                    <li><a href="profile-mails.html" class="blue-big">Mails <span>7</span></a></li>
+                                    <li><a href="profile-photo-edit.html" class="blue-big active-link"><span
+                                            class="link-title">Profilbild hochladen/ bearbeiten</span></a></li>
+                                    <li><a href="profile-edit.html" class="blue-big"><span class="link-title">Profil bearbeiten</span></a>
+                                    </li>
+                                    <li><a href="profile-saved.html" class="blue-big"><span
+                                            class="link-title">Merkliste</span></a></li>
+                                    <li><a href="profile-proposals.html" class="blue-big "><span class="link-title">Meine Angebote</span></a>
+                                    </li>
+                                    <li><a href="profile-mails.html" class="blue-big"><span
+                                            class="link-title">Mails <span class="mails-number">7</span></span></a></li>
                                 </ul>
 
                                 <div class="rating">
@@ -526,18 +532,35 @@
 
                                 <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
                             </div>
-                        </div><!-- end div /.col-sm-3 -->
+                        </div>
                         <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 editing">
                             <h2 class="title-main">Profilbild hochladen/ bearbeiten</h2>
 
-                            <div class="download-photo edit-photo">
-                                <input type="file" class="hidden" id="add-photo-id" accept="image/x-png,image/gif,image/jpeg">
-                                <label for="add-photo-id" class="add-files flex-left-center">
-                                    <img src="img/default-photo.png" alt="" id="avatar_preview" class="profile-photo ">
-                                    <span class="blue">Profilbild hochladen/ bearbeiten</span>
-                                </label>
+                            <form id="edit-photo-form">
 
-                            </div>
+                                <div class="download-photo edit-photo">
+                                    <input type="file" class="hidden" id="add-photo-id"
+                                           accept="image/x-png,image/gif,image/jpeg">
+                                    <label for="add-photo-id" class="add-files flex-left-center">
+                                        <img src="img/default-photo.png" alt="" id="avatar_preview"
+                                             class="profile-photo ">
+                                        <span class="blue">Profilbild hochladen/ bearbeiten</span>
+                                    </label>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+
+                                <div class="text-right form-footer-button">
+                                    <button type="submit" class="btn-common btn-orange" data-toggle="modal"
+                                            data-target="#confModal">Änderungen speichern
+                                    </button>
+                                </div>
+                            </form>
                         </div><!-- end div /.col-sm-9 -->
 
                     </div><!-- end div /.content-body -->
@@ -554,11 +577,12 @@
                                             <div class="author-wrapper">
                                                 <div class="star-small hidden-xs"></div>
                                                 <div class="star-big visible-xs"></div>
+
                                                 <div class="main-info">
                                                     <div class="item-author-name text-center">BigMummy Lorem</div>
                                                     <div class="item-author-img">
                                                         <img src="img/user-photo.jpg" class="author-face">
-                                                        <img src="img/medal-gold.png" class="author-medal">
+                                                        <div class="author-medal medal-gold"></div>
                                                     </div>
                                                     <div class="item-author-assessment">
                                                         <i class="fa fa-thumbs-o-up"
@@ -567,11 +591,15 @@
                                                     <div class="item-author-distance font-regular">
                                                         entfernt: 1,2 Km
                                                     </div>
+                                                    <a href="user-proposals.html"
+                                                       class="text-decor-none target-page"></a>
                                                 </div><!-- end div /.main-info -->
+
                                             </div><!-- end div /.author-wrapper -->
 
                                             <div class="best-food">
                                                 <div class="item-best-food">
+
                                                     <div class="title-card">Marinierte Aubergine Marinierte Lorem
                                                         Ipsum
                                                     </div>
@@ -582,8 +610,11 @@
                                                                                   aria-hidden="true"></i></span><span
                                                             class="price-text">&nbsp;/ Portion</span>
                                                     </div>
+                                                    <a href="order.html" class="text-decor-none target-page"></a>
                                                 </div><!-- end div /.item-best-food -->
+
                                                 <div class="item-best-food">
+
                                                     <div class="title-card">Marinierte Aubergine
                                                     </div>
                                                     <img src="img/food-image.jpg"
@@ -593,7 +624,9 @@
                                                                                   aria-hidden="true"></i></span><span
                                                             class="price-text">&nbsp;/ Portion</span>
                                                     </div>
+                                                    <a href="order.html" class="text-decor-none target-page"> </a>
                                                 </div><!-- end div /.item-best-food -->
+
                                             </div><!-- end div /.best-food -->
                                         </div><!-- end div /.best-item -->
                                     </div><!-- end div /.col-lg-12 -->
@@ -602,11 +635,12 @@
                                             <div class="author-wrapper">
                                                 <div class="star-small hidden-xs"></div>
                                                 <div class="star-big visible-xs"></div>
+
                                                 <div class="main-info">
                                                     <div class="item-author-name text-center">BigMummy Lorem</div>
                                                     <div class="item-author-img">
                                                         <img src="img/user-photo.jpg" class="author-face">
-                                                        <img src="img/medal-silver.png" class="author-medal">
+                                                        <div class="author-medal medal-silver"></div>
                                                     </div>
                                                     <div class="item-author-assessment">
                                                         <i class="fa fa-thumbs-o-up"
@@ -615,6 +649,53 @@
                                                     <div class="item-author-distance font-regular">
                                                         entfernt: 1,2 Km
                                                     </div>
+                                                    <a href="user-proposals.html"
+                                                       class="text-decor-none target-page"></a>
+                                                </div><!-- end div /.main-info -->
+
+                                            </div><!-- end div /.author-wrapper -->
+
+                                            <div class="best-food">
+
+                                                <div class="item-best-food">
+
+                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                                                        Ipsum
+                                                    </div>
+                                                    <img src="img/food-image.jpg"
+                                                         class="img-responsive item-best-food-img">
+                                                    <div>
+                                                <span class="price-value">3,96 <i class="fa fa-eur"
+                                                                                  aria-hidden="true"></i></span><span
+                                                            class="price-text">&nbsp;/ Portion</span>
+                                                    </div>
+                                                    <a href="order.html" class="text-decor-none target-page"></a>
+                                                </div><!-- end div /.item-best-food -->
+
+                                            </div><!-- end div /.best-food -->
+                                        </div><!-- end div /.best-item -->
+                                    </div><!-- end div /.col-lg-12 -->
+                                    <div class="col-lg-12 col-sm-4 best-item-col">
+                                        <div class="best-item ">
+                                            <div class="author-wrapper">
+                                                <div class="star-small hidden-xs"></div>
+                                                <div class="star-big visible-xs"></div>
+
+                                                <div class="main-info">
+                                                    <div class="item-author-name text-center">BigMummy Lorem</div>
+                                                    <div class="item-author-img">
+                                                        <img src="img/user-photo.jpg" class="author-face">
+                                                        <div class="author-medal medal-bronze"></div>
+                                                    </div>
+                                                    <div class="item-author-assessment">
+                                                        <i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                    </div>
+                                                    <div class="item-author-distance font-regular">
+                                                        entfernt: 1,2 Km
+                                                    </div>
+                                                    <a href="user-proposals.html"
+                                                       class="text-decor-none target-page"></a>
                                                 </div><!-- end div /.main-info -->
                                             </div><!-- end div /.author-wrapper -->
 
@@ -630,33 +711,10 @@
                                                                                   aria-hidden="true"></i></span><span
                                                             class="price-text">&nbsp;/ Portion</span>
                                                     </div>
+                                                    <a href="order.html" class="text-decor-none target-page"></a>
                                                 </div><!-- end div /.item-best-food -->
-                                            </div><!-- end div /.best-food -->
-                                        </div><!-- end div /.best-item -->
-                                    </div><!-- end div /.col-lg-12 -->
-                                    <div class="col-lg-12 col-sm-4 best-item-col">
-                                        <div class="best-item ">
-                                            <div class="author-wrapper">
-                                                <div class="star-small hidden-xs"></div>
-                                                <div class="star-big visible-xs"></div>
-                                                <div class="main-info">
-                                                    <div class="item-author-name text-center">BigMummy Lorem</div>
-                                                    <div class="item-author-img">
-                                                        <img src="img/user-photo.jpg" class="author-face">
-                                                        <img src="img/medal-bronze.png" class="author-medal">
-                                                    </div>
-                                                    <div class="item-author-assessment">
-                                                        <i class="fa fa-thumbs-o-up"
-                                                           aria-hidden="true"></i>&nbsp;<span>4,52</span>
-                                                    </div>
-                                                    <div class="item-author-distance font-regular">
-                                                        entfernt: 1,2 Km
-                                                    </div>
-                                                </div><!-- end div /.main-info -->
-                                            </div><!-- end div /.author-wrapper -->
+                                                <div class="item-best-food">
 
-                                            <div class="best-food">
-                                                <div class="item-best-food">
                                                     <div class="title-card">Marinierte Aubergine Marinierte Lorem
                                                         Ipsum
                                                     </div>
@@ -667,18 +725,7 @@
                                                                                   aria-hidden="true"></i></span><span
                                                             class="price-text">&nbsp;/ Portion</span>
                                                     </div>
-                                                </div><!-- end div /.item-best-food -->
-                                                <div class="item-best-food">
-                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
-                                                        Ipsum
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
-                                                <span class="price-value">3,96 <i class="fa fa-eur"
-                                                                                  aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
+                                                    <a href="order.html" class="text-decor-none target-page"></a>
                                                 </div><!-- end div /.item-best-food -->
                                             </div><!-- end div /.best-food -->
                                         </div><!-- end div /.best-item -->
@@ -713,36 +760,7 @@
             </div>
         </div>
     </section><!-- end section /.footer -->
-    <!-- Modal -->
-    <div id="confModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form id="modal_confirm_pswd">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"
-                                aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <h2 class="title-main" id="confModalLabel">Änderungen bestätigen</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="font-regular confModal-text">
-                            Bitte geben Sie Ihr
-                            aktuelles Passwort, um die
-                            Änderungen zu bestätigen.
-                        </div>
-                        <label class="input-wrapper ">
-                            <input type="password" class="input-body" name="conf_pswd">
-                            <span class="input-title">Passwort:</span>
-                            <span class="error-mess">Die Angaben stimmen nicht überein</span>
-                        </label>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn-common btn-orange">Änderungen bestätigen</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div><!-- end Modal -->
+
 </div><!-- end div /.wrapper.main-page-after-login -->
 <a href="#" class="scrollup"></a>
 <div class="modal fade" tabindex="-1" role="dialog" id="cropper_modal_id">
@@ -766,15 +784,43 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-<script src="js/bootstrap.min.js"></script>
+<div id="confModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="modal_confirm_pswd">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="title-main" id="confModalLabel">Änderungen bestätigen</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="font-regular confModal-text">
+                        Bitte geben Sie Ihr
+                        aktuelles Passwort, um die
+                        Änderungen zu bestätigen.
+                    </div>
+                    <label class="input-wrapper ">
+                        <input type="password" class="input-body" name="conf_pswd">
+                        <span class="input-title">Passwort:</span>
+                        <span class="error-mess">Die Angaben stimmen nicht überein</span>
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn-common btn-orange">Änderungen bestätigen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div><!-- end Modal -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/validation.js"></script>
 <script type="text/javascript" src="js/cropper.min.js"></script>
 <script type="text/javascript" src="js/jquery-cropper.min.js"></script>
-<script src="js/common.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
-<script src="js/profile_edit.js"></script>
 <script type="text/javascript" src="js/registration.js"></script>
+<script type="text/javascript" src="js/profile_edit.js"></script>
 </body>
 </html>

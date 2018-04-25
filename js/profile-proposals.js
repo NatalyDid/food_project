@@ -1,4 +1,8 @@
 $(function () {
+    $('.showLimit').on('click', function () {
+        $('.limit').toggle();
+    });
+
     $('#offer').on('click', function (ev) {
         ev.preventDefault();
         var id = ev.target.dataset.id;

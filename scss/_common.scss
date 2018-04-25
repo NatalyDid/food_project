@@ -320,17 +320,17 @@ h6 {
 }
 
 .star-big {
-  background: url('../img/sprite_Foodoria.png') no-repeat -326px -24px;
-  //background-size: 100%;
-  width: 30px;
-  height: 30px;
+  background: url('../img/sprite_Foodoria.png') no-repeat -375px -24px;
+  background-size: auto 90px;
+  width: 35px;
+  height: 35px;
 }
 
 .star-big:hover,
 .star-big:active,
 .star-big:focus {
-  background: url('../img/sprite_Foodoria.png') no-repeat -291px -24px;
-  //background-size: 100%;
+  background: url('../img/sprite_Foodoria.png') no-repeat -335px -24px;
+  background-size: auto 90px;
   cursor: pointer;
 }
 
@@ -629,7 +629,7 @@ label.error {
 .active-link {
   text-decoration: none;
   font-weight: bold;
-  & > .active-link {
+  & > .link-title {
     text-decoration: underline;
   }
   &:before {
@@ -643,17 +643,16 @@ label.error {
 }
 
 .text-decor-none {
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus{
     text-decoration: none;
   }
 }
 
-.target-page {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.edit-buttons{
+  font-size: 18px;
+
 }
 
 .scrollup {
@@ -712,6 +711,12 @@ label.error {
   margin: 25px 0;
   width: 45%;
   display: flex;
+  .banner-mark{
+    width: 60px;
+  }
+  .banner-descr{
+    flex: 1 auto;
+  }
   .checkmark {
     margin-right: 15px;
     background: url('../img/sprite_Foodoria.png') no-repeat -93px 0;
@@ -765,6 +770,7 @@ label.error {
   .banner-text {
     width: 100%;
     margin: 5px 0;
+    align-items: center;
   }
   .checkmark {
     & img {

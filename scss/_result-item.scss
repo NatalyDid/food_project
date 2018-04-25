@@ -70,6 +70,12 @@
     text-overflow: ellipsis;
     width: 100%;
     line-height: 30px;
+    &:hover,
+    &:focus,
+    &:active{
+      color: $green;
+      text-decoration: none;
+    }
   }
 }
 .item-text-description-content{

@@ -20,6 +20,7 @@
 .item-author-img {
   position: relative;
   margin: 10px 0 15px 0;
+  text-align: center;
   .author-face {
     height: 60px;
     width: 60px;
@@ -29,7 +30,7 @@
   .author-medal {
     position: absolute;
     top: 35px;
-    left: -5px;
+    left: 18px;
     width: 30px;
     height: 34px;
   }
@@ -40,7 +41,7 @@
     background: url('../img/sprite_Foodoria.png') no-repeat -199px -15px;
   }
   .medal-bronze{
-    background: url('../img/sprite_Foodoria.png') no-repeat -199px -15px;
+    background: url('../img/sprite_Foodoria.png') no-repeat -244px -15px;
   }
 }
 
@@ -75,12 +76,16 @@
     .star-big{
       position: absolute;
       right: 15px;
+      z-index: 50;
     }
   }
   .item-author-img{
     position: absolute;
-    top: 0;
+    top: -15px;
     left: 29px;
+    .author-medal{
+      left: -8px;
+    }
   }
   .item-author-assessment{
     margin-top: 4px;
