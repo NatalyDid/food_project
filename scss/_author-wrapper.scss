@@ -62,7 +62,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  cursor: pointer;
   width: 100%;
   position: relative;
 }
@@ -89,6 +88,15 @@
   }
   .item-author-assessment{
     margin-top: 4px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .item-author-name{
+    width: 90%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 

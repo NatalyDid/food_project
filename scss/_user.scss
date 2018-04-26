@@ -1,5 +1,15 @@
 .user-body {
   padding-top: 8px;
+  & .btn-green-reverse{
+    margin-top: 20px;
+  }
+  & .item-img{
+    & .btn-green{
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+      }
+    }
+  }
   & .title-main-green {
     @media screen and (max-width: 767px) {
       position: absolute;
@@ -32,9 +42,6 @@
     @media screen and (max-width: 767px) {
       margin: 60px 0 0 30px;
     }
-  }
-  & .btn-green {
-    margin-top: 20px;
   }
 }
 
@@ -172,6 +179,9 @@
 
 /*****************proposals*****************/
 .proposals {
+  & .item-text-description-content{
+    margin-top: 10px;
+  }
   & .result-item {
     @media screen and (max-width: 991px) {
       height: 275px;

@@ -82,6 +82,11 @@ h6 {
   font-size: 18px;
 }
 
+.title-normal-green {
+  @extend .title-normal;
+  color: $green;
+}
+
 .title-small {
   font-family: $robotoregular;
   font-weight: bold;
@@ -103,11 +108,6 @@ h6 {
   font-size: 14px;
   color: $green;
   line-height: 18px;
-}
-
-.title-normal-green {
-  @extend .title-normal;
-  color: $green;
 }
 
 .blue {
@@ -643,6 +643,7 @@ label.error {
 }
 
 .text-decor-none {
+  display: block;
   &:hover,
   &:active,
   &:focus{
@@ -660,6 +661,17 @@ label.error {
     display: block;
     text-align: center;
   }
+}
+
+.wrapper-row{
+  & .input-wrapper-100{
+    width: 100% !important;
+  }
+}
+
+.button-order{
+    margin-top: 7px;
+  cursor: pointer;
 }
 
 .scrollup {

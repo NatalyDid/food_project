@@ -139,7 +139,12 @@
     width: 132px;
     height: 29px;
     @media screen and (max-width: 991px) {
-      background: url('../img/sprite_Foodoria.png') no-repeat -500px -25px;;
+      background: url('../img/sprite_Foodoria.png') no-repeat -500px -25px;
+    }
+    @media screen and (max-width: 529px) {
+      background: url('../img/sprite_Foodoria.png') no-repeat -475px -22px;
+      width: 80px;
+      background-size: auto 70px;
     }
   }
   & .visa_mastercard{
@@ -149,12 +154,23 @@
     @media screen and (max-width: 991px) {
       background: url('../img/sprite_Foodoria.png') no-repeat -364px -24px;
     }
+    @media screen and (max-width: 529px) {
+      background: url('../img/sprite_Foodoria.png') no-repeat -235px -10px;
+      width: 80px;
+      background-size: auto 50px;
+    }
   }
   & .tab-content {
     padding: 30px 40px;
     border: 1px solid $grey-border;
     border-top: none;
     border-bottom: none;
+  }
+  & .account-price{
+    padding: 0 30px 20px 30px;
+    & .title-normal-green{
+      margin-right: 50px;
+    }
   }
 }
 

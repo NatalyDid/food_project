@@ -10,9 +10,7 @@
   }
 
   /*********************Gerichte******************/
-  //.star-big {
-  //  background: url("../img/star-active.png") center no-repeat;
-  //}
+
   .result-item {
     height: 250px;
     position: relative;
@@ -50,12 +48,18 @@
     position: absolute;
     bottom: 15px;
     left: 10%;
+    & .block-center {
+      @media screen and (max-width: 549px) {
+        display: block;
+        text-align: center;
+      }
+    }
     @media screen and (max-width: 767px) {
       bottom: 100px;
       left: 0;
       flex-direction: row;
       & .button-order {
-        margin-top: 0;
+        margin-top: 7px;
       }
     }
     @media screen and (max-width: 549px) {
@@ -107,11 +111,34 @@
   }
   .best-food {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-end;
+    -ms-flex-align: flex-end;
     & .item-best-food {
       padding-bottom: 0;
       width: 32%;
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .best-item .author-wrapper {
+      height: 200px;
+    }
+    @media screen and (max-width: 767px){
+      .best-item .author-wrapper{
+        height: auto;
+      }
+      .best-food {
+        height: 250px;
+        flex: 1 0 auto;
+        align-items: flex-start;
+      }
+    }
+
+    @media screen and (max-width: 460px){
+      .best-food {
+        height: 220px;
+      }
     }
   }
 

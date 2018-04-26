@@ -569,7 +569,7 @@
                                             </div>
 
                                             <div class="wrapper-row">
-                                                <label class="input-wrapper">
+                                                <label class="input-wrapper input-wrapper-100">
                                                     <input type="number" class="input-body" name="cardNumber">
                                                     <span class="input-title">Kartennummer *</span>
                                                     <span class="error-mess"></span>
@@ -577,7 +577,7 @@
                                             </div>
 
                                             <div class="wrapper-row">
-                                                <label class="input-wrapper">
+                                                <label class="input-wrapper input-wrapper-100">
                                                     <input type="text" class="input-body" name="cardName">
                                                     <span class="input-title">Karteninhaber *</span>
                                                     <span class="error-mess"></span>
@@ -620,8 +620,9 @@
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                15,- € inkl. 19% MwSt
+                                            <div class="row account-price">
+                                                <span class="title-normal-green">15,- € inkl. 19% MwSt</span>
+                                                <span class="font-regular-big">Premium Konto (PK)</span>
                                             </div>
 
                                             <div class="row">
@@ -635,7 +636,89 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="visa_mastercard">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="visa_mastercard">
+                                        <form id="visa-mastercard-form">
+
+                                            <div class="wrapper-row">
+                                                <div class="input-wrapper">
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" required name="select_card">
+                                                            <option value="">auswählen</option>
+                                                            <option value="MasterCard">MasterCard</option>
+                                                            <option value="Visa">Visa</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-row">
+                                                <label class="input-wrapper input-wrapper-100">
+                                                    <input type="number" class="input-body" name="cardNumber">
+                                                    <span class="input-title">Kartennummer *</span>
+                                                    <span class="error-mess"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="wrapper-row">
+                                                <label class="input-wrapper input-wrapper-100">
+                                                    <input type="text" class="input-body" name="cardName">
+                                                    <span class="input-title">Karteninhaber *</span>
+                                                    <span class="error-mess"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="wrapper-row">
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Gültig bis *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" required name="select_card">
+                                                            <option value="">auswählen</option>
+                                                            <option value="01">01</option>
+                                                            <option value="01">02</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="input-wrapper">
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" required name="select_card">
+                                                            <option value="">auswählen</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2019">2019</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-row">
+                                                <label class="input-wrapper">
+                                                    <input type="number" class="input-body" name="cardNumber">
+                                                    <span class="input-title">Kartenprüfnummer CVC *</span>
+                                                    <span class="error-mess"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="line"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row account-price">
+                                                <span class="title-normal-green">15,- € inkl. 19% MwSt</span>
+                                                <span class="font-regular-big">Premium Konto (PK)</span>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="line"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-right form-footer-button">
+                                                <button type="submit" class="btn-common btn-orange">Bezahlen</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                     <div role="tabpanel" class="tab-pane" id="prepay">...</div>
                                 </div>
 
@@ -657,52 +740,54 @@
                                                 <div class="star-big visible-xs"></div>
 
                                                 <div class="main-info">
-                                                    <div class="item-author-name text-center">BigMummy Lorem</div>
-                                                    <div class="item-author-img">
-                                                        <img src="img/user-photo.jpg" class="author-face">
-                                                        <div class="author-medal medal-gold"></div>
-                                                    </div>
+                                                    <a href="user-proposals.html" class="text-decor-none ">
+                                                        <div class="item-author-name text-center">BigMummy Lorem</div>
+                                                        <div class="item-author-img">
+                                                            <img src="img/user-photo.jpg" class="author-face">
+                                                            <div class="author-medal medal-gold"></div>
+                                                        </div>
+                                                    </a>
                                                     <div class="item-author-assessment">
-                                                        <i class="fa fa-thumbs-o-up"
-                                                           aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        <a href="user-estimations.html" class="text-decor-none"><i
+                                                                class="fa fa-thumbs-o-up"
+                                                                aria-hidden="true"></i>&nbsp;<span>4,52</span></a>
                                                     </div>
                                                     <div class="item-author-distance font-regular">
                                                         entfernt: 1,2 Km
                                                     </div>
-                                                    <a href="user-proposals.html"
-                                                       class="text-decor-none target-page"></a>
+
                                                 </div><!-- end div /.main-info -->
 
                                             </div><!-- end div /.author-wrapper -->
 
                                             <div class="best-food">
                                                 <div class="item-best-food">
-
-                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
-                                                        Ipsum
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
+                                                    <a href="order.html" class="text-decor-none target-page">
+                                                        <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                                                            Ipsum
+                                                        </div>
+                                                        <img src="img/food-image.jpg"
+                                                             class="img-responsive item-best-food-img">
+                                                        <div>
                                                 <span class="price-value">3,96 <i class="fa fa-eur"
                                                                                   aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
-                                                    <a href="order.html" class="text-decor-none target-page"></a>
+                                                                class="price-text">&nbsp;/ Portion</span>
+                                                        </div>
+                                                    </a>
                                                 </div><!-- end div /.item-best-food -->
 
                                                 <div class="item-best-food">
-
-                                                    <div class="title-card">Marinierte Aubergine
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
+                                                    <a href="order.html" class="text-decor-none target-page">
+                                                        <div class="title-card">Marinierte Aubergine
+                                                        </div>
+                                                        <img src="img/food-image.jpg"
+                                                             class="img-responsive item-best-food-img">
+                                                        <div>
                                                 <span class="price-value">3,96 <i class="fa fa-eur"
                                                                                   aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
-                                                    <a href="order.html" class="text-decor-none target-page"> </a>
+                                                                class="price-text">&nbsp;/ Portion</span>
+                                                        </div>
+                                                    </a>
                                                 </div><!-- end div /.item-best-food -->
 
                                             </div><!-- end div /.best-food -->
@@ -715,20 +800,22 @@
                                                 <div class="star-big visible-xs"></div>
 
                                                 <div class="main-info">
-                                                    <div class="item-author-name text-center">BigMummy Lorem</div>
-                                                    <div class="item-author-img">
-                                                        <img src="img/user-photo.jpg" class="author-face">
-                                                        <div class="author-medal medal-silver"></div>
-                                                    </div>
+                                                    <a href="user-proposals.html" class="text-decor-none ">
+                                                        <div class="item-author-name text-center">BigMummy Lorem</div>
+                                                        <div class="item-author-img">
+                                                            <img src="img/user-photo.jpg" class="author-face">
+                                                            <div class="author-medal medal-silver"></div>
+                                                        </div>
+                                                    </a>
                                                     <div class="item-author-assessment">
-                                                        <i class="fa fa-thumbs-o-up"
-                                                           aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        <a href="user-estimations.html" class="text-decor-none"><i
+                                                                class="fa fa-thumbs-o-up"
+                                                                aria-hidden="true"></i>&nbsp;<span>4,52</span></a>
                                                     </div>
                                                     <div class="item-author-distance font-regular">
                                                         entfernt: 1,2 Km
                                                     </div>
-                                                    <a href="user-proposals.html"
-                                                       class="text-decor-none target-page"></a>
+
                                                 </div><!-- end div /.main-info -->
 
                                             </div><!-- end div /.author-wrapper -->
@@ -736,18 +823,18 @@
                                             <div class="best-food">
 
                                                 <div class="item-best-food">
-
-                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
-                                                        Ipsum
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
+                                                    <a href="order.html" class="text-decor-none target-page">
+                                                        <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                                                            Ipsum
+                                                        </div>
+                                                        <img src="img/food-image.jpg"
+                                                             class="img-responsive item-best-food-img">
+                                                        <div>
                                                 <span class="price-value">3,96 <i class="fa fa-eur"
                                                                                   aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
-                                                    <a href="order.html" class="text-decor-none target-page"></a>
+                                                                class="price-text">&nbsp;/ Portion</span>
+                                                        </div>
+                                                    </a>
                                                 </div><!-- end div /.item-best-food -->
 
                                             </div><!-- end div /.best-food -->
@@ -760,50 +847,54 @@
                                                 <div class="star-big visible-xs"></div>
 
                                                 <div class="main-info">
-                                                    <div class="item-author-name text-center">BigMummy Lorem</div>
-                                                    <div class="item-author-img">
-                                                        <img src="img/user-photo.jpg" class="author-face">
-                                                        <div class="author-medal medal-bronze"></div>
-                                                    </div>
+                                                    <a href="user-proposals.html" class="text-decor-none ">
+                                                        <div class="item-author-name text-center">BigMummy Lorem</div>
+                                                        <div class="item-author-img">
+                                                            <img src="img/user-photo.jpg" class="author-face">
+                                                            <div class="author-medal medal-bronze"></div>
+                                                        </div>
+                                                    </a>
                                                     <div class="item-author-assessment">
-                                                        <i class="fa fa-thumbs-o-up"
-                                                           aria-hidden="true"></i>&nbsp;<span>4,52</span>
+                                                        <a href="user-estimations.html" class="text-decor-none"><i
+                                                                class="fa fa-thumbs-o-up"
+                                                                aria-hidden="true"></i>&nbsp;<span>4,52</span></a>
                                                     </div>
                                                     <div class="item-author-distance font-regular">
                                                         entfernt: 1,2 Km
                                                     </div>
-                                                    <a href="user-proposals.html"
-                                                       class="text-decor-none target-page"></a>
+
                                                 </div><!-- end div /.main-info -->
+
                                             </div><!-- end div /.author-wrapper -->
 
                                             <div class="best-food">
                                                 <div class="item-best-food">
-                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
-                                                        Ipsum
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
+                                                    <a href="order.html" class="text-decor-none target-page">
+                                                        <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                                                            Ipsum
+                                                        </div>
+                                                        <img src="img/food-image.jpg"
+                                                             class="img-responsive item-best-food-img">
+                                                        <div>
                                                 <span class="price-value">3,96 <i class="fa fa-eur"
                                                                                   aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
-                                                    <a href="order.html" class="text-decor-none target-page"></a>
+                                                                class="price-text">&nbsp;/ Portion</span>
+                                                        </div>
+                                                    </a>
                                                 </div><!-- end div /.item-best-food -->
                                                 <div class="item-best-food">
-
-                                                    <div class="title-card">Marinierte Aubergine Marinierte Lorem
-                                                        Ipsum
-                                                    </div>
-                                                    <img src="img/food-image.jpg"
-                                                         class="img-responsive item-best-food-img">
-                                                    <div>
+                                                    <a href="order.html" class="text-decor-none target-page">
+                                                        <div class="title-card">Marinierte Aubergine Marinierte Lorem
+                                                            Ipsum
+                                                        </div>
+                                                        <img src="img/food-image.jpg"
+                                                             class="img-responsive item-best-food-img">
+                                                        <div>
                                                 <span class="price-value">3,96 <i class="fa fa-eur"
                                                                                   aria-hidden="true"></i></span><span
-                                                            class="price-text">&nbsp;/ Portion</span>
-                                                    </div>
-                                                    <a href="order.html" class="text-decor-none target-page"></a>
+                                                                class="price-text">&nbsp;/ Portion</span>
+                                                        </div>
+                                                    </a>
                                                 </div><!-- end div /.item-best-food -->
                                             </div><!-- end div /.best-food -->
                                         </div><!-- end div /.best-item -->

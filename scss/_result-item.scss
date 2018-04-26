@@ -2,7 +2,7 @@
   width: 100%;
   border: 1px solid $grey-border;
   margin-bottom: 20px;
-  height: 220px;
+  height: 230px;
   display: flex;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .item-text-description-title {
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -72,15 +72,17 @@
     line-height: 30px;
     &:hover,
     &:focus,
-    &:active{
+    &:active {
       color: $green;
       text-decoration: none;
     }
   }
 }
-.item-text-description-content{
-  margin: 20px 0 15px 0;
+
+.item-text-description-content {
+  margin: 15px 0;
 }
+
 .tooltip > .tooltip-inner {
   color: $grey;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -137,6 +139,13 @@
   }
 }
 
+.block-center {
+  @media screen and (max-width: 499px) {
+    display: block;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .result-item {
     height: 240px;
@@ -144,71 +153,85 @@
 }
 
 @media screen and (max-width: 767px) {
-  .result-item{
+  .result-item {
     position: relative;
     height: auto;
     flex-direction: column;
   }
-  .item-img{
+  .item-img {
     position: absolute;
     top: 128px;
     left: 20px;
     padding-top: 0;
-    .btn-green{
+    .btn-green {
       margin-top: 22px;
     }
   }
-  .item-text{
+  .item-text {
     width: 100%;
     padding-top: 0;
   }
-  .item-text-header{
+  .item-text-header {
     order: 1;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 230px;
   }
-  .item-text-footer{
+  .item-text-footer {
     order: 2;
     margin-top: 6px;
     flex-direction: column;
     margin-left: 230px;
   }
-  .button-order{
+  .button-order {
     margin-top: 20px;
   }
-  .author-wrapper{
+  .author-wrapper {
     width: 100% !important;
   }
 
 }
 
 @media screen and (max-width: 499px) {
-  .item-img{
+  .item-img {
     width: 160px;
     padding-left: 0;
   }
-  .item-text-header  {
+  .item-text-header {
     margin-left: 180px;
     height: 85px;
     div {
       margin-right: 0;
     }
   }
-  .item-text{
+  .item-text {
     padding: 0 10px 70px 10px;
   }
-  .item-text-footer{
+  .item-text-footer {
     margin-left: 180px;
     margin-top: 20px;
   }
-  .button-order{
+  .button-order {
     position: absolute;
     bottom: 103px;
     left: 20px;
     width: 90%;
-    .btn-orange{
+    .btn-orange {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .result-item {
+    .author-wrapper {
+      border-top: 1px solid $grey-border;
+      @media screen and (max-width: 1229px) {
+        border-top: none;
+      }
+      @media screen and (max-width: 767px) {
+        border-top: 1px solid $grey-border;
+      }
     }
   }
 }

@@ -75,6 +75,9 @@ h6 {
   color: #7f8c8d;
   font-size: 18px; }
 
+.title-normal-green {
+  color: #95c11f; }
+
 .title-small, .title-small-green, .title-small-orange, .btn-common {
   font-family: robotoregular, sans-serif;
   font-weight: bold;
@@ -91,9 +94,6 @@ h6 {
   font-size: 14px;
   color: #95c11f;
   line-height: 18px; }
-
-.title-normal-green {
-  color: #95c11f; }
 
 .blue, .blue-big {
   color: #00a2d3;
@@ -512,8 +512,10 @@ label.error {
     text-decoration: none;
     font-weight: normal; }
 
-.text-decor-none:hover, .text-decor-none:active, .text-decor-none:focus {
-  text-decoration: none; }
+.text-decor-none {
+  display: block; }
+  .text-decor-none:hover, .text-decor-none:active, .text-decor-none:focus {
+    text-decoration: none; }
 
 .edit-buttons {
   font-size: 18px; }
@@ -522,6 +524,13 @@ label.error {
   .block-center {
     display: block;
     text-align: center; } }
+
+.wrapper-row .input-wrapper-100 {
+  width: 100% !important; }
+
+.button-order {
+  margin-top: 7px;
+  cursor: pointer; }
 
 .scrollup {
   width: 80px;
@@ -1321,7 +1330,7 @@ label.error {
   width: 100%;
   border: 1px solid #d9e2e4;
   margin-bottom: 20px;
-  height: 220px;
+  height: 230px;
   display: flex; }
 
 .item-img {
@@ -1365,7 +1374,7 @@ label.error {
       font-weight: 700; }
 
 .item-text-description-title {
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center; }
@@ -1382,7 +1391,7 @@ label.error {
       text-decoration: none; }
 
 .item-text-description-content {
-  margin: 20px 0 15px 0; }
+  margin: 15px 0; }
 
 .tooltip > .tooltip-inner {
   color: #7f8c8d;
@@ -1425,6 +1434,11 @@ label.error {
       margin-bottom: 4px; }
     .ingredients ul li:last-child {
       margin-bottom: 0; }
+
+@media screen and (max-width: 499px) {
+  .block-center {
+    display: block;
+    text-align: center; } }
 
 @media screen and (max-width: 991px) {
   .result-item {
@@ -1482,6 +1496,16 @@ label.error {
     .button-order .btn-orange, .button-order .btn-grey-big, .button-order .btn-transparent, .button-order .btn-bright-green, .button-order .btn-green-bg {
       width: 100%; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .result-item .author-wrapper {
+    border-top: 1px solid #d9e2e4; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 1229px), screen and (-ms-high-contrast: none) and (max-width: 1229px) {
+    .result-item .author-wrapper {
+      border-top: none; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+    .result-item .author-wrapper {
+      border-top: 1px solid #d9e2e4; } }
+
 .author-wrapper {
   font-family: robotoregular, sans-serif;
   font-weight: 700;
@@ -1535,7 +1559,6 @@ label.error {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  cursor: pointer;
   width: 100%;
   position: relative; }
 
@@ -1557,6 +1580,13 @@ label.error {
       left: -8px; }
   .item-author-assessment {
     margin-top: 4px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .item-author-name {
+    width: 90%; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+    .item-author-name {
+      width: 100%; } }
 
 .best-item {
   border: 1px solid #d9e2e4;
@@ -1818,7 +1848,7 @@ label.error {
 
 .profile-menu {
   list-style: none;
-  padding: 30px;
+  padding: 30px 25px;
   border: 1px solid #d9e2e4;
   background-color: #f7f9f9;
   margin: 30px 0; }
@@ -1892,7 +1922,7 @@ label.error {
     z-index: 100;
     outline: none;
     line-height: 0;
-    top: 45%;
+    top: 36%;
     display: block; }
   .author-slider .slick-prev {
     left: 0; }
@@ -2237,6 +2267,11 @@ label.error {
     @media screen and (max-width: 991px) {
       .payment-method .paypal {
         background: url("../img/sprite_Foodoria.png") no-repeat -500px -25px; } }
+    @media screen and (max-width: 529px) {
+      .payment-method .paypal {
+        background: url("../img/sprite_Foodoria.png") no-repeat -475px -22px;
+        width: 80px;
+        background-size: auto 70px; } }
   .payment-method .visa_mastercard {
     background: url("../img/sprite_Foodoria.png") no-repeat -364px -24px;
     width: 130px;
@@ -2244,11 +2279,20 @@ label.error {
     @media screen and (max-width: 991px) {
       .payment-method .visa_mastercard {
         background: url("../img/sprite_Foodoria.png") no-repeat -364px -24px; } }
+    @media screen and (max-width: 529px) {
+      .payment-method .visa_mastercard {
+        background: url("../img/sprite_Foodoria.png") no-repeat -235px -10px;
+        width: 80px;
+        background-size: auto 50px; } }
   .payment-method .tab-content {
     padding: 30px 40px;
     border: 1px solid #d9e2e4;
     border-top: none;
     border-bottom: none; }
+  .payment-method .account-price {
+    padding: 0 30px 20px 30px; }
+    .payment-method .account-price .title-normal-green {
+      margin-right: 50px; }
 
 .mails .title-main, .mails .title-main-green {
   margin-bottom: 40px; }
@@ -2535,13 +2579,17 @@ label.error {
     position: absolute;
     bottom: 15px;
     left: 10%; }
+    @media screen and (max-width: 549px) {
+      .saved .item-text-footer .block-center {
+        display: block;
+        text-align: center; } }
     @media screen and (max-width: 767px) {
       .saved .item-text-footer {
         bottom: 100px;
         left: 0;
         flex-direction: row; }
         .saved .item-text-footer .button-order {
-          margin-top: 0; } }
+          margin-top: 7px; } }
     @media screen and (max-width: 549px) {
       .saved .item-text-footer {
         position: inherit;
@@ -2581,11 +2629,27 @@ label.error {
       border-top: none; } }
   .saved .best-food {
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end; }
+    justify-content: space-around;
+    align-items: flex-end;
+    -ms-flex-align: flex-end; }
     .saved .best-food .item-best-food {
       padding-bottom: 0;
       width: 32%; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .saved .best-item .author-wrapper {
+      height: 200px; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .saved .best-item .author-wrapper {
+    height: auto; }
+  .saved .best-food {
+    height: 250px;
+    flex: 1 0 auto;
+    align-items: flex-start; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 460px), screen and (-ms-high-contrast: none) and (max-width: 460px) {
+  .saved .best-food {
+    height: 220px; } }
   .saved .searching {
     display: flex;
     align-items: center;
@@ -2619,6 +2683,11 @@ label.error {
 
 .user-body {
   padding-top: 8px; }
+  .user-body .btn-green-reverse {
+    margin-top: 20px; }
+  @media screen and (max-width: 767px) {
+    .user-body .item-img .btn-green {
+      margin-top: 15px; } }
   @media screen and (max-width: 767px) {
     .user-body .title-main-green {
       position: absolute;
@@ -2644,8 +2713,6 @@ label.error {
     @media screen and (max-width: 767px) {
       .user-body .item-author-params {
         margin: 60px 0 0 30px; } }
-  .user-body .btn-green {
-    margin-top: 20px; }
 
 .assessment-block .title-normal, .assessment-block .title-normal-green {
   margin: 50px 0 20px 0; }
@@ -2742,6 +2809,9 @@ label.error {
     align-items: center; } }
 
 /*****************proposals*****************/
+.proposals .item-text-description-content {
+  margin-top: 10px; }
+
 @media screen and (max-width: 991px) {
   .proposals .result-item {
     height: 275px; } }
