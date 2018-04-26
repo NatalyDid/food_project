@@ -62,6 +62,9 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  & .text-decor-none{
+    color: $grey;
+  }
   & .food-author-name {
     display: flex;
     flex-direction: column;
@@ -88,13 +91,27 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  @media screen and (max-width: 767px) {
-    width: 47%;
-  }
 }
 
 .assessment-block-visible {
   margin-bottom: 20px;
+}
+
+#assessment-visible{
+  & .assessment{
+    & .assessment-header{
+      flex-direction: row;
+      margin-top: 20px;
+      & .food-author-img{
+        margin-right: 20px;
+      }
+    }
+    & .assessment-content{
+      & .message{
+        margin-top: 5px;
+      }
+    }
+  }
 }
 
 /*****************estimations*****************/
@@ -128,6 +145,12 @@
   & .food-author-img {
     & img {
       margin: 0;
+      @media screen and (max-width: 991px) {
+        width: 42px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 70px;
+      }
     }
   }
   & .assessment-content {
@@ -173,6 +196,22 @@
     .food-author-name {
       margin: 5px 0 0 0;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @media screen and (max-width: 767px) {
+    .card-estimation {
+      height: 360px;
+      & .assessment {
+        width: 90%;
+      }
+      & .estimation-content {
+        & .content-img {
+          height: 135px;
+        }
+      }
     }
   }
 }

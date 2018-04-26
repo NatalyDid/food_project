@@ -1470,7 +1470,7 @@ label.error {
     flex-direction: column;
     margin-left: 230px; }
   .button-order {
-    margin-top: 20px; }
+    margin-top: 30px; }
   .author-wrapper {
     width: 100% !important; } }
 
@@ -1490,7 +1490,7 @@ label.error {
     margin-top: 20px; }
   .button-order {
     position: absolute;
-    bottom: 103px;
+    bottom: 97px;
     left: 20px;
     width: 90%; }
     .button-order .btn-orange, .button-order .btn-grey-big, .button-order .btn-transparent, .button-order .btn-bright-green, .button-order .btn-green-bg {
@@ -2728,6 +2728,8 @@ label.error {
     .assessment {
       flex-direction: row;
       justify-content: space-around; } }
+  .assessment .text-decor-none {
+    color: #7f8c8d; }
   .assessment .food-author-name {
     display: flex;
     flex-direction: column;
@@ -2747,12 +2749,18 @@ label.error {
   display: flex;
   align-items: center;
   margin-bottom: 10px; }
-  @media screen and (max-width: 767px) {
-    .assessment-header {
-      width: 47%; } }
 
 .assessment-block-visible {
   margin-bottom: 20px; }
+
+#assessment-visible .assessment .assessment-header {
+  flex-direction: row;
+  margin-top: 20px; }
+  #assessment-visible .assessment .assessment-header .food-author-img {
+    margin-right: 20px; }
+
+#assessment-visible .assessment .assessment-content .message {
+  margin-top: 5px; }
 
 /*****************estimations*****************/
 .estimations .profile-header,
@@ -2777,6 +2785,12 @@ label.error {
     position: relative; }
   .card-estimation .food-author-img img {
     margin: 0; }
+    @media screen and (max-width: 991px) {
+      .card-estimation .food-author-img img {
+        width: 42px; } }
+    @media screen and (max-width: 767px) {
+      .card-estimation .food-author-img img {
+        width: 70px; } }
   .card-estimation .assessment-content .food-author-assessment {
     position: absolute;
     top: 22px;
@@ -2807,6 +2821,14 @@ label.error {
   .assessment .food-author-name {
     margin: 5px 0 0 0;
     align-items: center; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .card-estimation {
+    height: 360px; }
+    .card-estimation .assessment {
+      width: 90%; }
+    .card-estimation .estimation-content .content-img {
+      height: 135px; } }
 
 /*****************proposals*****************/
 .proposals .item-text-description-content {
