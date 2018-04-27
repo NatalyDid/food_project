@@ -676,7 +676,7 @@
                                             <div class="font-regular">Hallo. Gerne komme ich gegen 18 Uhr vorbei
                                                 Meine Nummer ist 0176 98765432
                                             </div>
-                                            <div class="buttons-row">
+                                            <div class="button-mail-footer text-right">
                                                 <button type="button" class="btn-common btn-orange" data-toggle="modal" data-target="#modal-approve">bestätigen
                                                 </button>
 
@@ -1147,7 +1147,7 @@
                                         </div>
 
                                         <div class="button-mail-footer">
-                                            <button type="button" class="btn-common btn-transparent">Bestellvorgang abbrechen
+                                            <button type="button" class="btn-common btn-transparent" data-toggle="modal" data-target="#delete-confirm-modal-id" data-id="1">Bestellvorgang abbrechen
                                             </button>
                                         </div>
                                     </div>
@@ -1345,7 +1345,7 @@
                                             </label>
                                         </div>
                                         <div class="buttons-row">
-                                            <button type="button" class="btn-common btn-transparent">Bestellvorgang abbrechen
+                                            <button type="button" class="btn-common btn-transparent" data-toggle="modal" data-target="#delete-confirm-modal-id" data-id="2">Bestellvorgang abbrechen
                                             </button>
                                             <button type="button" class="btn-common btn-orange ">Speichern
                                             </button>
@@ -1808,7 +1808,7 @@
             </div>
         </div>
     </div>
-</div><!-- end Modal -->
+</div>
 <div id="modal-discard" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1835,11 +1835,39 @@
             </div>
         </div>
     </div>
-</div><!-- end Modal -->
+</div>
+<div id="delete-confirm-modal-id" class="modal fade delete-confirm-modal-class" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="font-regular">
+                        Möchten Sie das Angebot unwiderruflich löschen?
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons-row">
+                        <button class="btn-common btn-orange" id="delete-confirm-button-modal-id">ja</button>
+                        <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <a href="#" class="scrollup"></a>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/profile-proposals.js"></script>
 </body>
 </html>

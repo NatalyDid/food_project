@@ -1,15 +1,11 @@
 $(function () {
-    // $('.showLimit').on('click', function () {
-    //     $('.limit').toggle();
-    // });
-
     $('#expired').on('click', function(ev){
-        var limitId = ev.target.dataset.showLimit;
+        var limitId = ev.target.dataset.showlimit;
         console.log(limitId);
         if(limitId){
             $('.limit').each(function () {
                 if($(this).attr('data-limit') === limitId){
-                    $(this).show();
+                    $(this).toggle();
                 }
             });
         }
@@ -22,8 +18,8 @@ $(function () {
                 var modal = $(modalId);
                 modal.modal('show');
                 modal.on('shown.bs.modal', function () {
-                    $(buttonId).on('click', function (ev) {
-
+                    $(buttonId).on('click', function () {
+                        console.log(id);
                         modal.modal('hide');
                     });
                 });
@@ -32,6 +28,8 @@ $(function () {
     }
 
     modalButtonsEvents('#offer', '#delete-confirm-modal-id', '#delete-confirm-button-modal-id');
+
+    modalButtonsEvents('#mails', '#delete-confirm-modal-id', '#delete-confirm-button-modal-id');
 
     modalButtonsEvents('#proposals', '#modal-pre-order', '#confirm-button-modal-id');
 

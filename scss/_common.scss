@@ -677,6 +677,14 @@ label.error {
   cursor: pointer;
 }
 
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+  }
+}
+
 .scrollup {
   width: 80px;
   height: 80px;
