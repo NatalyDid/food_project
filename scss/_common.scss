@@ -648,6 +648,7 @@ label.error {
   &:active,
   &:focus{
     text-decoration: none;
+    outline: none;
   }
 }
 
@@ -657,9 +658,11 @@ label.error {
 }
 
 .block-center {
+  outline: none;
+  display: inline-block;
   @media screen and (max-width: 499px) {
-    display: block;
     text-align: center;
+    display: block;
   }
 }
 

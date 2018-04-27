@@ -100,11 +100,13 @@
   & .input-wrapper{
     width: 107px;
   }
-  & .order-price{
+  & .price{
     margin-left: 20px;
-    color: #ffab40;
-    font-size: 24px;
-    font-family: $robotomedium;
+    .price-value{
+      color: #ffab40;
+      font-size: 24px;
+      font-family: $robotomedium;
+    }
   }
 }
 .time-wrapper{

@@ -90,6 +90,12 @@
   margin-bottom: 20px;
   display: flex;
   position: relative;
+  & .button-food-order{
+    margin-top: 35px;
+    @media screen and (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
 }
 
 .food-img {
@@ -105,9 +111,6 @@
 .author-slider {
   margin-top: 10px;
   padding: 0 20px;
-  .aaa {
-    text-align: center;
-  }
   .slick-arrow {
     background: transparent;
     border: none;
@@ -128,6 +131,12 @@
   }
   .slick-initialized .slick-slide {
     width: 75px;
+  }
+  .food-author-button{
+    margin-top: 8px;
+    @media screen and (max-width: 529px) {
+      width: 90%;
+    }
   }
 }
 
@@ -369,6 +378,19 @@
 @media screen and (max-width: 529px) {
   .card-food {
     height: 520px;
+    & .button-food-order {
+      position: absolute;
+      top: 85%;
+      left: 20px;
+      width: 90%;
+      .btn-orange {
+        width: 100%;
+      }
+      .block-center {
+        display: block;
+        text-align: center;
+      }
+    }
   }
   .food-img {
     padding-left: 0;
@@ -390,15 +412,6 @@
   .food-text-footer {
     margin-left: 180px;
     margin-top: 0;
-  }
-  .button-food-order {
-    position: absolute;
-    top: 89%;
-    left: 20px;
-    width: 90%;
-    .btn-orange {
-      width: 100%;
-    }
   }
   .statistic {
     & .btn-green-bg {

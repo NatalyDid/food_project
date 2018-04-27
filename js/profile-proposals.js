@@ -1,6 +1,18 @@
 $(function () {
-    $('.showLimit').on('click', function () {
-        $('.limit').toggle();
+    // $('.showLimit').on('click', function () {
+    //     $('.limit').toggle();
+    // });
+
+    $('#expired').on('click', function(ev){
+        var limitId = ev.target.dataset.showLimit;
+        console.log(limitId);
+        if(limitId){
+            $('.limit').each(function () {
+                if($(this).attr('data-limit') === limitId){
+                    $(this).show();
+                }
+            });
+        }
     });
 
     function modalButtonsEvents(blockId, modalId, buttonId){
@@ -11,7 +23,7 @@ $(function () {
                 modal.modal('show');
                 modal.on('shown.bs.modal', function () {
                     $(buttonId).on('click', function (ev) {
-                        console.log(id);
+
                         modal.modal('hide');
                     });
                 });

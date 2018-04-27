@@ -14,8 +14,9 @@
         color: $light-grey;
       }
     }
-    & .fa-times{
+    & .fa-times {
       color: $light-grey;
+      cursor: default;
     }
   }
 }
@@ -155,9 +156,34 @@
   }
 }
 
-.chef-expand{
-  & .button-mail-footer{
+.chef-expand {
+  & .button-mail-footer {
     margin-top: 45%;
+    @media screen and (max-width: 767px) {
+      margin-top: 10%;
+    }
+  }
+}
+
+.chef-expand-info {
+  & .button-mail-footer {
+    margin-top: 40%;
+    @media screen and (max-width: 1229px) {
+      margin-top: 45%;
+    }
+    @media screen and (max-width: 991px) {
+      margin-top: 54%;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 10%;
+    }
+  }
+}
+
+.evaluation-informing {
+  & .assess {
+    border-bottom: 1px solid $grey-border;
+    padding-bottom: 70px;
   }
 }
 
@@ -242,25 +268,25 @@
 }
 
 #modal-approve,
-#modal-discard{
-  .modal-dialog{
+#modal-discard {
+  .modal-dialog {
     width: 400px;
   }
-  & .input-wrapper{
+  & .input-wrapper {
     margin-top: 20px;
   }
-  & .modal-footer{
-    & .btn-common{
+  & .modal-footer {
+    & .btn-common {
       width: 150px;
     }
   }
 }
 
 @media screen and (max-width: 991px) {
-  .buttons-row{
+  .buttons-row {
     flex-direction: column;
     margin-top: 0;
-    & .btn-common{
+    & .btn-common {
       margin-top: 10px;
       width: 100%;
     }
@@ -308,8 +334,8 @@
   .mail-text {
     width: 100%;
   }
-  .chef-expand{
-    & .btn-orange{
+  .chef-expand {
+    & .btn-orange {
       margin-top: 20px;
     }
   }

@@ -26,6 +26,7 @@
             willBe: "Wird gekocht"
         };
         var pickers = [];
+        var timePickers = [];
         runDropdowns();
         runInputs();
         runTimeInputs();
@@ -262,7 +263,7 @@
                     timeFormat: 'HH:mm',
                     interval: 60,
                     minTime: '00:00',
-                    maxTime: new Date(),
+                    maxTime: '23:00',
                     defaultTime: 'now',
                     startTime: '00:00',
                     dynamic: false,
@@ -294,6 +295,38 @@
                         pickers[i].picker.destroy();
                         var dateInput = document.getElementById('reverseDateId');
                         dateInput.value = moment().format("DD-MM-YYYY");
+                        var picker;
+// flag === true - from now to future, flag === false - from now to past
+                        if (flag) {
+                            picker = new Pikaday(
+                                {
+                                    field: dateInput,
+                                    format: 'DD-MM-YYYY',
+                                    firstDay: 1,
+                                    minDate: new Date(),
+                                    maxDate: new Date(moment().add(14, 'd').format('YYYY-MM-DD'))
+                                });
+                        } else {
+                            picker = new Pikaday(
+                                {
+                                    field: dateInput,
+                                    format: 'DD-MM-YYYY',
+                                    firstDay: 1,
+                                    minDate: new Date(moment().subtract(14, 'd').format('YYYY-MM-DD')),
+                                    maxDate: new Date()
+                                });
+                        }
+                        pickers[i].picker = picker;
+                    }
+                }
+            }
+
+            function updateTimePicker(flag) {
+                for (var i = 0; i < timePickers.length; i++) {
+                    if (timePickers[i].isChangable) {
+                        timePickers[i].picker.destroy();
+                        var timeInput = document.getElementById('reverseTimeId');
+                        timeInput.value = moment().format("DD-MM-YYYY");
                         var picker;
 // flag === true - from now to future, flag === false - from now to past
                         if (flag) {

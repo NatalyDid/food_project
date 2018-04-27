@@ -515,15 +515,19 @@ label.error {
 .text-decor-none {
   display: block; }
   .text-decor-none:hover, .text-decor-none:active, .text-decor-none:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none; }
 
 .edit-buttons {
   font-size: 18px; }
 
-@media screen and (max-width: 499px) {
-  .block-center {
-    display: block;
-    text-align: center; } }
+.block-center {
+  outline: none;
+  display: inline-block; }
+  @media screen and (max-width: 499px) {
+    .block-center {
+      text-align: center;
+      display: block; } }
 
 .wrapper-row .input-wrapper-100 {
   width: 100% !important; }
@@ -1900,6 +1904,11 @@ label.error {
   margin-bottom: 20px;
   display: flex;
   position: relative; }
+  .card-food .button-food-order {
+    margin-top: 35px; }
+    @media screen and (max-width: 767px) {
+      .card-food .button-food-order {
+        margin-top: 10px; } }
 
 .food-img {
   padding: 20px 0 15px 10px;
@@ -1911,8 +1920,6 @@ label.error {
 .author-slider {
   margin-top: 10px;
   padding: 0 20px; }
-  .author-slider .aaa {
-    text-align: center; }
   .author-slider .slick-arrow {
     background: transparent;
     border: none;
@@ -1930,6 +1937,11 @@ label.error {
     right: 0; }
   .author-slider .slick-initialized .slick-slide {
     width: 75px; }
+  .author-slider .food-author-button {
+    margin-top: 8px; }
+    @media screen and (max-width: 529px) {
+      .author-slider .food-author-button {
+        width: 90%; } }
 
 .food-author {
   padding: 7px 15px 0 15px; }
@@ -2104,6 +2116,16 @@ label.error {
 @media screen and (max-width: 529px) {
   .card-food {
     height: 520px; }
+    .card-food .button-food-order {
+      position: absolute;
+      top: 85%;
+      left: 20px;
+      width: 90%; }
+      .card-food .button-food-order .btn-orange, .card-food .button-food-order .btn-grey-big, .card-food .button-food-order .btn-transparent, .card-food .button-food-order .btn-bright-green, .card-food .button-food-order .btn-green-bg {
+        width: 100%; }
+      .card-food .button-food-order .block-center {
+        display: block;
+        text-align: center; }
   .food-img {
     padding-left: 0;
     top: 145px;
@@ -2120,13 +2142,6 @@ label.error {
   .food-text-footer {
     margin-left: 180px;
     margin-top: 0; }
-  .button-food-order {
-    position: absolute;
-    top: 89%;
-    left: 20px;
-    width: 90%; }
-    .button-food-order .btn-orange, .button-food-order .btn-grey-big, .button-food-order .btn-transparent, .button-food-order .btn-bright-green, .button-food-order .btn-green-bg {
-      width: 100%; }
   .statistic .btn-green-bg {
     font-size: 12px; } }
 
@@ -2305,7 +2320,8 @@ label.error {
   color: #b9bfc0; }
 
 .mails .inactive .fa-times {
-  color: #b9bfc0; }
+  color: #b9bfc0;
+  cursor: default; }
 
 .card-mail {
   display: flex;
@@ -2418,6 +2434,25 @@ label.error {
 
 .chef-expand .button-mail-footer {
   margin-top: 45%; }
+  @media screen and (max-width: 767px) {
+    .chef-expand .button-mail-footer {
+      margin-top: 10%; } }
+
+.chef-expand-info .button-mail-footer {
+  margin-top: 40%; }
+  @media screen and (max-width: 1229px) {
+    .chef-expand-info .button-mail-footer {
+      margin-top: 45%; } }
+  @media screen and (max-width: 991px) {
+    .chef-expand-info .button-mail-footer {
+      margin-top: 54%; } }
+  @media screen and (max-width: 767px) {
+    .chef-expand-info .button-mail-footer {
+      margin-top: 10%; } }
+
+.evaluation-informing .assess {
+  border-bottom: 1px solid #d9e2e4;
+  padding-bottom: 70px; }
 
 .confirmation .mail-text,
 .evaluation-informing .mail-text,
@@ -2935,11 +2970,12 @@ label.error {
   margin: 50px 0 10px 0; }
   .portion-price .input-wrapper {
     width: 107px; }
-  .portion-price .order-price {
-    margin-left: 20px;
-    color: #ffab40;
-    font-size: 24px;
-    font-family: robotomedium, sans-serif; }
+  .portion-price .price {
+    margin-left: 20px; }
+    .portion-price .price .price-value {
+      color: #ffab40;
+      font-size: 24px;
+      font-family: robotomedium, sans-serif; }
 
 .time-wrapper {
   display: flex;
