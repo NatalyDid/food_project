@@ -1,7 +1,6 @@
 $(function () {
     $('#expired').on('click', function(ev){
         var limitId = ev.target.dataset.showlimit;
-        console.log(limitId);
         if(limitId){
             $('.limit').each(function () {
                 if($(this).attr('data-limit') === limitId){
@@ -29,8 +28,8 @@ $(function () {
 
     modalButtonsEvents('#offer', '#delete-confirm-modal-id', '#delete-confirm-button-modal-id');
 
-    modalButtonsEvents('#mails', '#delete-confirm-modal-id', '#delete-confirm-button-modal-id');
+    /*modalButtonsEvents('#mails', '#delete-confirm-modal-id', '#delete-confirm-button-modal-id');
 
-    modalButtonsEvents('#proposals', '#modal-pre-order', '#confirm-button-modal-id');
+    modalButtonsEvents('#proposals', '#modal-pre-order', '#confirm-button-modal-id');*/
 
 });
