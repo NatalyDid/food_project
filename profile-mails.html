@@ -527,7 +527,7 @@
                             </div><!-- end div /.hidden-xs -->
                         </div><!-- end div /.user-profile -->
 
-                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 mails">
+                        <div class="col-xs-12 col-sm-8 col-md-7 col-md-offset-1 col-lg-8 mails" id="mails">
                             <h2 class="title-main">Meine Mails</h2>
                             <div class="chef-mails ">
                                 <div class="card-mail response">
@@ -1796,7 +1796,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn-common btn-orange">bestätigen</button>
+                    <button class="btn-common btn-orange" id="confirm-information-button">bestätigen</button>
                 </div>
             </div>
         </div>
@@ -1822,7 +1822,7 @@
                 <div class="modal-footer">
                     <div class="buttons-row">
                         <button class="btn-common btn-orange">ja</button>
-                        <button class="btn-common btn-transparent">nein</button>
+                        <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
                     </div>
                 </div>
             </div>
@@ -1862,5 +1862,6 @@
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/profile.js"></script>
+<script type="text/javascript" src="js/profile-mails.js"></script>
 </body>
 </html>

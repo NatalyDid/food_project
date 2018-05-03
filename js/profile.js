@@ -16,6 +16,10 @@ $(function () {
 
             var id = ev.target.dataset.id;
             if (id) {
+                if (ev.target.parentNode.className === 'food-edit inactive'){
+                    console.log('inactive');
+return;
+                }
                 var modal = $(modalId);
                 modal.modal('show');
                 modal.on('shown.bs.modal', function () {
