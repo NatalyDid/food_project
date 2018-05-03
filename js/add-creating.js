@@ -257,21 +257,37 @@
             })
         }
 
+        // function runTimeInputs() {
+        //     timeInputs.each(function (index, item) {
+        //         $(item).timepicker({
+        //             timeFormat: 'HH:mm',
+        //             interval: 60,
+        //             minTime: '00:00',
+        //             maxTime: '23:00',
+        //             defaultTime: 'now',
+        //             startTime: '00:00',
+        //             dynamic: false,
+        //             dropdown: true,
+        //             scrollbar: true
+        //         });
+        //         timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
+        //     });
+        // }
+
         function runTimeInputs() {
-            timeInputs.each(function (index, item) {
-                $(item).timepicker({
-                    timeFormat: 'HH:mm',
-                    interval: 60,
-                    minTime: '00:00',
-                    maxTime: '23:00',
-                    defaultTime: 'now',
-                    startTime: '00:00',
-                    dynamic: false,
-                    dropdown: true,
-                    scrollbar: true
+                timeInputs.each(function (index, item) {
+                    $(item).timepicker({
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: '00:00',
+                        maxTime: '23:00',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                    $(item).timepicker('setTime', new Date());
+                    timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
                 });
-            });
-        }
+            }
 
         function coockSelectChanged(event) {
             var currentValue = event.target.value;
@@ -280,10 +296,12 @@
             if (currentValue === 'Wird-gekocht') {
                 title.text(coockedTitle.willBe);
                 updateDatePicker(true);
+                updateTimePicker(true);
             }
             if (currentValue === 'Gekochtam') {
                 title.text(coockedTitle.already);
                 updateDatePicker(false);
+                updateTimePicker(false);
             }
             if (currentValue === 'Nach-Vorbestellug') {
                 $('.hidden-when-reserve').hide();
@@ -324,31 +342,31 @@
             function updateTimePicker(flag) {
                 for (var i = 0; i < timePickers.length; i++) {
                     if (timePickers[i].isChangable) {
-                        timePickers[i].picker.destroy();
-                        var timeInput = document.getElementById('reverseTimeId');
-                        timeInput.value = moment().format("DD-MM-YYYY");
-                        var picker;
+                        console.log(timePickers[i]);
 // flag === true - from now to future, flag === false - from now to past
                         if (flag) {
-                            picker = new Pikaday(
-                                {
-                                    field: dateInput,
-                                    format: 'DD-MM-YYYY',
-                                    firstDay: 1,
-                                    minDate: new Date(),
-                                    maxDate: new Date(moment().add(14, 'd').format('YYYY-MM-DD'))
-                                });
+                            // var Time = new Date();
+                            // var this_Hour = Time.getHours();
+                            // var this_Min = Time.getMinutes();
+                            // var Minutes = this_Min - (this_Min % 5);
+                            // if (this_Min % 5 > 2) Minutes += 5;
+                            // console.log(Minutes);
+                            $(timePickers[i].timePicker).timepicker('option',{
+                                timeFormat: 'H:i',
+                                step: 15,
+                                minTime: new Date(),
+                                maxTime: '23:00',
+                                disableTextInput: true
+                            });
                         } else {
-                            picker = new Pikaday(
-                                {
-                                    field: dateInput,
-                                    format: 'DD-MM-YYYY',
-                                    firstDay: 1,
-                                    minDate: new Date(moment().subtract(14, 'd').format('YYYY-MM-DD')),
-                                    maxDate: new Date()
-                                });
+                            $(timePickers[i].timePicker).timepicker('option',{
+                                timeFormat: 'H:i',
+                                step: 15,
+                                minTime: '00:00',
+                                maxTime: new Date(),
+                                disableTextInput: true
+                            });
                         }
-                        pickers[i].picker = picker;
                     }
                 }
             }
