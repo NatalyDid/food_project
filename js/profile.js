@@ -1,14 +1,20 @@
 $(function () {
-    $('#expired').on('click', function (ev) {
-        var limitId = ev.target.dataset.showlimit;
-        if (limitId) {
-            $('.limit').each(function () {
-                if ($(this).attr('data-limit') === limitId) {
-                    $(this).toggle();
-                }
-            });
-        }
-    });
+
+    function showPreOrderLimit(blockId, popUp){
+        $(blockId).on('click', function (ev) {
+            var limitId = ev.target.dataset.showlimit;
+            if (limitId) {
+                $(popUp).each(function () {
+                    if ($(this).attr('data-limit') === limitId) {
+                        $(this).toggle();
+                    }
+                });
+            }
+        });
+    }
+
+    showPreOrderLimit('#expired', '.limit');
+    showPreOrderLimit('#mails', '.limit');
 
     function modalButtonsEvents(blockId, modalId, buttonId) {
 
@@ -40,7 +46,7 @@ $(function () {
 
         $(blockId).on('click', function (ev) {
 
-            var reject = ev.target.dataset.reject;
+            var reject = ev.target.dataset.rejectid;
             if (reject) {
                 var modal = $(modalId);
                 modal.modal('show');

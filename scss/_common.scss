@@ -596,6 +596,16 @@ label.error {
   padding: 30px;
 }
 
+.modal-dialog{
+  margin: 0 auto;
+  @media screen and (max-width: 499px) {
+    width: 350px !important;
+  }
+  & .buttons-row{
+    flex-direction: row;
+  }
+}
+
 .modal-body {
   padding: 0 30px;
 }
@@ -603,6 +613,9 @@ label.error {
 .modal-footer {
   border-top: none;
   padding: 30px;
+  @media screen and (max-width: 499px) {
+    padding: 15px;
+  }
 }
 
 .visible-xs-block {
@@ -673,6 +686,11 @@ label.error {
 .button-order{
   margin-top: 7px;
   cursor: pointer;
+  z-index: 50;
+  & .btn-common{
+    display: block;
+    text-align: center;
+  }
 }
 
 @-moz-document url-prefix() {
@@ -709,6 +727,13 @@ label.error {
     .btn-orange {
       width: 100%;
     }
+  }
+}
+
+.profile,
+.main{
+  @media screen and (min-width: 768px) {
+    margin-top: 160px;
   }
 }
 

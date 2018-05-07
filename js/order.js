@@ -20,4 +20,31 @@ $(function(){
             }
         });
     });
+
+    function orderFormSubmitEvents() {
+
+        $('form[data-form]').each(function (index, form) {
+            $(form).on('submit', function (ev) {
+                ev.preventDefault();
+                var formid = ev.target.dataset.form;
+                var form = new FormData();
+                form.append('id', formid);
+                var formValuesArr = $(ev.target).serializeArray();
+                $(formValuesArr).each(function (index, item) {
+                    if(item.value){
+                        form.append(item.name, item.value);
+                    }
+                })
+                $.post('url', function () {
+                        alert("success");
+                    }
+                ).done(function (resp) {
+                }).fail(function () {
+                    alert("error");
+                })
+            })
+        })
+    }
+
+    orderFormSubmitEvents();
 });

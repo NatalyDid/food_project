@@ -481,12 +481,23 @@ label.error {
   border-bottom: none;
   padding: 30px; }
 
+.modal-dialog {
+  margin: 0 auto; }
+  @media screen and (max-width: 499px) {
+    .modal-dialog {
+      width: 350px !important; } }
+  .modal-dialog .buttons-row {
+    flex-direction: row; }
+
 .modal-body {
   padding: 0 30px; }
 
 .modal-footer {
   border-top: none;
   padding: 30px; }
+  @media screen and (max-width: 499px) {
+    .modal-footer {
+      padding: 15px; } }
 
 .visible-xs-block .btn-green-bg {
   width: 100%;
@@ -535,7 +546,11 @@ label.error {
 
 .button-order {
   margin-top: 7px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 50; }
+  .button-order .btn-common {
+    display: block;
+    text-align: center; }
 
 @-moz-document url-prefix() {
   select {
@@ -567,6 +582,11 @@ label.error {
     width: 100%; }
     .form-footer-button .btn-orange, .form-footer-button .btn-grey-big, .form-footer-button .btn-transparent, .form-footer-button .btn-bright-green, .form-footer-button .btn-green-bg {
       width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .profile,
+  .main {
+    margin-top: 160px; } }
 
 /******************main-banner***************/
 .banner-row {
@@ -634,8 +654,16 @@ label.error {
   .checkmark img {
     width: 30px; } }
 
+@media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200; } }
+
 .header .rowLogo {
-  padding: 20px 15px; }
+  padding: 20px 15px;
+  background-color: #fff; }
 
 .header .logo {
   float: left; }
@@ -663,7 +691,8 @@ label.error {
   height: 60px;
   background-color: #b1d474;
   padding-left: 15px;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 15px 10px -15px #7f8c8d; }
   .topMenu__searchButton {
     display: block;
     position: relative;
@@ -912,7 +941,8 @@ label.error {
     font-size: 18px;
     position: absolute;
     top: 15px;
-    right: 15px; }
+    right: 15px;
+    cursor: default; }
     @media screen and (min-width: 1230px) {
       .searchForm__close {
         display: none; } }
@@ -1008,7 +1038,8 @@ label.error {
       background: url("../img/meal_header.png") top right no-repeat, url("../img/bg_banner-header.jpg") top right no-repeat; } }
 
 .header__beforeLogin .rowLogo {
-  padding: 14px; }
+  padding: 14px;
+  background-color: transparent; }
   @media screen and (min-width: 992px) {
     .header__beforeLogin .rowLogo {
       padding: 30px 15px; } }
@@ -2013,7 +2044,8 @@ label.error {
     color: #7f8c8d; }
 
 .pre-orders {
-  margin: 10px 0 25px 0; }
+  margin: 10px 0 25px 0;
+  position: relative; }
   .pre-orders .checkable-toggler {
     padding-left: 0; }
   .pre-orders .checkable {
@@ -2048,23 +2080,12 @@ label.error {
 .limit {
   display: none;
   position: absolute;
-  bottom: 45px;
-  width: 45%;
+  top: 30px;
+  width: 100%;
   padding: 7px;
   z-index: 10;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: #fff; }
-  @media screen and (max-width: 1229px) {
-    .limit {
-      bottom: 30px; } }
-  @media screen and (max-width: 767px) {
-    .limit {
-      bottom: 207px;
-      width: 54%; } }
-  @media screen and (max-width: 529px) {
-    .limit {
-      width: 85%;
-      left: 10px; } }
 
 @media screen and (max-width: 767px) {
   .profile {
@@ -2334,6 +2355,10 @@ label.error {
   display: flex;
   border: 1px solid #d9e2e4;
   margin-bottom: 20px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .card-mail {
+      border-right: 1px solid #d9e2e4;
+      height: 370px; } }
 
 .mail-img {
   width: 160px;
@@ -2582,6 +2607,44 @@ label.error {
   .chef-expand .btn-orange, .chef-expand .btn-grey-big, .chef-expand .btn-transparent, .chef-expand .btn-bright-green, .chef-expand .btn-green-bg {
     margin-top: 20px; } }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .confirmation,
+  .evaluation-informing {
+    height: 410px; }
+  .chef-expand,
+  .chef-expand-info {
+    height: 320px; }
+  .user-confirmation-info {
+    height: 500px; }
+  .order-info {
+    height: 600px; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 991px), screen and (-ms-high-contrast: none) and (max-width: 991px) {
+  .response {
+    height: 440px; }
+  .user-confirmation-info {
+    height: 560px; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 768px), screen and (-ms-high-contrast: none) and (max-width: 768px) {
+  .response {
+    height: 610px; }
+  .response-pre-order,
+  .confirmation,
+  .evaluation-informing {
+    height: 565px; }
+  .request,
+  .chef-confirmation {
+    height: 520px; }
+  .rating-info {
+    height: 430px; }
+  .general-info,
+  .chef-expand {
+    height: 365px; }
+  .user-confirmation-info {
+    height: 740px; }
+  .order-info {
+    height: 780px; } }
+
 .saved {
   /*********************Gerichte******************/
   /*********************Anbieter******************/
@@ -2715,7 +2778,8 @@ label.error {
     .saved .search-buttons .fa-times-circle {
       margin-left: 10px;
       color: #b9bfc0;
-      font-size: 24px; }
+      font-size: 24px;
+      cursor: default; }
     @media screen and (max-width: 529px) {
       .saved .search-buttons {
         width: 100%;
@@ -2725,6 +2789,12 @@ label.error {
           width: 90%; }
           .saved .search-buttons .button-order-search .btn-orange, .saved .search-buttons .button-order-search .btn-grey-big, .saved .search-buttons .button-order-search .btn-transparent, .saved .search-buttons .button-order-search .btn-bright-green, .saved .search-buttons .button-order-search .btn-green-bg {
             width: 100%; } }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 529px), screen and (-ms-high-contrast: none) and (max-width: 529px) {
+  .saved .search-buttons {
+    margin-top: 65px; }
+  .saved .search-text {
+    width: 100%; } }
 
 .user-body {
   padding-top: 8px; }
@@ -2908,7 +2978,9 @@ label.error {
 .order .img-small-switcher {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto; }
 
 .order .order-text {
   margin-top: 20px; }

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <section class="header ">
+    <section class="header">
         <div class="topLogo">
             <div class="container ">
                 <div class="row rowLogo">
@@ -234,6 +234,13 @@
                                     <span class="fa fa-square-o"></span>
                                     <span class="fa fa-check"></span>
                                     <span>kein Schwein</span>
+                                </label>
+
+                                <input type="checkbox" class="checkable hidden" id="ch17" >
+                                <label for="ch17" class="checkable-toggler flex-left-center">
+                                    <span class="fa fa-square-o"></span>
+                                    <span class="fa fa-check"></span>
+                                    <span>kein Lamm</span>
                                 </label>
 
                                 <input type="checkbox" class="checkable hidden" id="ch12">
@@ -523,7 +530,7 @@
                         </div>
                     </div><!-- end div /.row -->
                     <div class="row">
-                        <form id="order-form">
+                        <form id="order-form" data-form="d1">
                             <div class="col-xs-12">
                                 <h3 class="title-normal">Bestelloptionen:</h3>
                                 <div class="portion-price">
@@ -611,7 +618,8 @@
                                     Sie können Ihre Bestellung jederzeit widerrufen.
                                 </div>
                                 <div class="button-order">
-                                    <button class="btn-common btn-orange">Bestellen</button>
+                                    <!--<a href="profile-mails.html" class="btn-common btn-orange">Bestellen</a>-->
+                                    <button type="submit" class="btn-common btn-orange">Bestellen</button>
                                 </div>
                             </div><!-- end div /.order-footer -->
                         </form>
@@ -834,6 +842,7 @@
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/validation.js"></script>
 <script type="text/javascript" src="js/add-creating.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
 <script type="text/javascript" src="js/order.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
 <body>
 
 <div class="wrapper ">
-    <section class="header ">
+    <section class="header">
         <div class="topLogo">
             <div class="container ">
                 <div class="row rowLogo">
@@ -27,8 +27,8 @@
                             Speisenvielfalt der ganzen Welt in deiner Umgebung.
                         </div>
                         <div class="links">
-                            <a href="#" class="blue">Einloggen</a>
-                            <a href="#" class="blue">Registrieren</a>
+                            <a href="login.html" class="blue">Einloggen</a>
+                            <a href="registration.html" class="blue">Registrieren</a>
                         </div>
                     </div>
                 </div><!-- end div /.rowLogo -->
@@ -239,6 +239,13 @@
                                     <span class="fa fa-square-o"></span>
                                     <span class="fa fa-check"></span>
                                     <span>kein Schwein</span>
+                                </label>
+
+                                <input type="checkbox" class="checkable hidden" id="ch17" >
+                                <label for="ch17" class="checkable-toggler flex-left-center">
+                                    <span class="fa fa-square-o"></span>
+                                    <span class="fa fa-check"></span>
+                                    <span>kein Lamm</span>
                                 </label>
 
                                 <input type="checkbox" class="checkable hidden" id="ch12">
@@ -600,7 +607,7 @@
                                                 </button>
                                             </div>
                                         </div><!-- end div /.message -->
-                                        <form data-formId="b1">
+                                        <form>
                                             <div class="evaluation inactive">
 
                                                 <div class="input-wrapper">
@@ -622,7 +629,7 @@
 
                                             </div><!-- end div /.evaluation -->
                                             <div class="button-mail-footer text-right">
-                                                <button type="button" class="btn-common btn-grey-big">Speichern
+                                                <button type="submit" class="btn-common btn-grey-big">Speichern
                                                 </button>
                                             </div>
                                         </form>
@@ -685,35 +692,38 @@
                                                 Meine Nummer ist 0176 98765432
                                             </div>
                                             <div class="button-mail-footer text-right">
-                                                <button type="button" class="btn-common btn-orange" data-toggle="modal"
-                                                        data-target="#modal-approve">bestätigen
+                                                <button type="button" class="btn-common btn-orange" data-approveId="a2">bestätigen
                                                 </button>
 
                                             </div>
                                         </div>
 
-                                        <div class="evaluation inactive">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form>
+                                            <div class="evaluation inactive">
+
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="1" name=""></textarea>
+                                                </label>
+
+                                            </div><!-- end div /.evaluation -->
+                                            <div class="button-mail-footer text-right">
+                                                <button type="submit" class="btn-common btn-grey-big">Speichern
+                                                </button>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="1"></textarea>
-                                            </label>
-                                        </div>
-                                        <div class="button-mail-footer text-right">
-                                            <button type="button" class="btn-common btn-grey-big">Speichern
-                                            </button>
-                                        </div>
+                                        </form>
                                     </div><!-- end div /.mail-text -->
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail request">
@@ -773,8 +783,16 @@
                                                    class="checkable-toggler checkable-toggler-bold flex-left-center">
                                                 <span class="fa fa-square-o"></span>
                                                 <span class="fa fa-check"></span>
-                                                <span class="font-regular showLimit">Für die Vorbestellungen aktivieren</span>
+                                                <span class="font-regular showLimit" data-showLimit="10">Für die Vorbestellungen aktivieren</span>
                                             </label>
+
+                                            <div class="limit font-regular" data-limit="10">
+                                                Mit Ihrem Benutzerkonto können Sie bis
+                                                zu XXX Angebote für die Vorbestellungen
+                                                aktivieren. Das Limit ist schon erreicht.
+                                                <a href="profile-expand_account.html" class="blue">Bitte erweitern Sie Ihr Konto</a> oder
+                                                <a href="profile-proposals.html" class="blue">verwalten Sie Ihre Angebote.</a>
+                                            </div>
                                         </div>
 
                                         <div class="expand-offer font-regular">
@@ -936,28 +954,30 @@
                                             </div>
                                         </div>
 
-                                        <div class="evaluation">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Zurück<br> bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form data-formId="b3">
+                                            <div class="evaluation">
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Zurück<br> bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="form-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="3" name="form-textarea"></textarea>
+                                                </label>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="3"></textarea>
-                                            </label>
-                                        </div>
-                                        <div class="button-mail-footer text-right">
-                                            <button type="button" class="btn-common btn-orange">Speichern
-                                            </button>
-                                        </div>
+                                            <div class="button-mail-footer text-right">
+                                                <button type="submit" class="btn-common btn-orange">Speichern
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail rating-info">
@@ -1345,31 +1365,36 @@
                                             </div>
                                         </div>
 
-                                        <div class="evaluation">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form data-formId="b5">
+                                            <div class="evaluation">
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="form-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="3" name="form-textarea"></textarea>
+                                                </label>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="3"></textarea>
-                                            </label>
-                                        </div>
-                                        <div class="buttons-row">
-                                            <button type="button" class="btn-common btn-transparent" data-cancel="c1">
-                                                Bestellvorgang abbrechen
-                                            </button>
-                                            <button type="button" class="btn-common btn-orange ">Speichern
-                                            </button>
-                                        </div>
+                                            <div class="buttons-row">
+                                                <button type="button" class="btn-common btn-transparent" data-cancel="c1">
+                                                    Bestellvorgang abbrechen
+                                                </button>
+                                                <button type="submit" class="btn-common btn-orange ">Speichern
+                                                </button>
+                                            </div>
+                                        </form>
+
+
+
                                     </div>
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail order-info">
@@ -1463,28 +1488,30 @@
                                             </div>
                                         </div>
 
-                                        <div class="evaluation">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form data-formId="b4">
+                                            <div class="evaluation">
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="form-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="3" name="form-textarea"></textarea>
+                                                </label>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="3"></textarea>
-                                            </label>
-                                        </div>
-                                        <div class="button-mail-footer text-right">
-                                            <button type="button" class="btn-common btn-orange">Speichern
-                                            </button>
-                                        </div>
+                                            <div class="button-mail-footer text-right">
+                                                <button type="submit" class="btn-common btn-orange">Speichern
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail rating-info">
@@ -1923,6 +1950,5 @@
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/profile.js"></script>
-<script type="text/javascript" src="js/profile-mails.js"></script>
 </body>
 </html>

@@ -345,16 +345,16 @@
                         console.log(timePickers[i]);
 // flag === true - from now to future, flag === false - from now to past
                         if (flag) {
-                            // var Time = new Date();
-                            // var this_Hour = Time.getHours();
-                            // var this_Min = Time.getMinutes();
-                            // var Minutes = this_Min - (this_Min % 5);
-                            // if (this_Min % 5 > 2) Minutes += 5;
-                            // console.log(Minutes);
+                            var Time = new Date();
+                            var this_Hour = Time.getHours();
+                            var this_Min = Time.getMinutes();
+                            var Minutes = this_Min - (this_Min % 5);
+                            if (this_Min % 5 > 2) Minutes += 5;
+                            console.log(Minutes);
                             $(timePickers[i].timePicker).timepicker('option',{
                                 timeFormat: 'H:i',
                                 step: 15,
-                                minTime: new Date(),
+                                minTime: this_Hour + ":" + Minutes,
                                 maxTime: '23:00',
                                 disableTextInput: true
                             });

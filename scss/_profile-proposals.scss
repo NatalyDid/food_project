@@ -231,6 +231,7 @@
 
 .pre-orders {
   margin: 10px 0 25px 0;
+  position: relative;
   & .checkable-toggler {
     padding-left: 0;
   }
@@ -281,23 +282,12 @@
 .limit {
   display: none;
   position: absolute;
-  bottom: 45px;
-  width: 45%;
+  top: 30px;
+  width: 100%;
   padding: 7px;
   z-index: 10;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: $white;
-  @media screen and (max-width: 1229px) {
-    bottom: 30px;
-  }
-  @media screen and (max-width: 767px) {
-    bottom: 207px;
-    width: 54%;
-  }
-  @media screen and (max-width: 529px) {
-    width: 85%;
-    left:10px;
-  }
 }
 
 @media screen and (max-width: 767px) {

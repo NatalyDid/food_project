@@ -15,6 +15,8 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
   }
   & .order-text{
     margin-top: 20px;

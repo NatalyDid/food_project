@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="wrapper ">
-    <section class="header ">
+    <section class="header">
         <div class="topLogo">
             <div class="container ">
                 <div class="row rowLogo">
@@ -107,15 +107,14 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </a>
                                     <ul class="dropdown-menu ul-dropdown" aria-labelledby="dropdownMenu10">
-                                        <li><a href="profile-edit.html" class="afterLogin">Profil</a></li>
-                                        <li><a href="profile-saved.html" class="afterLogin">Merkliste</a></li>
-                                        <li><a href="profile-proposals.html" class="afterLogin">Meine Angebote</a></li>
-                                        <li><a href="profile-expand_account.html" class="afterLogin">Konto erweitern</a>
-                                        </li>
-                                        <li><a href="profile-mails.html" class="afterLogin">Mails</a></li>
+                                        <li><a href="#" class="afterLogin">Profil</a></li>
+                                        <li><a href="#" class="afterLogin">Merkliste</a></li>
+                                        <li><a href="#" class="afterLogin">Meine Angebote</a></li>
+                                        <li><a href="#" class="afterLogin">Konto erweitern</a></li>
+                                        <li><a href="#" class="afterLogin">Mails</a></li>
                                         <li><a href="#" class="afterLogin">Ausloggen</a></li>
-                                        <li><a href="login.html" class="beforeLogin">Einloggen</a></li>
-                                        <li><a href="registration.html" class="beforeLogin">Registrieren</a></li>
+                                        <li><a href="#" class="beforeLogin">Einloggen</a></li>
+                                        <li><a href="#" class="beforeLogin">Registrieren</a></li>
                                     </ul>
                                 </div><!-- end div /.user-img -->
                                 <div class="topMenu__accountLabel">Willkommen, <br> Daniel</div>
@@ -136,15 +135,14 @@
                             <a href=""><i class="fa fa-plus">&nbsp;</i>Angebot erstellen</a>
                             <a href="">Shop</a>
                             <a href="">My cart &nbsp;<span><i class="fa fa-shopping-basket"></i> 2</span></a>
-                            <a href="profile-edit.html" class="afterLogin">Profil</a>
-                            <a href="profile-saved.html" class="afterLogin">Merkliste</a>
-                            <a href="profile-proposals.html" class="afterLogin">Meine Angebote</a>
-                            <a href="profile-expand_account.html" class="afterLogin">Konto erweitern</a>
-                            <a href="profile-mails.html" class="afterLogin">Mails &nbsp; <span
-                                    class="topMenu__mailboxcount">7</span></a>
+                            <a href="#" class="afterLogin">Profil</a>
+                            <a href="#" class="afterLogin">Merkliste</a>
+                            <a href="#" class="afterLogin">Meine Angebote</a>
+                            <a href="#" class="afterLogin">Konto erweitern</a>
+                            <a href="#" class="afterLogin">Mails &nbsp; <span class="topMenu__mailboxcount">7</span></a>
                             <a href="#" class="afterLogin">Ausloggen</a>
-                            <a href="login.html" class="beforeLogin">Einloggen</a>
-                            <a href="registration.html" class="beforeLogin">Registrieren</a>
+                            <a href="" class="beforeLogin">Einloggen</a>
+                            <a href="" class="beforeLogin">Registrieren</a>
                         </nav>
                     </div><!-- end div /.menu__wrapper -->
                 </div><!-- end div /.menu -->
@@ -240,6 +238,13 @@
                                     <span class="fa fa-square-o"></span>
                                     <span class="fa fa-check"></span>
                                     <span>kein Schwein</span>
+                                </label>
+
+                                <input type="checkbox" class="checkable hidden" id="ch17" >
+                                <label for="ch17" class="checkable-toggler flex-left-center">
+                                    <span class="fa fa-square-o"></span>
+                                    <span class="fa fa-check"></span>
+                                    <span>kein Lamm</span>
                                 </label>
 
                                 <input type="checkbox" class="checkable hidden" id="ch12">
@@ -709,7 +714,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -726,7 +731,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -743,7 +748,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -760,7 +765,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -777,7 +782,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -822,15 +827,15 @@
                                                     <span class="fa fa-check"></span>
                                                     <span class="font-regular showLimit" data-showLimit="0" >Für die Vorbestellungen aktivieren</span>
                                                 </label>
+                                                <div class="limit" data-limit="0">
+                                                    Sie Haben das Limit für die Vorbestellungen ausgeschöpft
+                                                    <a href="" class="blue">Limit erhöhen</a>
+                                                </div>
                                             </div>
                                             <div class="button-food-order">
                                                 <a href="order.html"
                                                    class="btn-common btn-orange block-center">Angebot wiederholen
                                                 </a>
-                                            </div>
-                                            <div class="limit" data-limit="0">
-                                                Sie Haben das Limit für die Vorbestellungen ausgeschöpft
-                                                <a href="" class="blue">Limit erhöhen</a>
                                             </div>
                                         </div>
                                     </div>
@@ -854,7 +859,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -871,7 +876,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -888,7 +893,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -905,7 +910,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -922,7 +927,7 @@
                                                 </a>
                                                 <div class="food-author-button">
                                                     <a href=""
-                                                       class="btn-common btn-bright-green block-center">Bewerten
+                                                       class="btn-common btn-bright-green block-center">Bewertet
                                                     </a>
                                                 </div>
                                             </div>
@@ -967,15 +972,15 @@
                                                     <span class="fa fa-check"></span>
                                                     <span class="font-regular showLimit" data-showLimit="1" >Für die Vorbestellungen aktivieren</span>
                                                 </label>
+                                                <div class="limit" data-limit="1">
+                                                    Sie Haben das Limit für die Vorbestellungen ausgeschöpft
+                                                    <a href="" class="blue">Limit erhöhen</a>
+                                                </div>
                                             </div>
                                             <div class="button-food-order">
                                                 <a href="add-creating.html"
                                                    class="btn-common btn-orange block-center">Angebot wiederholen
                                                 </a>
-                                            </div>
-                                            <div class="limit" data-limit="1">
-                                                Sie Haben das Limit für die Vorbestellungen ausgeschöpft
-                                                <a href="" class="blue">Limit erhöhen</a>
                                             </div>
                                         </div>
                                     </div>

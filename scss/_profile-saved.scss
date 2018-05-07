@@ -166,6 +166,7 @@
       margin-left: 10px;
       color: $light-grey;
       font-size: 24px;
+      cursor: default;
     }
     @media screen and (max-width: 529px) {
       width: 100%;
@@ -179,4 +180,15 @@
       }
     }
   }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @media screen and (max-width: 529px) {
+      .search-buttons {
+        margin-top: 65px;
+      }
+      .search-text{
+        width: 100%;
+      }
+    }
+  }
+
 }

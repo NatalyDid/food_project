@@ -25,6 +25,10 @@
   display: flex;
   border: 1px solid $grey-border;
   margin-bottom: 20px;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    border-right: 1px solid $grey-border;
+    height: 370px;
+  }
 }
 
 .mail-img {
@@ -156,8 +160,8 @@
   }
 }
 
-.response-pre-order{
-  & .button-mail-footer{
+.response-pre-order {
+  & .button-mail-footer {
     margin-top: 10px;
   }
 }
@@ -346,5 +350,59 @@
     }
   }
 }
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .confirmation,
+  .evaluation-informing{
+    height: 410px;
+  }
+  .chef-expand,
+  .chef-expand-info{
+    height: 320px;
+  }
+  .user-confirmation-info{
+    height: 500px;
+  }
+  .order-info{
+    height: 600px;
+  }
+  @media screen and (max-width: 991px) {
+    .response{
+      height: 440px;
+    }
+    .user-confirmation-info{
+      height: 560px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .response{
+      height: 610px;
+    }
+    .response-pre-order,
+    .confirmation,
+    .evaluation-informing{
+      height: 565px;
+    }
+    .request,
+    .chef-confirmation{
+      height: 520px;
+    }
+    .rating-info{
+      height: 430px;
+    }
+    .general-info,
+    .chef-expand{
+      height: 365px;
+    }
+    .user-confirmation-info{
+      height: 740px;
+    }
+    .order-info{
+      height: 780px;
+    }
+  }
+}
+
 
 
