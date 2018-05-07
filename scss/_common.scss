@@ -306,9 +306,8 @@ h6 {
 
 .star-small {
   background: url('../img/sprite_Foodoria.png') no-repeat -326px -24px;
-  //background-size: 100%;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   margin: 0 auto;
 }
 
@@ -316,7 +315,6 @@ h6 {
 .star-small:active,
 .star-small:focus {
   background: url('../img/sprite_Foodoria.png') no-repeat -291px -24px;
-  //background-size: 100%;
 }
 
 .star-big {

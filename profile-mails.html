@@ -358,7 +358,8 @@
                             </div><!-- end div /.selection -->
                         </div><!-- end div /.col-xs-12 -->
                         <div class="searchMore__submit">
-                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN</button>
+                            <button id="searchMore__submit" type="submit" class="btn-common btn-green-bg">ÜBERNEHMEN
+                            </button>
                         </div><!-- end div /.searchMore__submit -->
                     </div><!-- end div /.searchMore__wrapper -->
                 </div><!-- end div /.searchMore -->
@@ -443,7 +444,8 @@
 
                                                 <div class="basic-acc ">Basiskonto (BK)</div>
 
-                                                <a href="profile-expand_account.html" class="blue-big">Konto erweitern</a>
+                                                <a href="profile-expand_account.html" class="blue-big">Konto
+                                                    erweitern</a>
                                             </div>
                                         </div><!-- end div /.filtr-dropdown -->
                                     </div><!-- end div /.dropdown -->
@@ -457,11 +459,16 @@
 
                             <div class="hidden-xs">
                                 <ul class="profile-menu">
-                                    <li><a href="profile-photo-edit.html" class="blue-big"><span class="link-title">Profilbild hochladen/ bearbeiten</span></a></li>
-                                    <li><a href="profile-edit.html" class="blue-big active-link"><span class="link-title">Profil bearbeiten</span></a></li>
-                                    <li><a href="profile-saved.html" class="blue-big"><span class="link-title">Merkliste</span></a></li>
-                                    <li><a href="profile-proposals.html" class="blue-big "><span class="link-title">Meine Angebote</span></a></li>
-                                    <li><a href="profile-mails.html" class="blue-big"><span class="link-title">Mails <span class="mails-number">7</span></span></a></li>
+                                    <li><a href="profile-photo-edit.html" class="blue-big"><span class="link-title">Profilbild hochladen/ bearbeiten</span></a>
+                                    </li>
+                                    <li><a href="profile-edit.html" class="blue-big active-link"><span
+                                            class="link-title">Profil bearbeiten</span></a></li>
+                                    <li><a href="profile-saved.html" class="blue-big"><span
+                                            class="link-title">Merkliste</span></a></li>
+                                    <li><a href="profile-proposals.html" class="blue-big "><span class="link-title">Meine Angebote</span></a>
+                                    </li>
+                                    <li><a href="profile-mails.html" class="blue-big"><span
+                                            class="link-title">Mails <span class="mails-number">7</span></span></a></li>
                                 </ul><!-- end div /.profile-menu -->
 
                                 <div class="rating">
@@ -585,34 +592,40 @@
                                                 Meine Nummer ist 0176 98765432
                                             </div>
                                             <div class="buttons-row">
-                                                <button type="button" class="btn-common btn-orange" data-toggle="modal" data-target="#modal-approve">bestätigen
+                                                <button type="button" class="btn-common btn-orange" data-approveId="a1">
+                                                    bestätigen
                                                 </button>
-                                                <button type="button" class="btn-common btn-transparent" data-toggle="modal" data-target="#modal-discard">ablehnen
+                                                <button type="button" class="btn-common btn-transparent"
+                                                        data-rejectId="a1">ablehnen
                                                 </button>
                                             </div>
                                         </div><!-- end div /.message -->
-                                        <div class="evaluation inactive">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form data-formId="b1">
+                                            <div class="evaluation inactive">
+
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="1" name=""></textarea>
+                                                </label>
+
+                                            </div><!-- end div /.evaluation -->
+                                            <div class="button-mail-footer text-right">
+                                                <button type="button" class="btn-common btn-grey-big">Speichern
+                                                </button>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="1"></textarea>
-                                            </label>
-                                        </div><!-- end div /.evaluation -->
-                                        <div class="button-mail-footer text-right">
-                                            <button type="button" class="btn-common btn-grey-big">Speichern
-                                            </button>
-                                        </div>
+                                        </form>
                                     </div><!-- end div /.mail-text -->
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail response response-pre-order">
@@ -672,7 +685,8 @@
                                                 Meine Nummer ist 0176 98765432
                                             </div>
                                             <div class="button-mail-footer text-right">
-                                                <button type="button" class="btn-common btn-orange" data-toggle="modal" data-target="#modal-approve">bestätigen
+                                                <button type="button" class="btn-common btn-orange" data-toggle="modal"
+                                                        data-target="#modal-approve">bestätigen
                                                 </button>
 
                                             </div>
@@ -764,9 +778,11 @@
                                         </div>
 
                                         <div class="expand-offer font-regular">
-                                            <a href="profile-expand_account.html" class="blue-big">Erweitern Sie Ihr Konto</a><br>
+                                            <a href="profile-expand_account.html" class="blue-big">Erweitern Sie Ihr
+                                                Konto</a><br>
                                             oder<br>
-                                            <a href="profile-proposals.html" class="blue-big">Verwalten Sie Ihre Angebote</a>
+                                            <a href="profile-proposals.html" class="blue-big">Verwalten Sie Ihre
+                                                Angebote</a>
                                         </div>
 
                                         <div class="incoming">
@@ -834,29 +850,30 @@
                                             <div class="font-regular">Hallo. Gerne komme ich gegen 18 Uhr vorbei
                                             </div>
                                         </div>
-
-                                        <div class="evaluation">
-                                            <div class="input-wrapper">
-                                                <span class="input-title">Bewerten *</span>
-                                                <div class="select_wrapper fa fa-chevron-down">
-                                                    <select class="input-body">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                        <form data-formId="b2">
+                                            <div class="evaluation">
+                                                <div class="input-wrapper">
+                                                    <span class="input-title">Bewerten *</span>
+                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                        <select class="input-body" name="form-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <label class="input-wrapper big-input">
+                                                    <span class="input-title">Kommentar (optional)</span>
+                                                    <textarea class="input-body" rows="3" name="form-textarea"></textarea>
+                                                </label>
                                             </div>
-                                            <label class="input-wrapper big-input">
-                                                <span class="input-title">Kommentar (optional)</span>
-                                                <textarea class="input-body" rows="3"></textarea>
-                                            </label>
-                                        </div>
-                                        <div class="button-mail-footer text-right">
-                                            <button type="button" class="btn-common btn-orange">Speichern
-                                            </button>
-                                        </div>
+                                            <div class="button-mail-footer text-right">
+                                                <button type="submit" class="btn-common btn-orange">Speichern
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div><!-- end div /.card-mail -->
                                 <div class="card-mail evaluation-informing">
@@ -1127,7 +1144,8 @@
                                             gestellt und wollen die Portion/Portionen
                                             am 15.04.2018 zwischen 18:00 und 19:00 Uhr
                                             in 45678 Berlin abholen<br><br>
-                                            <div class="font-regular">Bitte warten Sie auf die Antwort von dem Anbieter oder
+                                            <div class="font-regular">Bitte warten Sie auf die Antwort von dem Anbieter
+                                                oder
                                                 brechen Sie den Bestellvorgang ab.
                                             </div>
                                         </div>
@@ -1142,7 +1160,8 @@
                                         </div>
 
                                         <div class="button-mail-footer">
-                                            <button type="button" class="btn-common btn-transparent" data-toggle="modal" data-target="#delete-confirm-modal-id" data-id="1">Bestellvorgang abbrechen
+                                            <button type="button" class="btn-common btn-transparent" data-cancel="c2">
+                                                Bestellvorgang abbrechen
                                             </button>
                                         </div>
                                     </div>
@@ -1191,7 +1210,8 @@
                                         </div>
 
                                         <div class="incoming">
-                                            Der Anbieter Dud hat die Option „Vorbestellung“ für das Menü freigeschaltet. Sie können jetzt das Menü bestellen.
+                                            Der Anbieter Dud hat die Option „Vorbestellung“ für das Menü freigeschaltet.
+                                            Sie können jetzt das Menü bestellen.
                                         </div>
 
                                         <div class="button-mail-footer text-right">
@@ -1296,7 +1316,8 @@
                                         </div>
 
                                         <div class="incoming">
-                                            Der Anbieter Dud hat Ihre Bestellung bestätigt. Bitte Kommen Sie am 15.04.2018 zwischen 18:00 und 19:00 Uhr an die Adresse:
+                                            Der Anbieter Dud hat Ihre Bestellung bestätigt. Bitte Kommen Sie am
+                                            15.04.2018 zwischen 18:00 und 19:00 Uhr an die Adresse:
                                             <div class="user-data">
                                                 <div>
                                                     Robin Schulz<br>
@@ -1310,7 +1331,10 @@
                                                 </div>
                                             </div>
 
-                                            <button class="btn-green btn-green-reverse" data-toggle="modal" data-target="#map1"><i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;  Auf Karte zeigen</button>
+                                            <button class="btn-green btn-green-reverse" data-toggle="modal"
+                                                    data-target="#map1"><i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;
+                                                Auf Karte zeigen
+                                            </button>
                                         </div>
 
                                         <div class="message">
@@ -1340,7 +1364,8 @@
                                             </label>
                                         </div>
                                         <div class="buttons-row">
-                                            <button type="button" class="btn-common btn-transparent" data-toggle="modal" data-target="#delete-confirm-modal-id" data-id="2">Bestellvorgang abbrechen
+                                            <button type="button" class="btn-common btn-transparent" data-cancel="c1">
+                                                Bestellvorgang abbrechen
                                             </button>
                                             <button type="button" class="btn-common btn-orange ">Speichern
                                             </button>
@@ -1392,7 +1417,8 @@
                                         </div>
 
                                         <div class="incoming">
-                                            Der Anbieter Dud hat Ihre Bestellung bestätigt. Bitte Kommen Sie am 15.04.2018 zwischen 18:00 und 19:00 Uhr an die Adresse:
+                                            Der Anbieter Dud hat Ihre Bestellung bestätigt. Bitte Kommen Sie am
+                                            15.04.2018 zwischen 18:00 und 19:00 Uhr an die Adresse:
                                             <div class="user-data">
                                                 <div>
                                                     Robin Schulz<br>
@@ -1406,7 +1432,10 @@
                                                 </div>
                                             </div>
 
-                                            <button class="btn-green btn-green-reverse" data-toggle="modal" data-target="#map2"><i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;  Auf Karte zeigen</button>
+                                            <button class="btn-green btn-green-reverse" data-toggle="modal"
+                                                    data-target="#map2"><i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;
+                                                Auf Karte zeigen
+                                            </button>
                                         </div>
 
                                         <div class="message">
@@ -1422,7 +1451,8 @@
                                             <div class="food-author-assessment">
                                                 <i class="fa fa-thumbs-o-up"
                                                    aria-hidden="true"></i>&nbsp;<span>4</span>
-                                            </div>bewertet.
+                                            </div>
+                                            bewertet.
                                         </div>
 
                                         <div class="message">
@@ -1747,7 +1777,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <img src="img/map.png" class="map">
@@ -1763,7 +1794,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <img src="img/map.png" class="map">
@@ -1787,11 +1819,12 @@
                 <div class="modal-body">
 
                     <div class="font-regular">
-                        Sobald sie auf "Bestätigen" klicken, erhält der Käufer Ihre persönlichen Daten "Telefonnummer" und "Nachnamen".
+                        Sobald sie auf "Bestätigen" klicken, erhält der Käufer Ihre persönlichen Daten "Telefonnummer"
+                        und "Nachnamen".
                     </div>
                     <label class="input-wrapper big-input">
                         <span class="input-title">Kommentar (optional)</span>
-                        <textarea class="input-body" rows="3"></textarea>
+                        <textarea class="input-body" rows="3" id="optional-comment-id"></textarea>
                     </label>
 
                 </div>
@@ -1821,7 +1854,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="buttons-row">
-                        <button class="btn-common btn-orange">ja</button>
+                        <button class="btn-common btn-orange" id="reject-delete-button-id">ja</button>
                         <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
                     </div>
                 </div>
@@ -1849,6 +1882,34 @@
                 <div class="modal-footer">
                     <div class="buttons-row">
                         <button class="btn-common btn-orange" id="delete-confirm-button-modal-id">ja</button>
+                        <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="order-cancel-confirm-modal-id" class="modal fade delete-confirm-modal-class" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="font-regular">
+                        Möchten Sie den Bestellvorgang
+                        wirklich abbrechen?
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="buttons-row">
+                        <button class="btn-common btn-orange" id="order-cancel-confirm-button-modal-id">ja</button>
                         <button class="btn-common btn-transparent" data-dismiss="modal">nein</button>
                     </div>
                 </div>
