@@ -800,9 +800,7 @@ label.error {
     .menu__wrapperPhoto {
       width: 75px;
       height: 75px;
-      border-radius: 50%;
-      background: url("../img/user-photo.jpg") no-repeat;
-      background-size: contain; }
+      border-radius: 50%; }
     .menu__wrapperLabel {
       font-size: 16px;
       margin-left: 85px;
