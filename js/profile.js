@@ -91,6 +91,7 @@ $(function () {
                 var modal = $(modalId);
                 modal.modal('show');
                 modal.on('shown.bs.modal', function () {
+                    console.log('hbgbihybn');
                     $(buttonId).on('click', function () {
                         // дата-атрибут approveId(на кнопке на самом письме) соответствует id письма
 
@@ -101,18 +102,20 @@ $(function () {
                         if (comment) {
                             form.append('comment', comment);
                         }
+
                         $.post('url', function () {
                                 alert("success");
                             }
                         ).done(function (resp) {
-                            console.log(approve);
                             modal.modal('hide');
-                            modal.off('shown.bs.modal');
-                            $(buttonId).off('click');
                         }).fail(function () {
                             alert("error");
                         })
                     });
+                });
+                modal.on('hide.bs.modal', function () {
+                    modal.off('shown.bs.modal');
+                    $(buttonId).off('click');
                 });
             }
         });

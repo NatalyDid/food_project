@@ -39,6 +39,7 @@ $(function(){
                         alert("success");
                     }
                 ).done(function (resp) {
+                    window.location.href = "profile-mails.html";
                 }).fail(function () {
                     alert("error");
                 })

@@ -9,10 +9,22 @@ h6 {
 
 .wrapper {
   min-height: 100%;
-  position: relative;
-  padding-bottom: 70px;
+  //padding-bottom: 70px;
   @media screen and (max-width: 767px) {
-    padding-bottom: 140px;
+    //padding-bottom: 140px;
+  }
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 145px);
+    overflow-y: auto;
+  }
+}
+
+.wrapper__beforeLogin{
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 170px);
+  }
+  & .banner-section{
+    display: block;
   }
 }
 
@@ -730,18 +742,15 @@ label.error {
   }
 }
 
-.profile,
-.main{
-  @media screen and (min-width: 768px) {
-    margin-top: 160px;
-  }
+.profile {
+  padding-top: 55px;
 }
 
 /******************main-banner***************/
 
-//.banner-section{
-//  display: none;
-//}
+.banner-section{
+  display: none;
+}
 
 .banner-row {
   padding: 30px 0;

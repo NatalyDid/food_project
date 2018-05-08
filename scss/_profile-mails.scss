@@ -52,7 +52,14 @@
   align-items: center;
   & .star-small {
     margin: 0 10px 0 5px;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
   }
+}
+
+.mail-author-name{
+  width: 90%;
 }
 
 .mail-author-footer {
@@ -61,6 +68,9 @@
   & .food-author-img {
     width: 60px;
     margin-right: 10px;
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
 }
 

@@ -1,10 +1,4 @@
 .header {
-  @media screen and (min-width: 768px) {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 200;
-  }
   .rowLogo {
     padding: 20px 15px;
     background-color: $white;
@@ -40,7 +34,6 @@
   background-color: $light-green;
   padding-left: 15px;
   position: relative;
-  box-shadow: 0 15px 10px -15px $grey;
   &__searchButton {
     display: block;
     position: relative;
@@ -132,8 +125,6 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      background: url("../img/user-photo.jpg") no-repeat;
-      background-size: contain;
       float: left;
     }
     &Label {
@@ -346,7 +337,6 @@
     top: 60px;
   }
   &__wrapper {
-    //overflow-y: scroll;
     .title-small {
       color: $grey;
     }

@@ -21,12 +21,18 @@ h6 {
   margin: 0; }
 
 .wrapper {
-  min-height: 100%;
-  position: relative;
-  padding-bottom: 70px; }
-  @media screen and (max-width: 767px) {
+  min-height: 100%; }
+  @media screen and (min-width: 768px) {
     .wrapper {
-      padding-bottom: 140px; } }
+      height: calc(100vh - 145px);
+      overflow-y: auto; } }
+
+@media screen and (min-width: 768px) {
+  .wrapper__beforeLogin {
+    height: calc(100vh - 170px); } }
+
+.wrapper__beforeLogin .banner-section {
+  display: block; }
 
 .content-header {
   padding-top: 10px;
@@ -583,12 +589,13 @@ label.error {
     .form-footer-button .btn-orange, .form-footer-button .btn-grey-big, .form-footer-button .btn-transparent, .form-footer-button .btn-bright-green, .form-footer-button .btn-green-bg {
       width: 100%; } }
 
-@media screen and (min-width: 768px) {
-  .profile,
-  .main {
-    margin-top: 160px; } }
+.profile {
+  padding-top: 55px; }
 
 /******************main-banner***************/
+.banner-section {
+  display: none; }
+
 .banner-row {
   padding: 30px 0; }
 
@@ -654,13 +661,6 @@ label.error {
   .checkmark img {
     width: 30px; } }
 
-@media screen and (min-width: 768px) {
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 200; } }
-
 .header .rowLogo {
   padding: 20px 15px;
   background-color: #fff; }
@@ -691,8 +691,7 @@ label.error {
   height: 60px;
   background-color: #b1d474;
   padding-left: 15px;
-  position: relative;
-  box-shadow: 0 15px 10px -15px #7f8c8d; }
+  position: relative; }
   .topMenu__searchButton {
     display: block;
     position: relative;
@@ -771,8 +770,6 @@ label.error {
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      background: url("../img/user-photo.jpg") no-repeat;
-      background-size: contain;
       float: left; }
     .topMenu__accountLabel {
       color: #fff;
@@ -1115,11 +1112,9 @@ label.error {
   border-top: 1px solid #d9e2e4;
   padding-top: 25px;
   padding-bottom: 25px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 70px; }
+  height: 70px;
+  background-color: #fff; }
   .footer .copyright {
     color: #7f8c8d; }
   .footer div a {
@@ -2070,9 +2065,6 @@ label.error {
 .expired .card-food .author-slider .btn-bright-green {
   background-color: #b9bfc0; }
 
-.profile {
-  padding-top: 55px; }
-
 .slider_item {
   text-align: center;
   outline: none; }
@@ -2378,6 +2370,12 @@ label.error {
   align-items: center; }
   .mail-author-header .star-small {
     margin: 0 10px 0 5px; }
+    @media screen and (max-width: 767px) {
+      .mail-author-header .star-small {
+        margin: 0; } }
+
+.mail-author-name {
+  width: 90%; }
 
 .mail-author-footer {
   display: flex;
@@ -2385,6 +2383,9 @@ label.error {
   .mail-author-footer .food-author-img {
     width: 60px;
     margin-right: 10px; }
+    @media screen and (max-width: 767px) {
+      .mail-author-footer .food-author-img {
+        margin-right: 0; } }
 
 .portions {
   color: #95c11f;
