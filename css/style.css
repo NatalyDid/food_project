@@ -1862,9 +1862,6 @@ label.error {
     .form-registration-footer-button .btn-orange, .form-registration-footer-button .btn-grey-big, .form-registration-footer-button .btn-transparent, .form-registration-footer-button .btn-bright-green, .form-registration-footer-button .btn-green-bg {
       width: 100%; } }
 
-.profile-proposals .result-item {
-  height: 340px; }
-
 .profile-header {
   display: flex;
   justify-content: space-between;
@@ -2998,9 +2995,6 @@ label.error {
   .order .with-padding {
     padding: 0 20px; } }
 
-.order .line {
-  margin-top: 20px; }
-
 .order-header {
   display: flex;
   align-items: center;
@@ -3099,6 +3093,9 @@ label.error {
 @media screen and (max-width: 499px) {
   #order-form .button-order {
     bottom: -45px; } }
+
+.profile-content .line {
+  margin-top: 20px; }
 
 .impressum-body {
   padding-top: 15px; }

@@ -37,9 +37,6 @@
       padding: 0 20px;
     }
   }
-  .line{
-    margin-top: 20px;
-  }
 }
 .order-header{
   display: flex;
@@ -169,5 +166,11 @@
     @media screen and (max-width: 499px) {
       bottom: -45px;
     }
+  }
+}
+
+.profile-content{
+  .line{
+    margin-top: 20px;
   }
 }
