@@ -777,7 +777,12 @@ label.error {
       font-size: 12px;
       line-height: 16px;
       margin-left: 48px;
-      margin-top: 6px; }
+      padding-top: 6px; }
+    .topMenu__accountName {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%; }
 
 .menu {
   display: none;
@@ -1012,6 +1017,9 @@ label.error {
     .perimeter .dropdown-menu {
       top: 50px;
       left: 140px; } }
+
+.user-img .white {
+  text-decoration: none; }
 
 .user-img .dropdown-menu {
   top: 40px;
@@ -1948,6 +1956,11 @@ label.error {
 .author-slider {
   margin-top: 10px;
   padding: 0 20px; }
+  .author-slider .font-regular, .author-slider .font-regular-big, .author-slider .font-regular-bold, .author-slider .font-regular-italic, .author-slider .error-mess, .author-slider .blue, .author-slider .blue-big, .author-slider .btn-green, .author-slider .ul-dropdown > li > a, .author-slider label.error, .author-slider .footer, .author-slider .item-text-header, .author-slider .item-text-footer .price .price-text, .item-text-footer .price .author-slider .price-text, .author-slider .ingredients ul, .ingredients .author-slider ul, .author-slider .price-text, .author-slider .sign-in, .author-slider .rating div:first-child, .rating .author-slider div:first-child, .author-slider .food-img, .author-slider .food-text, .author-slider #order-form .input-title, #order-form .author-slider .input-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; }
   .author-slider .slick-arrow {
     background: transparent;
     border: none;

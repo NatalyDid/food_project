@@ -105,6 +105,12 @@
 .author-slider {
   margin-top: 10px;
   padding: 0 20px;
+  .font-regular{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
   .slick-arrow {
     background: transparent;
     border: none;

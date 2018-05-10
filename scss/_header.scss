@@ -133,7 +133,13 @@
       font-size: 12px;
       line-height: 16px;
       margin-left: 48px;
-      margin-top: 6px;
+      padding-top: 6px;
+    }
+    &Name{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
     }
   }
 }
@@ -409,6 +415,9 @@
 }
 
 .user-img {
+  .white{
+    text-decoration: none;
+  }
   .dropdown-menu {
     top: 40px;
     left: -50px;
