@@ -1141,6 +1141,8 @@ label.error {
 
 .add-create-block-styles {
   padding: 15px; }
+  .add-create-block-styles .title-main, .add-create-block-styles .title-main-green {
+    padding-left: 15px; }
   .add-create-block-styles .margin-top-titles {
     margin-top: 35px; }
     .add-create-block-styles .margin-top-titles + .preview-wrapper {
@@ -1172,7 +1174,9 @@ label.error {
     border: 1px solid #b9bfc0;
     margin-top: 20px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    background: url("../img/food-image-bg.jpg");
+    background-size: contain; }
     .add-create-block-styles .preview-wrapper .fa {
       left: auto;
       right: 8px;

@@ -257,23 +257,6 @@
             })
         }
 
-        // function runTimeInputs() {
-        //     timeInputs.each(function (index, item) {
-        //         $(item).timepicker({
-        //             timeFormat: 'HH:mm',
-        //             interval: 60,
-        //             minTime: '00:00',
-        //             maxTime: '23:00',
-        //             defaultTime: 'now',
-        //             startTime: '00:00',
-        //             dynamic: false,
-        //             dropdown: true,
-        //             scrollbar: true
-        //         });
-        //         timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
-        //     });
-        // }
-
         function runTimeInputs() {
                 timeInputs.each(function (index, item) {
                     $(item).timepicker({
