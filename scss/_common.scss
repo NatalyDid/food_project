@@ -448,9 +448,9 @@ h6 {
   &:after {
     content: '';
     position: absolute;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
     width: 35px;
     background-color: white;
     pointer-events: none;
@@ -836,3 +836,5 @@ label.error {
     }
   }
 }
+
+
