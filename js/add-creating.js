@@ -242,6 +242,22 @@
             });
         }
 
+        $('.dropdown.multi-selected').on('click', function (event) {
+            event.stopPropagation();
+            var target = event.target;
+            while (this !== target) {
+                target = target.parentNode;
+            }
+            console.log(this);
+            console.log(target);
+            var dropdowns = $('.dropdown.multi-selected');
+            for (var i = 0; i < dropdowns.length; i++) {
+                if (dropdowns[i] !== target) {
+                    dropdowns[i].classList.remove('open');
+                }
+            }
+        });
+
         function runInputs() {
             dateInputs.each(function (index, item) {
                 item.value = moment().format("DD-MM-YYYY");
