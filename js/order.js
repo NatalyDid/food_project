@@ -22,7 +22,6 @@ $(function(){
     });
 
     function orderFormSubmitEvents() {
-
         $('form[data-form]').each(function (index, form) {
             $(form).on('submit', function (ev) {
                 ev.preventDefault();
@@ -47,5 +46,12 @@ $(function(){
         })
     }
 
-    orderFormSubmitEvents();
+    setValidator($('#order-form'));
+
+    $('#order-form').on('submit', function (event) {
+        if (!$('#order-form').valid()){
+            event.preventDefault();
+        }
+        orderFormSubmitEvents();
+    });
 });
