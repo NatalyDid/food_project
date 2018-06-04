@@ -973,6 +973,8 @@ label.error {
     @media screen and (min-width: 1230px) {
       .searchMore__wrapper {
         margin-left: calc(50vw - 600px); } }
+    .searchMore__wrapper .selection:first-child .checkable-toggler {
+      padding: 6px 0 6px 35px; }
   .searchMore .arrow {
     position: absolute;
     border: 6px solid transparent;

@@ -354,6 +354,11 @@
     @media screen and (min-width: 1230px) {
       margin-left: calc(50vw - 600px);
     }
+    & .selection:first-child{
+      & .checkable-toggler{
+        padding: 6px 0 6px 35px;
+      }
+    }
   }
   .arrow {
     position: absolute;

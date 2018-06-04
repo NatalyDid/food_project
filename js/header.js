@@ -50,13 +50,20 @@
 
         $('#ch15,#ch16').on('click', function () {
             if ($(this).prop('checked')) {
-                $('#ch11,#ch12,#ch13,#ch14,#ch17').prop('checked', true).prop('disabled', true);
+                $('#ch11,#ch12,#ch13,#ch14,#ch17').prop('disabled', true);
             } else {
                 if (!$('#ch15').prop('checked') && !$('#ch16').prop('checked')) {
-                    $('#ch11,#ch12,#ch13,#ch14,#ch17').prop('checked', false).prop('disabled', false);
+                    $('#ch11,#ch12,#ch13,#ch14,#ch17').prop('disabled', false);
                 }
             }
         });
+
+        $('#ch01').on('click', function () {
+            if ($(this).prop('checked')) {
+                $('#ch11,#ch12,#ch13,#ch14,#ch17').prop('disabled', false);
+            }
+        });
+
         $('#ch21').on('click', function () {
             if ($(this).prop('checked')) {
                 $('#ch22,#ch23,#ch24,#ch25').prop('checked', true).prop('disabled', true);
