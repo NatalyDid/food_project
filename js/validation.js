@@ -67,7 +67,10 @@ function setValidator(id) {
             zip: "required",
             place: "required",
             proposal_name: "required",
-            price: "required",
+            price: {
+                required: true,
+                number: true
+            },
             description: "required",
             ingredients: "required",
             conf_pswd: "required"
@@ -122,7 +125,10 @@ function setValidator(id) {
             zip: "Bitte geben Sie Ihre Postleitzahl ein.",
             place:  "Bitte geben Sie Ihren Wohnort ein.",
             proposal_name: "Dieses Feld muss ausgefüllt werden",
-            price: "Dieses Feld muss ausgefüllt werden",
+            price: {
+                required: "Dieses Feld muss ausgefüllt werden",
+                number: "In diesem Feld muss es Zahlen geben."
+            },
             description: "Dieses Feld muss ausgefüllt werden",
             ingredients: "Dieses Feld muss ausgefüllt werden",
             conf_pswd: "Dieses Feld muss ausgefüllt werden"
