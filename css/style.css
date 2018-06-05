@@ -409,7 +409,7 @@ h6 {
     margin-top: 2px; }
 
 .checkable-toggler {
-  padding: 6px 0 6px 15px;
+  padding: 6px 0 6px 20px;
   transition: 0.25s;
   cursor: pointer;
   color: #7f8c8d;
