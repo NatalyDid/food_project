@@ -30,7 +30,7 @@
             if (ev.target.id === 'showMore') {
                 return
             }
-            while (ev.target.tagName !== 'BODY' && !ev.target.classList.contains('searchMore__wrapper')) {
+            while (ev.target.tagName !== 'BODY'  && !ev.target.classList.contains('searchMore__wrapper') && !ev.target.classList.contains('chips')) {
                 ev.target = ev.target.parentNode;
             }
             if (ev.target.tagName === 'BODY') {
