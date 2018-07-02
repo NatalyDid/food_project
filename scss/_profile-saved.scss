@@ -8,6 +8,12 @@
   .third-link {
     margin-left: 8px;
   }
+  .aaa {
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    width: 190px;
+  }
 
   /*********************Gerichte******************/
 
@@ -24,7 +30,8 @@
   .item-img {
     padding-top: 25px;
     & .btn-green {
-      margin-top: 20px;
+      margin-top: 13px;
+      visibility: hidden;
     }
     @media screen and (max-width: 991px) {
       width: 180px;
@@ -47,17 +54,23 @@
   .item-text-footer {
     position: absolute;
     bottom: 15px;
-    left: 10%;
+    left: 8%;
+    align-items: center;
+    width: 68%;
     & .block-center {
       @media screen and (max-width: 549px) {
         display: block;
         text-align: center;
       }
     }
+    @media screen and (max-width: 991px) {
+      width: 63%;
+    }
     @media screen and (max-width: 767px) {
       bottom: 100px;
-      left: 0;
+      left: -10px;
       flex-direction: row;
+      width: 55%;
       & .button-order {
         margin-top: 7px;
       }
@@ -70,21 +83,6 @@
         bottom: 100px;
         left: 7px;
         width: 90%;
-      }
-    }
-    & .btn-orange {
-      margin-left: 140px;
-      @media screen and (max-width: 1229px) {
-        margin-left: 110px;
-      }
-      @media screen and (max-width: 991px) {
-        margin-left: 50px;
-      }
-      @media screen and (max-width: 767px) {
-        margin-left: 20px;
-      }
-      @media screen and (max-width: 549px) {
-        width: 100%;
       }
     }
   }
@@ -113,7 +111,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    -ms-flex-align: flex-end;
+    //-ms-flex-align: flex-end;
     & .item-best-food {
       padding-bottom: 0;
       width: 32%;
