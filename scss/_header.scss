@@ -261,6 +261,21 @@
     @media screen and (min-width: 1230px) {
       margin-top: 10px;
     }
+    & .select_wrapper{
+      width: 122%;
+      left: -13px;
+      top: -4px;
+      &:before{
+        right: 18px;
+        top: 21px;
+        font-size: 12px;
+        color: #7F8C8D;
+      }
+      & .input-body{
+        margin-top: 0;
+        padding: 10px;
+      }
+    }
   }
   select {
     padding: 10px 12px;

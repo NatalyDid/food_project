@@ -36,7 +36,21 @@
                         <div class="clearfix">
                             <div class="searchForm__close" id="searchForm__close"><i class="fa fa-times"></i></div>
                             <div class="arrow"></div>
-                            <input class="searchForm__input" placeholder="PLZ oder Ort">
+                            <!--<input class="searchForm__input" placeholder="PLZ oder Ort">-->
+
+                            <!--<div class="col-xs-12 col-sm-6">-->
+                            <div class="input-wrapper searchForm__input">
+                                <div class="select_wrapper fa fa-caret-down">
+                                    <select class="input-body" required name="select_type">
+                                        <option value="">PLZ oder Ort</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--</div>-->
 
                             <div class="dropdown single perimeter ">
                                 <button class="btn btn-dropdown dropdown-toggle searchForm__input" type="button"
@@ -272,7 +286,7 @@
                             </label>
 
                             <input type="radio" name="optionsRadios20" class="selector"
-                                   id="ch15" value="option22" >
+                                   id="ch15" value="option22">
                             <div class="radio">
                                 <label for="ch15"><span>Vegetarisch</span></label>
                             </div>
