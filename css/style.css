@@ -592,6 +592,12 @@ label.error {
 .profile {
   padding-top: 55px; }
 
+.aaa {
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  width: 190px; }
+
 /******************main-banner***************/
 .banner-section {
   display: none; }
@@ -1534,6 +1540,9 @@ label.error {
   .block-center {
     display: block;
     text-align: center; } }
+
+.main .item-img .btn-green {
+  visibility: hidden; }
 
 @media screen and (max-width: 991px) {
   .result-item {
@@ -2717,10 +2726,7 @@ label.error {
   .saved .third-link {
     margin-left: 8px; }
   .saved .aaa {
-    position: absolute;
-    top: 25px;
-    left: 15px;
-    width: 190px; }
+    left: 10px; }
   .saved .result-item {
     height: 250px;
     position: relative; }
