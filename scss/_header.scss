@@ -218,7 +218,7 @@
     background-color: $white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    padding: 35px 15px 20px 15px;
+    padding: 35px 10px 20px 10px;
     max-width: 1200px;
     @media screen and (min-width: 1230px) {
       padding: 0;
@@ -244,7 +244,7 @@
     border-radius: 2px;
     border: 1px solid $grey-border;
     margin: 17px auto 0;
-    width: 90%;
+    width: 270px;
     color: $grey;
     font-family: robotoregular, sans-serif;
     padding: 3px 12px;
@@ -255,14 +255,29 @@
     height: 40px;
     @media screen and (min-width: 768px) {
       float: left;
-      width: 22%;
-      margin-right: 8px;
+      &_small{
+        width: 100px;
+        margin-right: 6px;
+      }
+      &_big{
+        width: 275px;
+        margin-right: 8px;
+      }
     }
     @media screen and (min-width: 1230px) {
       margin-top: 10px;
+      &_small{
+        width: 14%;
+        margin-right: 8px;
+      }
+      &_big{
+        width: 42%;
+        margin-right: 9px;
+      }
     }
+
     & .select_wrapper{
-      width: 122%;
+      width: 111%;
       left: -13px;
       top: -4px;
       &:before{
@@ -301,16 +316,17 @@
     width: 90%;
     margin: 0 auto;
     text-align: left;
-    padding: 10px 16px;
+    padding: 10px 8px;
     position: relative;
     outline: none;
     @media screen and (min-width: 768px) {
-      width: 25%;
+      width: 22%;
       float: left;
       margin-top: 17px;
     }
     @media screen and (min-width: 1230px) {
       margin-top: 10px;
+      width: 18%;
     }
     &Icon.fa-cogs {
       position: absolute;
@@ -368,7 +384,7 @@
     margin: 0 auto;
     max-width: 770px;
     @media screen and (min-width: 1230px) {
-      margin-left: calc(50vw - 600px);
+      margin-left: calc(50vw - 540px);
     }
     & .selection:first-child{
       & .checkable-toggler{
@@ -382,6 +398,12 @@
     border-bottom: 14px solid $white;
     top: -20px;
     left: 50%;
+    @media screen and (min-width: 768px) {
+      left: 54%;
+    }
+    @media screen and (min-width: 1230px) {
+      left: 50%;
+    }
   }
   &__submit {
     position: absolute;
@@ -415,22 +437,25 @@
   .btn-dropdown {
     height: 40px;
     border: 1px solid $grey-border;
+    padding-left: 10px !important;
     .caret {
       margin-left: 45px;
     }
   }
   .dropdown-menu {
     top: 40px;
-    left: 0;
-    width: 100%;
+    left: 12px;
+    width: 92%;
+    min-width: 50px !important;
     @media screen and (min-width: 768px) {
       top: 57px;
-      left: 22%;
-      width: 24%;
+      left: 280px;
+      width: 100px;
     }
     @media screen and (min-width: 1230px) {
       top: 50px;
-      left: 140px;
+      left: 270px;
+      width: 16%;
     }
   }
 }
