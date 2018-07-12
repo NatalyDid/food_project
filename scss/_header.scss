@@ -345,6 +345,11 @@
     @media screen and (min-width: 1230px) {
       margin-top: 11px;
     }
+    & .btn-orange{
+      @media screen and (min-width: 1230px) {
+        padding: 7px 25px;
+      }
+    }
   }
   &__close {
     color: $grey;

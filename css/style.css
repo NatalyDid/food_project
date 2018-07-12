@@ -998,6 +998,9 @@ label.error {
     @media screen and (min-width: 1230px) {
       .searchForm__submit {
         margin-top: 11px; } }
+    @media screen and (min-width: 1230px) {
+      .searchForm__submit .btn-orange, .searchForm__submit .btn-grey-big, .searchForm__submit .btn-transparent, .searchForm__submit .btn-bright-green, .searchForm__submit .btn-green-bg {
+        padding: 7px 25px; } }
   .searchForm__close {
     color: #7f8c8d;
     font-size: 18px;
