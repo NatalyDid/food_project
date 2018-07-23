@@ -1,3 +1,12 @@
+.wrapper-add-creating {
+  min-height: 100%;
+}
+
+.wrapper-add-creating__beforeLogin{
+  & .banner-section{
+    display: block;
+  }
+}
 .add-create-block-styles {
   padding: 15px;
   .title-main{

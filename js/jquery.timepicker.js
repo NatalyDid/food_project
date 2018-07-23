@@ -418,15 +418,19 @@
 	function _render(self)
 	{
 		var settings = self.data('timepicker-settings');
+		console.log(self.data);
 		var list = self.data('timepicker-list');
+		//var list = self;
 
-		if (list && list.length) {
+
+
+        if (list && list.length) {
 			list.remove();
 			self.data('timepicker-list', false);
 		}
 
 		if (settings.useSelect) {
-			list = $('<select />', { 'class': 'ui-timepicker-select' });
+			list = $('.date-input-wrapper');
 			var wrapped_list = list;
 		} else {
 			list = $('<ul />', { 'class': 'ui-timepicker-list' });
