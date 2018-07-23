@@ -1216,11 +1216,9 @@ label.error {
     margin-top: 20px;
     text-align: center; } }
 
-.wrapper-add-creating {
-  min-height: 100%; }
-
-.wrapper-add-creating__beforeLogin .banner-section {
-  display: block; }
+@media screen and (min-width: 768px) {
+  .wrapper-add-creating {
+    overflow-y: unset; } }
 
 .add-create-block-styles {
   padding: 15px; }

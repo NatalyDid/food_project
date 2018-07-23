@@ -420,7 +420,6 @@
 		var settings = self.data('timepicker-settings');
 		console.log(self.data);
 		var list = self.data('timepicker-list');
-		//var list = self;
 
 
 
