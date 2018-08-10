@@ -30,6 +30,7 @@
             if (ev.target.id === 'showMore') {
                 return
             }
+            // в цикле поднимаемся по элементам к родителям пока не дойдем до body
             while (ev.target.tagName !== 'BODY'  && !ev.target.classList.contains('searchMore__wrapper') && !ev.target.classList.contains('chips')) {
                 ev.target = ev.target.parentNode;
             }

@@ -1781,20 +1781,24 @@ label.error {
     .best-item-wrapper .title-normal, .best-item-wrapper .title-normal-green {
       color: #fff;
       margin-bottom: 20px !important; }
+    .best-item-wrapper .row {
+      display: flex;
+      align-items: stretch; }
   .best-item-col {
-    padding: 0 5px; }
+    padding: 0 5px;
+    display: flex; }
   .best-item-col:first-child {
     padding-left: 10px; }
   .best-item-col:last-child {
     padding-right: 10px; }
-  .best-item {
-    height: 380px; }
   .price-value {
     font-size: 16px; }
     .price-value .fa {
       font-size: 13px; } }
 
 @media screen and (max-width: 767px) {
+  .best-item-wrapper .row {
+    flex-direction: column; }
   .best-item {
     height: auto;
     flex-direction: column; }
@@ -1807,7 +1811,16 @@ label.error {
     align-items: flex-end; }
     .best-food .item-best-food {
       width: 45%;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      margin-right: 5px; }
+      .best-food .item-best-food:last-child {
+        margin-right: 0; }
+  .best-item-col:first-child {
+    padding-left: 5px; }
+  .best-item-col:last-child {
+    padding-right: 5px; }
+  .price-card {
+    min-height: 42px; } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .best-item .author-wrapper {
