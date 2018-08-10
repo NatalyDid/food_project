@@ -1,6 +1,7 @@
 .order{
   & .item-text-description-title{
     margin: 0 0 30px 20px;
+    flex-flow: row wrap;
   }
   & .order-img{
     margin-bottom: 20px;
