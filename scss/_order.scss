@@ -1,7 +1,13 @@
 .order{
   & .item-text-description-title{
     margin: 0 0 30px 20px;
-    flex-flow: row wrap;
+    display: block;
+    & .star-big{
+      float: left;
+    }
+    & .title-main-green{
+      margin-top: -10px;
+    }
   }
   & .order-img{
     margin-bottom: 20px;
