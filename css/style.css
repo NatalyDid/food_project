@@ -1519,7 +1519,8 @@ label.error {
       text-decoration: none; }
 
 .item-text-description-content {
-  margin: 15px 0; }
+  margin: 15px 0;
+  height: 51px; }
 
 .tooltip > .tooltip-inner {
   color: #7f8c8d;

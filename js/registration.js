@@ -7,7 +7,16 @@ $(document).ready(function () {
     var getCroppedDataButton = $('#get-cropped-data-button');
     var avatar = $('#avatar_preview');
     var savedFile;
+
+    $('[aria-label="Close"]').on('click', function () {
+        $(document).trigger('wrap-destroy');
+    });
+
     uploadImageInput.on('change', readFile);
+
+    $(document).on('wrap-destroy', function () {
+        imageBody.cropper('destroy');
+    });
 
     getCroppedDataButton.on('click', function () {
 
@@ -27,6 +36,7 @@ $(document).ready(function () {
                     }, 0);
                 }, writable: true, enumerable: true, configurable: true});
         }(self));
+
 
         imageBody.cropper('getCroppedCanvas').toBlob(function (blob) {
             cropperModal.modal('hide');

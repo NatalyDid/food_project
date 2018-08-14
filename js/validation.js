@@ -15,14 +15,14 @@ function setValidator(id) {
             pswd: "required",
             email_address: {
                 required: true,
-                email: true
+                email_pattern: true
             },
             optionsGender: "required",
             firstName: "required",
             surname: "required",
             email: {
                 required: true,
-                email: true
+                email_pattern: true
             },
             nick: {
                 required: true,
@@ -90,8 +90,7 @@ function setValidator(id) {
             firstName: "Bitte geben Sie Ihren Vornamen ein.",
             surname: "Bitte geben Sie Ihren Nachnamen ein.",
             email: {
-                required: "Bitte geben Sie Ihre E-Mail Adresse ein.",
-                email: "Die Angabe ist nicht korrekt."
+                required: "Bitte geben Sie Ihre E-Mail Adresse ein."
             },
             nick: {
                 required: "Bitte geben Sie Ihren Benutzernamen ein.",
@@ -144,6 +143,10 @@ $(function () {
     $.validator.addMethod("tel_num", function (value, element) {
         return this.optional(element) || /^0\d{3,4}\ \d{7}$/.test(value);
     }, "Die Angabe ist nicht korrekt.");
+
+    $.validator.addMethod("email_pattern", function (value, element) {
+        return this.optional(element) || /[a-z0-9]+@[a-z]+\.[a-z]+/.test( value );
+    }, "lalala.");
 });
 
 
