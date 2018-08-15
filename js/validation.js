@@ -15,6 +15,7 @@ function setValidator(id) {
             pswd: "required",
             email_address: {
                 required: true,
+                email: true,
                 email_pattern: true
             },
             optionsGender: "required",
@@ -90,7 +91,9 @@ function setValidator(id) {
             firstName: "Bitte geben Sie Ihren Vornamen ein.",
             surname: "Bitte geben Sie Ihren Nachnamen ein.",
             email: {
-                required: "Bitte geben Sie Ihre E-Mail Adresse ein."
+                required: "Bitte geben Sie Ihre E-Mail Adresse ein.",
+                email: "Die E-Mail Adresse ist nicht korrekt.",
+                email_pattern: "Die E-Mail Adresse ist nicht korrekt."
             },
             nick: {
                 required: "Bitte geben Sie Ihren Benutzernamen ein.",
@@ -145,8 +148,8 @@ $(function () {
     }, "Die Angabe ist nicht korrekt.");
 
     $.validator.addMethod("email_pattern", function (value, element) {
-        return this.optional(element) || /[a-z0-9]+@[a-z]+\.[a-z]+/.test( value );
-    }, "lalala.");
+        return this.optional(element) || /^[A-Za-z0-9][A-Za-z0-9\.\-_]*[A-Za-z0-9]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]*$/.test( value );
+    }, "Die E-Mail Adresse ist nicht korrekt.");
 });
 
 

@@ -31,7 +31,15 @@
         runInputs();
         runTimeInputs();
 
+        $('[aria-label="Close"]').on('click', function () {
+            $(document).trigger('wrap-destroy');
+        });
+
         uploadImageInput.on('change', readFile);
+
+        $(document).on('wrap-destroy', function () {
+            imageBody.cropper('destroy');
+        });
 
         getCroppedDataButton.on('click', function () {
             if (blobsArray.length < 4) {

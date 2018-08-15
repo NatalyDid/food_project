@@ -699,6 +699,13 @@ label.error {
     overflow-x: scroll;
     width: 375px; } }
 
+.select2-container--default .select2-selection--single {
+  width: 273px;
+  height: 40px !important; }
+  @media screen and (max-width: 767px) {
+    .select2-container--default .select2-selection--single {
+      width: 270px; } }
+
 .header .rowLogo {
   padding: 20px 15px;
   background-color: #fff; }
