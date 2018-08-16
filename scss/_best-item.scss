@@ -104,6 +104,7 @@
   .best-item{
     height: auto;
     flex-direction: column;
+    width: 100%;
     & .author-wrapper{
       border-right: none;
       border-bottom: 1px solid $grey-border;

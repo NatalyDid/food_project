@@ -1812,7 +1812,8 @@ label.error {
     flex-direction: column; }
   .best-item {
     height: auto;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .best-item .author-wrapper {
       border-right: none;
       border-bottom: 1px solid #d9e2e4; }
