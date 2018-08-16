@@ -699,13 +699,6 @@ label.error {
     overflow-x: scroll;
     width: 375px; } }
 
-.select2-container--default .select2-selection--single {
-  width: 273px;
-  height: 40px !important; }
-  @media screen and (max-width: 767px) {
-    .select2-container--default .select2-selection--single {
-      width: 270px; } }
-
 .header .rowLogo {
   padding: 20px 15px;
   background-color: #fff; }
@@ -828,6 +821,12 @@ label.error {
       overflow: hidden;
       text-overflow: ellipsis;
       width: 100%; }
+  .topMenu .select2-container--default .select2-selection--single {
+    width: 273px;
+    height: 40px !important; }
+    @media screen and (max-width: 767px) {
+      .topMenu .select2-container--default .select2-selection--single {
+        width: 270px; } }
 
 .menu {
   display: none;

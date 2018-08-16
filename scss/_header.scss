@@ -142,6 +142,13 @@
         width: 100%;
     }
   }
+  & .select2-container--default .select2-selection--single{
+    width: 273px;
+    height: 40px !important;
+    @media screen and (max-width: 767px) {
+      width: 270px;
+    }
+  }
 }
 
 .menu {
