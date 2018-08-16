@@ -1694,7 +1694,9 @@ label.error {
 
 .item-author-distance {
   padding: 0 10px;
-  text-align: center;
+  text-align: center; }
+
+.item-author-distance-hidden {
   visibility: hidden; }
 
 .main-info {
