@@ -388,6 +388,31 @@
         }
     });
 
+    var span_value = $('#interval_count span').text();
+
+
+    $("#reverseDateId").change(function(){
+        var reverseDate_value = document.getElementById('reverseDateId').value;
+        var inputsDelivery_value = document.querySelectorAll('input[data-date]');
+        for (var i = 0; i < inputsDelivery_value.length; i++) {
+            inputsDelivery_value[i].value = reverseDate_value;
+        }
+    });
+
+
+     $('span[data-hideInterval]').on('click', function () {
+        $(this).parent().hide();
+        span_value = +span_value - 1;
+        $('#interval_count span').text(span_value);
+    });
+
+    $('div[data-showInterval]').on('click', function () {
+        console.log('www');
+        $('.date-input-wrapper').show();
+        span_value = +span_value + 1;
+        $('#interval_count span').text(span_value);
+    });
+
     setValidator($('#form-creating'));
 })();
 

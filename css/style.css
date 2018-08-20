@@ -1323,6 +1323,10 @@ label.error {
   .add-create-block-styles .date-input-wrapper {
     position: relative;
     margin-bottom: 10px; }
+    .add-create-block-styles .date-input-wrapper:nth-child(n+3) {
+      display: none; }
+    .add-create-block-styles .date-input-wrapper .fa-times-circle {
+      margin-left: 20px; }
   .add-create-block-styles .calendar {
     position: absolute;
     left: 30px;
@@ -1351,6 +1355,10 @@ label.error {
     position: relative;
     width: 100%;
     padding-top: 56.25%; }
+  .add-create-block-styles .add_interval {
+    width: 190px; }
+    .add-create-block-styles .add_interval .btn-transparent {
+      cursor: default; }
   @media screen and (max-width: 1230px) {
     .add-create-block-styles .with-padding {
       padding: 0; } }

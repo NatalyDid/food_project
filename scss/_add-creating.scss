@@ -6,7 +6,7 @@
 
 .add-create-block-styles {
   padding: 15px;
-  .title-main{
+  .title-main {
     padding-left: 15px;
   }
   .margin-top-titles {
@@ -137,6 +137,12 @@
   .date-input-wrapper {
     position: relative;
     margin-bottom: 10px;
+    &:nth-child(n+3){
+      display: none;
+    }
+    & .fa-times-circle {
+      margin-left: 20px;
+    }
   }
   .calendar {
     position: absolute;
@@ -171,6 +177,12 @@
     position: relative;
     width: 100%;
     padding-top: 56.25%;
+  }
+  .add_interval {
+    width: 190px;
+    & .btn-transparent{
+      cursor: default;
+    }
   }
   @media screen and (max-width: 1230px) {
     .with-padding {
