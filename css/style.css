@@ -1320,8 +1320,8 @@ label.error {
     color: #7f8c8d;
     display: inline-block;
     margin-right: 5px; }
-  .add-create-block-styles #addDateInputWrapper {
-    display: none !important; }
+  .add-create-block-styles div[data-addInputWrapper] {
+    display: none; }
   .add-create-block-styles .date-input-wrapper {
     position: relative;
     margin-bottom: 10px; }

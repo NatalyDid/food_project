@@ -75,6 +75,7 @@
         zusatzInputsBlockButton.on('click', zusatzInputsBlockButtonHandle);
         coockedSelect.on('change', coockSelectChanged);
 
+
         function readFile(event) {
             if (event.target.files && event.target.files[0]) {
                 if (event.target.files[0].type && 'image/jpeg image/gif image/png'.indexOf(event.target.files[0].type) !== -1) {
@@ -387,16 +388,7 @@
         }
     }
 
-    $('#wahlen_checkable_1').on('click', function () {
-        if ($(this).prop('checked')) {
-            $('#wahlen_checkable_2,#wahlen_checkable_3,#wahlen_checkable_4,#wahlen_checkable_5').prop('checked', true).prop('disabled', true);
-        } else {
-            $('#wahlen_checkable_2,#wahlen_checkable_3,#wahlen_checkable_4,#wahlen_checkable_5').prop('checked', false).prop('disabled', false);
-        }
-    });
-
     var span_value = $('#interval_count span').text();
-
 
     $('#deliveryBlock').on('click', function (ev) {
         if ($(ev.target).attr('data-hideInterval')) {
@@ -410,20 +402,21 @@
         }
     });
 
-
     $('div[data-showInterval]').on('click', function () {
-        if(+span_value < 3) {
-            console.log('www');
-            var $dateInput = $('<div></div>');
-            $dateInput.html($('#addDateInputWrapper').html());
-            $dateInput.insertBefore($('#addDateInputWrapper'));
-            span_value = +span_value + 1;
-            if (+span_value === 3) {
-                $(this).hide();
-            }
-            $('#interval_count span').text(span_value);
+        span_value = +span_value + 1;
+        if (+span_value === 3) {
+            $(this).hide();
         }
+        $('#interval_count span').text(span_value);
+        $('[data-addinputwrapper="'+ span_value +'"]').show();
+    });
 
+    $('#wahlen_checkable_1').on('click', function () {
+        if ($(this).prop('checked')) {
+            $('#wahlen_checkable_2,#wahlen_checkable_3,#wahlen_checkable_4,#wahlen_checkable_5').prop('checked', true).prop('disabled', true);
+        } else {
+            $('#wahlen_checkable_2,#wahlen_checkable_3,#wahlen_checkable_4,#wahlen_checkable_5').prop('checked', false).prop('disabled', false);
+        }
     });
 
     setValidator($('#form-creating'));

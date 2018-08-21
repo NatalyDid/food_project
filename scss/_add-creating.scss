@@ -134,8 +134,8 @@
     display: inline-block;
     margin-right: 5px;
   }
-  #addDateInputWrapper {
-    display: none !important;
+  div[data-addInputWrapper] {
+    display: none;
   }
   .date-input-wrapper {
     position: relative;
