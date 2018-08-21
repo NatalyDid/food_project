@@ -845,7 +845,7 @@
                                     </div>
 
                                     <div class="col-xs-12 hidden-when-reserve">
-                                        <div class="input-wrapper">
+                                        <div class="input-wrapper" id="deliveryBlock">
                                             <span class="input-title">Kann abgeholt werden *</span>
 
                                             <div class="date-input-wrapper">
@@ -861,40 +861,24 @@
                                                 <span class="prefix">bis:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
                                                        value="12:00" name="delivery_1_time_end">
-                                                <!--<span class="fa fa-times-circle edit-buttons"
-                                                      data-hideInterval="001"></span>-->
                                             </div>
 
-                                            <div class="date-input-wrapper filters-margin-top" id="qqq">
-                                                <span class="calendar fa fa-calendar"></span>
-                                                <span class="prefix">am:</span>
-                                                <input type="text" data-date="true"
-                                                       class="input-body date-input" value="12.05.2018">
-                                                <i class="move-string filters-margin-top"></i>
-                                                <span class="prefix">von:</span>
-                                                <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
-                                                <span class="prefix">bis:</span>
-                                                <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
-                                                <span class="fa fa-times-circle edit-buttons"
-                                                      data-hideInterval="002"></span>
-                                            </div>
-
-                                            <div class="date-input-wrapper filters-margin-top">
-                                                <span class="calendar fa fa-calendar"></span>
-                                                <span class="prefix">am:</span>
-                                                <input type="text" readonly="readonly" data-date="true"
-                                                       class="input-body date-input" value="12.05.2018">
-                                                <i class="move-string filters-margin-top"></i>
-                                                <span class="prefix">von:</span>
-                                                <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
-                                                <span class="prefix">bis:</span>
-                                                <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
-                                                <span class="fa fa-times-circle edit-buttons"
-                                                      data-hideInterval="003"></span>
+                                            <div id="addDateInputWrapper">
+                                                <div class="date-input-wrapper filters-margin-top">
+                                                    <span class="calendar fa fa-calendar"></span>
+                                                    <span class="prefix">am:</span>
+                                                    <input type="text" data-date="true"
+                                                           class="input-body date-input" value="12.05.2018">
+                                                    <i class="move-string filters-margin-top"></i>
+                                                    <span class="prefix">von:</span>
+                                                    <input type="text" data-time="true" class="input-body time-input"
+                                                           value="12:00">
+                                                    <span class="prefix">bis:</span>
+                                                    <input type="text" data-time="true" class="input-body time-input"
+                                                           value="12:00">
+                                                    <span class="fa fa-times-circle edit-buttons"
+                                                          data-hideInterval="002"></span>
+                                                </div>
                                             </div>
 
                                             <div class="add_interval" data-showInterval>

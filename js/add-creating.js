@@ -282,19 +282,19 @@
         }
 
         function runTimeInputs() {
-                timeInputs.each(function (index, item) {
-                    $(item).timepicker({
-                        timeFormat: 'H:i',
-                        step: 15,
-                        minTime: '00:00',
-                        maxTime: '23:00',
-                        startTime: '00:00',
-                        disableTextInput: true
-                    });
-                    $(item).timepicker('setTime', new Date());
-                    timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
+            timeInputs.each(function (index, item) {
+                $(item).timepicker({
+                    timeFormat: 'H:i',
+                    step: 15,
+                    minTime: '00:00',
+                    maxTime: '23:00',
+                    startTime: '00:00',
+                    disableTextInput: true
                 });
-            }
+                $(item).timepicker('setTime', new Date());
+                timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
+            });
+        }
 
         function coockSelectChanged(event) {
             var currentValue = event.target.value;
@@ -304,6 +304,13 @@
                 title.text(coockedTitle.willBe);
                 updateDatePicker(true);
                 updateTimePicker(true);
+                $("#reverseDateId").change(function () {
+                    var reverseDate_value = document.getElementById('reverseDateId').value;
+                    var inputsDelivery_value = document.querySelectorAll('input[data-date]');
+                    for (var i = 0; i < inputsDelivery_value.length; i++) {
+                        inputsDelivery_value[i].value = reverseDate_value;
+                    }
+                });
             }
             if (currentValue === 'Gekochtam') {
                 title.text(coockedTitle.already);
@@ -358,7 +365,7 @@
                             var Minutes = this_Min - (this_Min % 5);
                             if (this_Min % 5 > 2) Minutes += 5;
                             console.log(Minutes);
-                            $(timePickers[i].timePicker).timepicker('option',{
+                            $(timePickers[i].timePicker).timepicker('option', {
                                 timeFormat: 'H:i',
                                 step: 15,
                                 minTime: this_Hour + ":" + Minutes,
@@ -366,7 +373,7 @@
                                 disableTextInput: true
                             });
                         } else {
-                            $(timePickers[i].timePicker).timepicker('option',{
+                            $(timePickers[i].timePicker).timepicker('option', {
                                 timeFormat: 'H:i',
                                 step: 15,
                                 minTime: '00:00',
@@ -391,26 +398,32 @@
     var span_value = $('#interval_count span').text();
 
 
-    $("#reverseDateId").change(function(){
-        var reverseDate_value = document.getElementById('reverseDateId').value;
-        var inputsDelivery_value = document.querySelectorAll('input[data-date]');
-        for (var i = 0; i < inputsDelivery_value.length; i++) {
-            inputsDelivery_value[i].value = reverseDate_value;
+    $('#deliveryBlock').on('click', function (ev) {
+        if ($(ev.target).attr('data-hideInterval')) {
+            $(ev.target).parent().hide();
+            span_value = +span_value - 1;
+            $('#interval_count span').text(span_value);
+            ev.stopPropagation();
+            if (span_value < 3) {
+                $('div[data-showInterval]').show();
+            }
         }
     });
 
 
-     $('span[data-hideInterval]').on('click', function () {
-        $(this).parent().hide();
-        span_value = +span_value - 1;
-        $('#interval_count span').text(span_value);
-    });
-
     $('div[data-showInterval]').on('click', function () {
-        console.log('www');
-        $('.date-input-wrapper').show();
-        span_value = +span_value + 1;
-        $('#interval_count span').text(span_value);
+        if(+span_value < 3) {
+            console.log('www');
+            var $dateInput = $('<div></div>');
+            $dateInput.html($('#addDateInputWrapper').html());
+            $dateInput.insertBefore($('#addDateInputWrapper'));
+            span_value = +span_value + 1;
+            if (+span_value === 3) {
+                $(this).hide();
+            }
+            $('#interval_count span').text(span_value);
+        }
+
     });
 
     setValidator($('#form-creating'));

@@ -1320,11 +1320,11 @@ label.error {
     color: #7f8c8d;
     display: inline-block;
     margin-right: 5px; }
+  .add-create-block-styles #addDateInputWrapper {
+    display: none !important; }
   .add-create-block-styles .date-input-wrapper {
     position: relative;
     margin-bottom: 10px; }
-    .add-create-block-styles .date-input-wrapper:nth-child(n+3) {
-      display: none; }
     .add-create-block-styles .date-input-wrapper .fa-times-circle {
       margin-left: 20px; }
   .add-create-block-styles .calendar {
@@ -1359,6 +1359,8 @@ label.error {
     width: 190px; }
     .add-create-block-styles .add_interval .btn-transparent {
       cursor: default; }
+  .add-create-block-styles #interval_count {
+    display: none; }
   @media screen and (max-width: 1230px) {
     .add-create-block-styles .with-padding {
       padding: 0; } }

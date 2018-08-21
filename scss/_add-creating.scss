@@ -134,12 +134,12 @@
     display: inline-block;
     margin-right: 5px;
   }
+  #addDateInputWrapper {
+    display: none !important;
+  }
   .date-input-wrapper {
     position: relative;
     margin-bottom: 10px;
-    &:nth-child(n+3){
-      display: none;
-    }
     & .fa-times-circle {
       margin-left: 20px;
     }
@@ -183,6 +183,9 @@
     & .btn-transparent{
       cursor: default;
     }
+  }
+  #interval_count{
+    display: none;
   }
   @media screen and (max-width: 1230px) {
     .with-padding {
