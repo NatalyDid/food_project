@@ -36,6 +36,10 @@
         });
 
         uploadImageInput.on('change', readFile);
+        $('.preview-wrapper').each(function (index, value){
+            $(this).on('click', readFile);
+        });
+
 
         $(document).on('wrap-destroy', function () {
             imageBody.cropper('destroy');
@@ -77,6 +81,7 @@
 
 
         function readFile(event) {
+            console.log("ddd");
             if (event.target.files && event.target.files[0]) {
                 if (event.target.files[0].type && 'image/jpeg image/gif image/png'.indexOf(event.target.files[0].type) !== -1) {
                     var reader = new FileReader();
