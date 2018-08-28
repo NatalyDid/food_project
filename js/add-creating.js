@@ -36,10 +36,6 @@
         });
 
         uploadImageInput.on('change', readFile);
-        $('.preview-wrapper').each(function (index, value){
-            $(this).on('click', readFile);
-        });
-
 
         $(document).on('wrap-destroy', function () {
             imageBody.cropper('destroy');

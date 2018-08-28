@@ -50,7 +50,7 @@ h6 {
   .sidebar .title-normal, .sidebar .title-normal-green {
     margin-bottom: 40px; }
 
-.font-regular, .font-regular-big, .font-regular-bold, .font-regular-italic, .error-mess, .blue, .blue-big, .btn-green, .ul-dropdown > li > a, label.error, .footer, .item-text-header, .item-text-footer .price .price-text, .ingredients ul, .price-text, .sign-in, .rating div:first-child, .food-img, .food-text, .food-price .price-text, #order-form .input-title {
+.font-regular, .font-regular-big, .font-regular-bold, .font-regular-italic, .error-mess, .blue, .blue-big, .btn-green, .ul-dropdown > li > span, label.error, .footer, .item-text-header, .item-text-footer .price .price-text, .ingredients ul, .price-text, .sign-in, .rating div:first-child, .food-img, .food-text, .food-price .price-text, #order-form .input-title {
   font-family: robotoregular, sans-serif;
   font-size: 12px;
   color: #7f8c8d; }
@@ -242,12 +242,8 @@ h6 {
     font-size: 12px;
     color: #7f8c8d;
     border-radius: 3px; }
-  .dropdown.single .caret {
-    position: absolute;
-    top: 50%;
-    right: 15px; }
 
-.ul-dropdown > li > a {
+.ul-dropdown > li > span {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
@@ -256,7 +252,7 @@ h6 {
   padding: 7px 25px;
   text-decoration: none;
   color: #7f8c8d; }
-  .ul-dropdown > li > a:hover {
+  .ul-dropdown > li > span:hover {
     background-color: #eef6f9;
     color: #009ee2; }
 
@@ -361,11 +357,11 @@ h6 {
   .selection .title-small, .selection .title-small-green, .selection .title-small-orange, .selection .btn-common {
     margin-bottom: 5px; }
 
-.select_wrapper {
+/*.select_wrapper {
   position: relative;
   width: 100%;
-  height: 36px; }
-  .select_wrapper:after {
+  height: 36px;
+  &:after {
     content: '';
     position: absolute;
     right: 5px;
@@ -373,16 +369,35 @@ h6 {
     bottom: 5px;
     width: 35px;
     background-color: white;
-    pointer-events: none; }
-  .select_wrapper:before {
+    pointer-events: none;
+  }
+  &:before {
     position: absolute;
-    color: #b9bfc0;
+    color: $light-grey;
     right: 10px;
     top: 18px;
     transform: translateY(-50%);
     z-index: 1;
     font-size: 10px;
-    pointer-events: none; }
+    pointer-events: none;
+  }
+}*/
+.select_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .select_wrapper:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 1em;
+    right: .75em;
+    border-top: 8px solid black;
+    opacity: 0.5; }
 
 .dropdown-menu-modify {
   width: 100%;
@@ -557,11 +572,25 @@ label.error {
     display: block;
     text-align: center; }
 
-@-moz-document url-prefix() {
-  select {
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: ""; } }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #efefef;
+  border: none;
+  border-radius: 3px;
+  padding: 1em 2em 1em 1em;
+  font-size: 1em;
+  position: relative; }
+  select option {
+    margin-top: 10px;
+    background: transparent !important;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+
+select::-ms-expand {
+  display: none; }
 
 .scrollup {
   width: 80px;
@@ -698,6 +727,21 @@ label.error {
   body {
     overflow-x: scroll;
     width: 375px; } }
+
+.cookies-message {
+  padding: 30px 0;
+  background: #f7f9f9;
+  border-top: 1px solid #b9bfc0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .cookies-message .btn-orange, .cookies-message .btn-grey-big, .cookies-message .btn-transparent, .cookies-message .btn-bright-green, .cookies-message .btn-green-bg {
+    width: 100%;
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .cookies-message .btn-orange, .cookies-message .btn-grey-big, .cookies-message .btn-transparent, .cookies-message .btn-bright-green, .cookies-message .btn-green-bg {
+        margin-top: 0; } }
 
 .header .rowLogo {
   padding: 20px 15px;
@@ -925,6 +969,25 @@ label.error {
     font-style: italic;
     line-height: 32px;
     height: 40px; }
+    .searchForm__input_small:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      pointer-events: none;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 1.25em;
+      right: .75em;
+      border-top: 8px solid black;
+      opacity: 0.5; }
+    .searchForm__input_big .select_wrapper .input-body {
+      width: 270px; }
+      @media screen and (min-width: 768px) {
+        .searchForm__input_big .select_wrapper .input-body {
+          width: 275px; } }
+    .searchForm__input_big .select_wrapper:after {
+      top: 1.4em; }
     @media screen and (min-width: 768px) {
       .searchForm__input {
         float: left; }
@@ -2082,7 +2145,7 @@ label.error {
 .author-slider {
   margin-top: 10px;
   padding: 0 20px; }
-  .author-slider .font-regular, .author-slider .font-regular-big, .author-slider .font-regular-bold, .author-slider .font-regular-italic, .author-slider .error-mess, .author-slider .blue, .author-slider .blue-big, .author-slider .btn-green, .author-slider .ul-dropdown > li > a, .author-slider label.error, .author-slider .footer, .author-slider .item-text-header, .author-slider .item-text-footer .price .price-text, .item-text-footer .price .author-slider .price-text, .author-slider .ingredients ul, .ingredients .author-slider ul, .author-slider .price-text, .author-slider .sign-in, .author-slider .rating div:first-child, .rating .author-slider div:first-child, .author-slider .food-img, .author-slider .food-text, .author-slider #order-form .input-title, #order-form .author-slider .input-title {
+  .author-slider .font-regular, .author-slider .font-regular-big, .author-slider .font-regular-bold, .author-slider .font-regular-italic, .author-slider .error-mess, .author-slider .blue, .author-slider .blue-big, .author-slider .btn-green, .author-slider .ul-dropdown > li > span, .author-slider label.error, .author-slider .footer, .author-slider .item-text-header, .author-slider .item-text-footer .price .price-text, .item-text-footer .price .author-slider .price-text, .author-slider .ingredients ul, .ingredients .author-slider ul, .author-slider .price-text, .author-slider .sign-in, .author-slider .rating div:first-child, .rating .author-slider div:first-child, .author-slider .food-img, .author-slider .food-text, .author-slider #order-form .input-title, #order-form .author-slider .input-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2182,7 +2245,7 @@ label.error {
     .pre-orders .checkable:checked + .checkable-toggler {
       color: #95c11f;
       background-color: transparent; }
-      .pre-orders .checkable:checked + .checkable-toggler .font-regular, .pre-orders .checkable:checked + .checkable-toggler .font-regular-big, .pre-orders .checkable:checked + .checkable-toggler .font-regular-bold, .pre-orders .checkable:checked + .checkable-toggler .font-regular-italic, .pre-orders .checkable:checked + .checkable-toggler .error-mess, .pre-orders .checkable:checked + .checkable-toggler .blue, .pre-orders .checkable:checked + .checkable-toggler .blue-big, .pre-orders .checkable:checked + .checkable-toggler .btn-green, .pre-orders .checkable:checked + .checkable-toggler .ul-dropdown > li > a, .pre-orders .checkable:checked + .checkable-toggler label.error, .pre-orders .checkable:checked + .checkable-toggler .footer, .pre-orders .checkable:checked + .checkable-toggler .item-text-header, .pre-orders .checkable:checked + .checkable-toggler .ingredients ul, .ingredients .pre-orders .checkable:checked + .checkable-toggler ul, .pre-orders .checkable:checked + .checkable-toggler .price-text, .pre-orders .checkable:checked + .checkable-toggler .sign-in, .pre-orders .checkable:checked + .checkable-toggler .rating div:first-child, .rating .pre-orders .checkable:checked + .checkable-toggler div:first-child, .pre-orders .checkable:checked + .checkable-toggler .food-img, .pre-orders .checkable:checked + .checkable-toggler .food-text, .pre-orders .checkable:checked + .checkable-toggler #order-form .input-title, #order-form .pre-orders .checkable:checked + .checkable-toggler .input-title {
+      .pre-orders .checkable:checked + .checkable-toggler .font-regular, .pre-orders .checkable:checked + .checkable-toggler .font-regular-big, .pre-orders .checkable:checked + .checkable-toggler .font-regular-bold, .pre-orders .checkable:checked + .checkable-toggler .font-regular-italic, .pre-orders .checkable:checked + .checkable-toggler .error-mess, .pre-orders .checkable:checked + .checkable-toggler .blue, .pre-orders .checkable:checked + .checkable-toggler .blue-big, .pre-orders .checkable:checked + .checkable-toggler .btn-green, .pre-orders .checkable:checked + .checkable-toggler .ul-dropdown > li > span, .pre-orders .checkable:checked + .checkable-toggler label.error, .pre-orders .checkable:checked + .checkable-toggler .footer, .pre-orders .checkable:checked + .checkable-toggler .item-text-header, .pre-orders .checkable:checked + .checkable-toggler .ingredients ul, .ingredients .pre-orders .checkable:checked + .checkable-toggler ul, .pre-orders .checkable:checked + .checkable-toggler .price-text, .pre-orders .checkable:checked + .checkable-toggler .sign-in, .pre-orders .checkable:checked + .checkable-toggler .rating div:first-child, .rating .pre-orders .checkable:checked + .checkable-toggler div:first-child, .pre-orders .checkable:checked + .checkable-toggler .food-img, .pre-orders .checkable:checked + .checkable-toggler .food-text, .pre-orders .checkable:checked + .checkable-toggler #order-form .input-title, #order-form .pre-orders .checkable:checked + .checkable-toggler .input-title {
         color: #95c11f; }
 
 .expired .card-food .food-description h3,

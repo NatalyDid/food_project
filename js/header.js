@@ -43,10 +43,10 @@
             $('#searchMore').hide();
         });
 
-        $(".dropdown-menu.single-menu li a").click(function () {
+        $(".dropdown-menu.single-menu li span").click(function () {
             var selText = $(this).text();
-            var caret = '<span class="caret"></span>';
-            $(this).parents('.dropdown.single').find('.dropdown-toggle').html(selText + caret);
+            //var caret = '<span class="caret"></span>';
+            $(this).parents('.dropdown.single').find('.dropdown-toggle').html(selText);
         });
 
         $('#ch15,#ch16').on('click', function () {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Foodoria24</title>
     <link href="css/style.css" rel="stylesheet">
 
@@ -40,7 +40,7 @@
 
                             <!--<div class="col-xs-12 col-sm-6">-->
                             <div class="input-wrapper searchForm__input searchForm__input_big">
-                                <div class="select_wrapper fa fa-caret-down">
+                                <div class="select_wrapper">
                                     <select class="input-body" required name="select_type">
                                         <option value="">PLZ oder Ort</option>
                                         <option value="1">09337 Callenberg, Hohenstein-Ernstthal</option>
@@ -58,20 +58,20 @@
                                         id="dropdownMenu1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Umkreis
-                                    <span class="caret"></span>
+                                    <!--<span class="caret"></span>-->
                                 </button>
                                 <ul class="dropdown-menu single-menu ul-dropdown" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">1,5 km</a></li>
-                                    <li><a href="#">2,5 km</a></li>
-                                    <li><a href="#">3,5 km</a></li>
-                                    <li><a href="#">5 km</a></li>
-                                    <li><a href="#">7,5 km</a></li>
-                                    <li><a href="#">10 km</a></li>
-                                    <li><a href="#">15 km</a></li>
-                                    <li><a href="#">20 km</a></li>
-                                    <li><a href="#">25 km</a></li>
-                                    <li><a href="#">35 km</a></li>
-                                    <li><a href="#">50 km</a></li>
+                                    <li><span>1,5 km</span></li>
+                                    <li><span>2,5 km</span></li>
+                                    <li><span>3,5 km</span></li>
+                                    <li><span>5 km</span></li>
+                                    <li><span>7,5 km</span></li>
+                                    <li><span>10 km</span></li>
+                                    <li><span>15 km</span></li>
+                                    <li><span>20 km</span></li>
+                                    <li><span>25 km</span></li>
+                                    <li><span>35 km</span></li>
+                                    <li><span>50 km</span></li>
                                 </ul>
                             </div><!-- end div /.perimeter -->
 
@@ -439,7 +439,7 @@
                                     <div class="col-xs-12 col-sm-6">
                                         <div class="input-wrapper">
                                             <span class="input-title">Kategorie *</span>
-                                            <div class="select_wrapper fa fa-chevron-down">
+                                            <div class="select_wrapper">
                                                 <select class="input-body" required name="select_kat">
                                                     <option value="">auswählen</option>
                                                     <option value="Kalt">Kalt</option>
@@ -452,7 +452,7 @@
                                     <div class="col-xs-12 col-sm-6">
                                         <div class="input-wrapper">
                                             <span class="input-title">Speisenart * </span>
-                                            <div class="select_wrapper fa fa-chevron-down">
+                                            <div class="select_wrapper ">
                                                 <select class="input-body" required name="select_type">
                                                     <option value="">auswählen</option>
                                                     <option value="Vorspeise">Vorspeise (vorgewählt)</option>
@@ -476,7 +476,7 @@
                                     <div class="col-xs-12">
                                         <div class="input-wrapper">
                                             <span class="input-title">Fleischgerichte / Vegetarisch *</span>
-                                            <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+                                            <div class="select_wrapper dropdown multi-selected">
 
                                                 <div class="input-body dropdown-toggle btn-multiple">
                                                     <span>auswählen</span>
@@ -523,7 +523,7 @@
 
                                     <div class="col-xs-12 hidden" id="cutting_block_fleischgericht">
                                         <div class="input-wrapper">
-                                            <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+                                            <div class="select_wrapper dropdown multi-selected">
 
                                                 <div class="input-body dropdown-toggle btn-multiple">
                                                     <span>ausgewählte Produkte</span>
@@ -609,7 +609,7 @@
                                     <div class="col-xs-12 filters-margin-top" id="zusatz_inputs_block_id">
                                         <div class="input-wrapper">
                                             <span class="input-title">ohne Zusatz von * </span>
-                                            <div class="select_wrapper fa fa-chevron-down dropdown multi-selected">
+                                            <div class="select_wrapper dropdown multi-selected">
 
                                                 <div class="input-body dropdown-toggle btn-multiple">
                                                     <span>auswählen</span>
@@ -724,7 +724,7 @@
                                             <span class="input-title">Portionsgröße *</span>
                                             <div class="row">
                                                 <div class="col-xs-6">
-                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                    <div class="select_wrapper ">
                                                         <select class="input-body" required name="select_portion">
                                                             <option value="">auswählen</option>
                                                             <option value="100">100</option>
@@ -774,7 +774,7 @@
                                             <span class="input-title">Portionen *</span>
                                             <div class="row">
                                                 <div class="col-xs-6">
-                                                    <div class="select_wrapper fa fa-chevron-down">
+                                                    <div class="select_wrapper ">
                                                         <select class="input-body" required name="select_number">
                                                             <option value="">auswählen</option>
                                                             <option value="1">1</option>
@@ -816,7 +816,7 @@
                                     <div class="col-xs-12">
                                         <div class="input-wrapper">
                                             <span class="input-title">Optionen *</span>
-                                            <div class="select_wrapper fa fa-chevron-down">
+                                            <div class="select_wrapper ">
                                                 <select class="input-body" id="coocked_select_id" required
                                                         name="select_opt">
                                                     <option value="">auswählen</option>
@@ -1143,6 +1143,22 @@
             </div>
         </div>
     </section><!-- end section /.footer -->
+    <section class="cookies-message">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-lg-10">
+                            Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen erhalten Sie in der Datenschutzerklärung
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-2">
+                            <button class="btn-common btn-orange">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <div class="loader-wrapper">
     <div class="loader"></div>

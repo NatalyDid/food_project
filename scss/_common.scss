@@ -15,11 +15,11 @@ h6 {
   }
 }
 
-.wrapper__beforeLogin{
+.wrapper__beforeLogin {
   @media screen and (min-width: 768px) {
     height: calc(100vh - 170px);
   }
-  & .banner-section{
+  & .banner-section {
     display: block;
   }
 }
@@ -284,17 +284,17 @@ h6 {
       color: $grey;
       border-radius: 3px;
     }
-    .caret {
-      position: absolute;
-      top: 50%;
-      right: 15px;
-    }
+    //.caret {
+    //  position: absolute;
+    //  top: 50%;
+    //  right: 15px;
+    //}
   }
 }
 
 .ul-dropdown {
   & > li {
-    & > a {
+    & > span {
       clear: both;
       font-weight: normal;
       line-height: 1.42857143;
@@ -441,7 +441,7 @@ h6 {
   }
 }
 
-.select_wrapper {
+/*.select_wrapper {
   position: relative;
   width: 100%;
   height: 36px;
@@ -465,7 +465,32 @@ h6 {
     font-size: 10px;
     pointer-events: none;
   }
+}*/
+
+.select_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 1em;
+    right: .75em;
+    border-top: 8px solid black;
+    opacity: 0.5;
+  }
 }
+
+//.select_wrapper.select_wrapper-top{
+//  &:after {
+//    top: 0.5em;
+//  }
+//}
 
 .dropdown-menu-modify {
   width: 100%;
@@ -604,12 +629,12 @@ label.error {
   padding: 30px;
 }
 
-.modal-dialog{
+.modal-dialog {
   margin: 0 auto;
   @media screen and (max-width: 499px) {
     width: 350px !important;
   }
-  & .buttons-row{
+  & .buttons-row {
     flex-direction: row;
   }
 }
@@ -665,13 +690,13 @@ label.error {
   display: block;
   &:hover,
   &:active,
-  &:focus{
+  &:focus {
     text-decoration: none;
     outline: none;
   }
 }
 
-.edit-buttons{
+.edit-buttons {
   font-size: 18px;
   color: $grey;
 }
@@ -685,28 +710,61 @@ label.error {
   }
 }
 
-.wrapper-row{
-  & .input-wrapper-100{
+.wrapper-row {
+  & .input-wrapper-100 {
     width: 100% !important;
   }
 }
 
-.button-order{
+.button-order {
   margin-top: 7px;
   cursor: pointer;
   z-index: 50;
-  & .btn-common{
+  & .btn-common {
     display: block;
     text-align: center;
   }
 }
 
-@-moz-document url-prefix() {
-  select {
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: "";
+//@-moz-document url-prefix() {
+//  select {
+//    -moz-appearance: none;
+//    text-indent: 0.01px;
+//    text-overflow: "";
+//  }
+//}
+//
+//select {
+//  -webkit-appearance: menulist-button;
+//}
+//@supports (-ms-accelerator:true) {
+//  select {
+//    -webkit-appearance: menulist;
+//  }
+//}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  //padding: .5em;
+  background: #efefef;
+  border: none;
+  border-radius: 3px;
+  padding: 1em 2em 1em 1em;
+  font-size: 1em;
+  position: relative;
+  & option{
+    margin-top: 10px;
+    background: transparent !important;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
   }
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .scrollup {
@@ -751,7 +809,7 @@ label.error {
 
 /******************main-banner***************/
 
-.banner-section{
+.banner-section {
   display: none;
 }
 
@@ -776,10 +834,10 @@ label.error {
   margin: 25px 0;
   width: 45%;
   display: flex;
-  .banner-mark{
+  .banner-mark {
     width: 60px;
   }
-  .banner-descr{
+  .banner-descr {
     flex: 1 auto;
   }
   .checkmark {
@@ -844,7 +902,7 @@ label.error {
   }
 }
 
-.loader-wrapper{
+.loader-wrapper {
   display: none;
   position: fixed;
   left: 0;
@@ -856,26 +914,48 @@ label.error {
 }
 
 .loader {
-   border: 10px solid #f3f3f3;
-   border-top: 10px solid #3498db;
-   border-radius: 50%;
-   width: 50px;
-   height: 50px;
-   animation: spin 2s linear infinite;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 375px) {
-  body{
+  body {
     overflow-x: scroll;
     width: 375px;
   }
 }
+
+.cookies-message{
+  padding: 30px 0;
+  background: $grey-bg;
+  border-top: 1px solid $light-grey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  & .btn-orange{
+    width: 100%;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+}
+
