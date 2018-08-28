@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a5f7db-92a1-4f01-86e8-c9ef0833651c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/libs/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_common.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +20,7 @@
     <favorites_list name="food_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6243967">
+    <splitter split-orientation="horizontal" split-proportion="0.4804739">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="add-creating.html" pinned="false" current-in-tab="true">
@@ -80,22 +82,24 @@
           <file leaf-file-name="pikaday.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/pikaday.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="282">
-                  <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+                <state relative-caret-position="392">
+                  <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_common.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_common.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/_common.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="944" column="17" lean-forward="true" selection-start-line="944" selection-start-column="17" selection-end-line="944" selection-end-column="17" />
+                <state relative-caret-position="370">
+                  <caret line="476" column="14" lean-forward="true" selection-start-line="476" selection-start-column="14" selection-end-line="476" selection-end-column="14" />
                   <folding>
                     <element signature="e#5685#6206#0" />
                     <element signature="e#6215#6603#0" />
                     <element signature="e#6612#6982#0" />
                     <element signature="e#7002#7194#0" />
+                    <marker date="1535458696614" expanded="true" signature="11699:11820" ph="..." />
+                    <marker date="1535458696614" expanded="true" signature="11699:11957" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -110,7 +114,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/bootstrap.min.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="207">
@@ -146,7 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>edit-butt</find>
       <find>date</find>
       <find>date-in</find>
       <find>btn</find>
@@ -167,15 +170,16 @@
       <find>searchForm__input</find>
       <find>searchForm__input_small</find>
       <find>searchForm</find>
-      <find>caret</find>
       <find>single</find>
       <find>perimeter</find>
       <find>dateInputs</find>
       <find>select</find>
       <find>select_wr</find>
-      <find>zoom</find>
       <find>select_</find>
       <find>big</find>
+      <find>caret</find>
+      <find>zoom</find>
+      <find>sele</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -221,11 +225,11 @@
         <option value="$PROJECT_DIR$/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/js/header.js" />
-        <option value="$PROJECT_DIR$/libs/pikaday.css" />
         <option value="$PROJECT_DIR$/scss/_header.scss" />
-        <option value="$PROJECT_DIR$/scss/_common.scss" />
         <option value="$PROJECT_DIR$/add-creating.html" />
         <option value="$PROJECT_DIR$/libs/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/libs/pikaday.css" />
+        <option value="$PROJECT_DIR$/scss/_common.scss" />
       </list>
     </option>
   </component>
@@ -432,12 +436,12 @@
       <workItem from="1534756702395" duration="13666000" />
       <workItem from="1534833515032" duration="9049000" />
       <workItem from="1534846483299" duration="623000" />
-      <workItem from="1535439960998" duration="16601000" />
+      <workItem from="1535439960998" duration="18003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167438000" />
+    <option name="totallyTimeSpent" value="168840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -733,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/pikaday.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -751,19 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="944" column="17" lean-forward="true" selection-start-line="944" selection-start-column="17" selection-end-line="944" selection-end-column="17" />
-          <folding>
-            <element signature="e#5685#6206#0" />
-            <element signature="e#6215#6603#0" />
-            <element signature="e#6612#6982#0" />
-            <element signature="e#7002#7194#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,6 +769,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="3806" column="6" selection-start-line="3806" selection-start-column="1" selection-end-line="3806" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/pikaday.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="476" column="14" lean-forward="true" selection-start-line="476" selection-start-column="14" selection-end-line="476" selection-end-column="14" />
+          <folding>
+            <element signature="e#5685#6206#0" />
+            <element signature="e#6215#6603#0" />
+            <element signature="e#6612#6982#0" />
+            <element signature="e#7002#7194#0" />
+            <marker date="1535458696614" expanded="true" signature="11699:11820" ph="..." />
+            <marker date="1535458696614" expanded="true" signature="11699:11957" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

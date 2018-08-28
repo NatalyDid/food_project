@@ -483,6 +483,7 @@ h6 {
     right: .75em;
     border-top: 8px solid black;
     opacity: 0.5;
+    z-index: 1;
   }
 }
 
@@ -726,22 +727,22 @@ label.error {
   }
 }
 
-//@-moz-document url-prefix() {
-//  select {
-//    -moz-appearance: none;
-//    text-indent: 0.01px;
-//    text-overflow: "";
-//  }
-//}
-//
-//select {
-//  -webkit-appearance: menulist-button;
-//}
-//@supports (-ms-accelerator:true) {
-//  select {
-//    -webkit-appearance: menulist;
-//  }
-//}
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+  }
+}
+
+select {
+  -webkit-appearance: menulist-button;
+}
+@supports (-ms-accelerator:true) {
+  select {
+    -webkit-appearance: menulist;
+  }
+}
 
 select {
   -webkit-appearance: none;
@@ -950,6 +951,7 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   & .btn-orange{
     width: 100%;
     margin-top: 20px;

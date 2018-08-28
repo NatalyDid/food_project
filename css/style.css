@@ -397,7 +397,8 @@ h6 {
     top: 1em;
     right: .75em;
     border-top: 8px solid black;
-    opacity: 0.5; }
+    opacity: 0.5;
+    z-index: 1; }
 
 .dropdown-menu-modify {
   width: 100%;
@@ -572,6 +573,19 @@ label.error {
     display: block;
     text-align: center; }
 
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: ""; } }
+
+select {
+  -webkit-appearance: menulist-button; }
+
+@supports (-ms-accelerator: true) {
+  select {
+    -webkit-appearance: menulist; } }
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -735,7 +749,8 @@ select::-ms-expand {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 2; }
   .cookies-message .btn-orange, .cookies-message .btn-grey-big, .cookies-message .btn-transparent, .cookies-message .btn-bright-green, .cookies-message .btn-green-bg {
     width: 100%;
     margin-top: 20px; }
