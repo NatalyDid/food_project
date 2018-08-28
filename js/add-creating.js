@@ -138,6 +138,8 @@
         }
 
         function changeMainImage(ev) {
+            ev.stopPropagation();
+            ev.preventDefault();
             var blobIndex = ev.target.attributes['data-img-index'].value;
             var tempZeroBlob = blobsArray[0];
             blobsArray[0] = blobsArray[ev.target.attributes['data-img-index'].value];
@@ -151,6 +153,8 @@
         }
 
         function deleteImage(ev) {
+            ev.stopPropagation();
+            ev.preventDefault();
             var blobIndex = ev.target.attributes['data-img-index'].value;
             blobsArray.splice(blobIndex, 1);
             var imagesSrcArray = [];
