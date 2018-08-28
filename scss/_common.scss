@@ -284,11 +284,6 @@ h6 {
       color: $grey;
       border-radius: 3px;
     }
-    //.caret {
-    //  position: absolute;
-    //  top: 50%;
-    //  right: 15px;
-    //}
   }
 }
 
@@ -486,12 +481,6 @@ h6 {
     z-index: 1;
   }
 }
-
-//.select_wrapper.select_wrapper-top{
-//  &:after {
-//    top: 0.5em;
-//  }
-//}
 
 .dropdown-menu-modify {
   width: 100%;
@@ -951,7 +940,7 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 100;
   & .btn-orange{
     width: 100%;
     margin-top: 20px;
