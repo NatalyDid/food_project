@@ -254,7 +254,8 @@ h6 {
   color: #7f8c8d; }
   .ul-dropdown > li > span:hover {
     background-color: #eef6f9;
-    color: #009ee2; }
+    color: #009ee2;
+    cursor: pointer; }
 
 .star-small {
   background: url("../img/sprite_Foodoria.png") no-repeat -326px -24px;
