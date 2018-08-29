@@ -1537,8 +1537,18 @@ select::-ms-expand {
   .sorting button.btn-dropdown {
     width: 100%;
     border: 1px solid #7f8c8d; }
-    .sorting button.btn-dropdown .caret {
-      margin-left: 65px; }
+    .sorting button.btn-dropdown:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      pointer-events: none;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 1.25em;
+      right: .75em;
+      border-top: 8px solid black;
+      opacity: 0.5; }
   .sorting .dropdown-menu {
     width: 100%; }
 
