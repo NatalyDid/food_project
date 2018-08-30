@@ -73,7 +73,7 @@ $(document).ready(function () {
      if (slick_container_single.length) {
          slick_container_single.slick();
          $(".slick-slide").removeClass("aaa");
-         $('.item-img .btn-green').css('visibility','visible');
+        $('.item-img .btn-green').css('visibility','visible');
      }
 
    var slick_container_multiple = $('.author-slider');

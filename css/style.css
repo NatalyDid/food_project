@@ -1399,7 +1399,7 @@ select::-ms-expand {
     color: #7f8c8d;
     display: inline-block;
     margin-right: 5px; }
-  .add-create-block-styles div[data-addInputWrapper] {
+  .add-create-block-styles .hidden-input {
     display: none; }
   .add-create-block-styles .date-input-wrapper {
     position: relative;

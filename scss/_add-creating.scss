@@ -134,7 +134,10 @@
     display: inline-block;
     margin-right: 5px;
   }
-  div[data-addInputWrapper] {
+  //div[data-addInputWrapper] {
+  //  display: none;
+  //}
+  .hidden-input{
     display: none;
   }
   .date-input-wrapper {
