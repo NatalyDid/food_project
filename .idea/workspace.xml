@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="81a5f7db-92a1-4f01-86e8-c9ef0833651c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-creating.html" beforeDir="false" afterPath="$PROJECT_DIR$/add-creating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/add-creating.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add-creating.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,14 +21,14 @@
     <favorites_list name="food_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5945787">
+    <splitter split-orientation="horizontal" split-proportion="0.73954034">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="add-creating.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/add-creating.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="837" column="74" lean-forward="true" selection-start-line="837" selection-start-column="74" selection-end-line="837" selection-end-column="74" />
+                <state relative-caret-position="454">
+                  <caret line="867" column="79" selection-start-line="867" selection-start-column="79" selection-end-line="867" selection-end-column="79" />
                   <folding>
                     <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                   </folding>
@@ -41,8 +43,35 @@
           <file leaf-file-name="add-creating.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/add-creating.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="770">
-                  <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+                <state relative-caret-position="662">
+                  <caret line="316" column="74" lean-forward="true" selection-start-line="316" selection-start-column="74" selection-end-line="316" selection-end-column="74" />
+                  <folding>
+                    <element signature="e#1756#3147#0" />
+                    <element signature="e#3486#4418#0" />
+                    <element signature="e#4452#4877#0" />
+                    <element signature="e#4956#5957#0" />
+                    <element signature="e#5996#6707#0" />
+                    <element signature="e#6742#7597#0" />
+                    <element signature="e#7647#8234#0" />
+                    <element signature="e#8294#8712#0" />
+                    <element signature="e#8766#9816#0" />
+                    <element signature="e#9856#10171#0" />
+                    <element signature="e#10222#10609#0" />
+                    <element signature="e#10643#11191#0" />
+                    <element signature="e#11260#11761#0" />
+                    <element signature="e#17252#17597#0" />
+                    <element signature="e#17657#17888#0" />
+                    <element signature="e#17945#18306#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_common.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/_common.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="940" column="12" lean-forward="true" selection-start-line="940" selection-start-column="12" selection-end-line="940" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -50,7 +79,7 @@
           <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="805">
+                <state relative-caret-position="1782">
                   <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
                 </state>
               </provider>
@@ -59,8 +88,8 @@
           <file leaf-file-name="_add-creating.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_add-creating.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="431">
-                  <caret line="146" column="24" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
+                <state relative-caret-position="3212">
+                  <caret line="146" column="24" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -71,8 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>absta</find>
-      <find>Galeriebild</find>
       <find>make-ma</find>
       <find>preview</find>
       <find>&quot;\f078&quot;</find>
@@ -101,6 +128,8 @@
       <find>aaa</find>
       <find>data-showinterval</find>
       <find>date-input-wrapper</find>
+      <find>reverse</find>
+      <find>setT</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -140,7 +169,6 @@
         <option value="$PROJECT_DIR$/scss/_author-wrapper.scss" />
         <option value="$PROJECT_DIR$/scss/_best-item.scss" />
         <option value="$PROJECT_DIR$/js/lala.js" />
-        <option value="$PROJECT_DIR$/js/add-creating.js" />
         <option value="$PROJECT_DIR$/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/js/header.js" />
         <option value="$PROJECT_DIR$/scss/_header.scss" />
@@ -149,8 +177,9 @@
         <option value="$PROJECT_DIR$/scss/_sorting.scss" />
         <option value="$PROJECT_DIR$/main_page.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/add-creating.html" />
         <option value="$PROJECT_DIR$/scss/_add-creating.scss" />
+        <option value="$PROJECT_DIR$/add-creating.html" />
+        <option value="$PROJECT_DIR$/js/add-creating.js" />
         <option value="$PROJECT_DIR$/scss/_common.scss" />
       </list>
     </option>
@@ -366,34 +395,36 @@
       <workItem from="1535632664966" duration="3068000" />
       <workItem from="1535695390246" duration="698000" />
       <workItem from="1535956501308" duration="116000" />
-      <workItem from="1536045349712" duration="5756000" />
+      <workItem from="1536045349712" duration="5805000" />
+      <workItem from="1536070321117" duration="140000" />
+      <workItem from="1536129613462" duration="5524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186318000" />
+    <option name="totallyTimeSpent" value="192031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" order="2" sideWeight="0.35340023" side_tool="true" visible="true" weight="0.10590095" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64659977" visible="true" weight="0.10590095" />
+      <window_info id="Gulp" order="2" sideWeight="0.22296543" side_tool="true" visible="true" weight="0.10590095" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7770346" visible="true" weight="0.10590095" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14604236" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.042363435" />
       <window_info id="Structure" order="1" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.18729097" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -425,7 +456,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -632,9 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,20 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12672">
-          <caret line="576" column="55" selection-start-line="576" selection-start-column="52" selection-end-line="576" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="935" column="17" lean-forward="true" selection-start-line="935" selection-start-column="17" selection-end-line="935" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/pikaday.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -703,29 +717,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
+        <state relative-caret-position="1782">
           <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_add-creating.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="146" column="24" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
+        <state relative-caret-position="3212">
+          <caret line="146" column="24" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="576" column="55" selection-start-line="576" selection-start-column="52" selection-end-line="576" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="940" column="12" lean-forward="true" selection-start-line="940" selection-start-column="12" selection-end-line="940" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/add-creating.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="662">
+          <caret line="316" column="74" lean-forward="true" selection-start-line="316" selection-start-column="74" selection-end-line="316" selection-end-column="74" />
+          <folding>
+            <element signature="e#1756#3147#0" />
+            <element signature="e#3486#4418#0" />
+            <element signature="e#4452#4877#0" />
+            <element signature="e#4956#5957#0" />
+            <element signature="e#5996#6707#0" />
+            <element signature="e#6742#7597#0" />
+            <element signature="e#7647#8234#0" />
+            <element signature="e#8294#8712#0" />
+            <element signature="e#8766#9816#0" />
+            <element signature="e#9856#10171#0" />
+            <element signature="e#10222#10609#0" />
+            <element signature="e#10643#11191#0" />
+            <element signature="e#11260#11761#0" />
+            <element signature="e#17252#17597#0" />
+            <element signature="e#17657#17888#0" />
+            <element signature="e#17945#18306#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add-creating.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="837" column="74" lean-forward="true" selection-start-line="837" selection-start-column="74" selection-end-line="837" selection-end-column="74" />
+        <state relative-caret-position="454">
+          <caret line="867" column="79" selection-start-line="867" selection-start-column="79" selection-end-line="867" selection-end-column="79" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>

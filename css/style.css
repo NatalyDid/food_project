@@ -751,7 +751,7 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100; }
+  z-index: 10002; }
   .cookies-message .btn-orange, .cookies-message .btn-grey-big, .cookies-message .btn-transparent, .cookies-message .btn-bright-green, .cookies-message .btn-green-bg {
     width: 100%;
     margin-top: 20px; }

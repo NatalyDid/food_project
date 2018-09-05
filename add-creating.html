@@ -834,12 +834,13 @@
                                             <div class="date-input-wrapper">
                                                 <span class="calendar fa fa-calendar"></span>
                                                 <span class="prefix">am:</span>
-                                                <input type="text" data-date="true"
+                                                <input type="text" data-date="true" data-reverse="true"
                                                        id="reverseDateId" class="input-body date-input"
                                                        value="12.05.2018">
                                                 <span class="prefix">um:</span>
-                                                <input type="text" data-time="true" id="reverseTimeId"
-                                                       class="input-body time-input" value="12:00">
+                                                <input type="text" data-time="true" data-reverse="true"
+                                                       id="reverseTimeId" class="input-body time-input"
+                                                       value="12:00">
                                             </div>
                                         </div>
                                     </div>
@@ -853,46 +854,48 @@
                                                 <span class="prefix">am:</span>
                                                 <input type="text" data-date="true"
                                                        class="input-body date-input" value="12.05.2018"
-                                                       name="delivery_1_date">
+                                                       name="delivery_1_date" id="delivery_1_date" >
                                                 <i class="move-string filters-margin-top"></i>
                                                 <span class="prefix">von:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00" name="delivery_1_time_start">
+                                                       value="12:00" name="delivery_1_time_start" id="delivery_1_time_start">
                                                 <span class="prefix">bis:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00" name="delivery_1_time_end">
+                                                       value="12:00" name="delivery_1_time_end" id="delivery_1_time_end">
                                             </div>
 
                                             <div class="date-input-wrapper filters-margin-top hidden-input" data-addinputwrapper="2">
                                                 <span class="calendar fa fa-calendar"></span>
                                                 <span class="prefix">am:</span>
                                                 <input type="text" data-date="true"
-                                                       class="input-body date-input" value="12.05.2018">
+                                                       class="input-body date-input" value="12.05.2018"
+                                                       name="delivery_2_date" id="delivery_2_date" >
                                                 <i class="move-string filters-margin-top"></i>
                                                 <span class="prefix">von:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
+                                                       value="12:00" name="delivery_2_time_start" id="delivery_2_time_start">
                                                 <span class="prefix">bis:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
+                                                       value="12:00" name="delivery_2_time_end" id="delivery_2_time_end">
                                                 <span class="fa fa-times-circle edit-buttons"
-                                                      data-hideInterval="002"></span>
+                                                      data-hideInterval="2"></span>
                                             </div>
 
                                             <div class="date-input-wrapper filters-margin-top hidden-input" data-addinputwrapper="3">
                                                 <span class="calendar fa fa-calendar"></span>
                                                 <span class="prefix">am:</span>
                                                 <input type="text" data-date="true"
-                                                       class="input-body date-input" value="12.05.2018">
+                                                       class="input-body date-input" value="12.05.2018"
+                                                       name="delivery_3_date" id="delivery_3_date">
                                                 <i class="move-string filters-margin-top"></i>
                                                 <span class="prefix">von:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
+                                                       value="12:00" name="delivery_3_time_start" id="delivery_3_time_start">
                                                 <span class="prefix">bis:</span>
                                                 <input type="text" data-time="true" class="input-body time-input"
-                                                       value="12:00">
+                                                       value="12:00" name="delivery_3_time_end" id="delivery_3_time_end">
                                                 <span class="fa fa-times-circle edit-buttons"
-                                                      data-hideInterval="002"></span>
+                                                      data-hideInterval="3"></span>
                                             </div>
 
                                             <div class="add_interval" data-showInterval>

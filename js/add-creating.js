@@ -281,9 +281,9 @@
                         format: 'DD-MM-YYYY',
                         firstDay: 1,
                         minDate: new Date(),
-                        maxDate: new Date(moment().add(14, 'd').format('YYYY-MM-DD'))
+                        maxDate: new Date(moment().add(3, 'd').format('YYYY-MM-DD'))
                     });
-                pickers.push({picker: picker, isChangable: item.hasAttribute('id')})
+                pickers.push({picker: picker, isChangable: item.hasAttribute('data-reverse')})
             })
         }
 
@@ -297,8 +297,8 @@
                     startTime: '00:00',
                     disableTextInput: true
                 });
-                $(item).timepicker('setTime', new Date());
-                timePickers.push({timePicker: item, isChangable: item.hasAttribute('id')})
+                //$(item).timepicker('setTime', new Date());
+               timePickers.push({timePicker: item, isChangable: item.hasAttribute('data-reverse')})
             });
         }
 
@@ -342,7 +342,7 @@
                                     format: 'DD-MM-YYYY',
                                     firstDay: 1,
                                     minDate: new Date(),
-                                    maxDate: new Date(moment().add(14, 'd').format('YYYY-MM-DD'))
+                                    maxDate: new Date(moment().add(2, 'd').format('YYYY-MM-DD'))
                                 });
                         } else {
                             picker = new Pikaday(
@@ -350,7 +350,7 @@
                                     field: dateInput,
                                     format: 'DD-MM-YYYY',
                                     firstDay: 1,
-                                    minDate: new Date(moment().subtract(14, 'd').format('YYYY-MM-DD')),
+                                    minDate: new Date(moment().subtract(1, 'd').format('YYYY-MM-DD')),
                                     maxDate: new Date()
                                 });
                         }
