@@ -297,9 +297,53 @@
                     startTime: '00:00',
                     disableTextInput: true
                 });
-                //$(item).timepicker('setTime', new Date());
-               timePickers.push({timePicker: item, isChangable: item.hasAttribute('data-reverse')})
+                // $(item).timepicker('setTime', new Date());
+                timePickers.push({timePicker: item, isChangable: item.hasAttribute('data-reverse')})
             });
+        }
+
+        function asdf() {
+            var reverseDate_value = document.getElementById('reverseDateId').value;
+            var reverseTime_value = document.getElementById('reverseTimeId').value;
+
+            $('#deliveryBlock').find('.date-input-wrapper').each(function (i) {
+               /* console.log($(this));
+                $(this).find('.time-input').val(reverseTime_value);
+                if ($(this).find('.date-input').val() === reverseDate_value) {
+                    $(this).find('.time-input').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: reverseDate_value,
+                        maxTime: '23:59',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    })
+                } else {
+                    $(this).find('.time-input').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: '00:00',
+                        maxTime: '23:59',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    })
+                }*/
+            })
+            /*
+            for (var i = 0; i < inputsDeliveryTime_value.length; i++) {
+                $(inputsDeliveryTime_value[i]).val(reverseDate_value);
+                $(inputsDeliveryTime_value[i]).timepicker('option', {
+                    timeFormat: 'H:i',
+                    step: 15,
+                    minTime: reverseDate_value,
+                    maxTime: '23:59',
+                    startTime: '00:00',
+                    disableTextInput: true
+                });
+
+           }
+           */
+
         }
 
         function coockSelectChanged(event) {
@@ -310,6 +354,8 @@
                 title.text(coockedTitle.willBe);
                 updateDatePicker(true);
                 updateTimePicker(true);
+                updateTimePickerWillbe();
+                updateDelivery();
                 $("#reverseDateId").change(function () {
                     var reverseDate_value = document.getElementById('reverseDateId').value;
                     var inputsDelivery_value = document.querySelectorAll('input[data-date]');
@@ -317,11 +363,22 @@
                         inputsDelivery_value[i].value = reverseDate_value;
                     }
                 });
+
+                asdf();
+
+                $("#reverseTimeId").change(asdf);
+
+
+                $('#reverseDateId').off('change', updateTimePickerAlready);
+                $('#reverseDateId').on('change', updateTimePickerWillbe);
             }
             if (currentValue === 'Gekochtam') {
                 title.text(coockedTitle.already);
                 updateDatePicker(false);
                 updateTimePicker(false);
+                updateTimePickerAlready();
+                $('#reverseDateId').off('change', updateTimePickerWillbe);
+                $('#reverseDateId').on('change', updateTimePickerAlready)
             }
             if (currentValue === 'Nach-Vorbestellug') {
                 $('.hidden-when-reserve').hide();
@@ -375,10 +432,11 @@
                                 timeFormat: 'H:i',
                                 step: 15,
                                 minTime: this_Hour + ":" + Minutes,
-                                maxTime: '23:00',
+                                maxTime: '23:59',
                                 disableTextInput: true
                             });
                         } else {
+
                             $(timePickers[i].timePicker).timepicker('option', {
                                 timeFormat: 'H:i',
                                 step: 15,
@@ -389,6 +447,58 @@
                         }
                     }
                 }
+            }
+
+            function updateTimePickerAlready() {
+                $('#reverseTimeId').val(moment().format('HH:mm'));
+                if ($('#reverseDateId').val() !== moment().format('DD-MM-YYYY')) {
+                    $('#reverseTimeId').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: '00:00',
+                        maxTime: '23:59',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                } else {
+                    $('#reverseTimeId').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: '00:00',
+                        maxTime: moment().format('HH:mm'),
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                }
+            }
+
+            function updateTimePickerWillbe() {
+                $('#reverseTimeId').val(moment().format('HH:mm'));
+                if ($('#reverseDateId').val() !== moment().format('DD-MM-YYYY')) {
+                    $('#reverseTimeId').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: '00:00',
+                        maxTime: '23:59',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                } else {
+                    $('#reverseTimeId').timepicker('option', {
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: moment().format('HH:mm'),
+                        maxTime: '23:59',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                }
+            }
+
+            function updateDelivery() {
+                var cookDate = $('#reverseDateId').val(),
+                    cookTime = $('#reverseTimeId').val();
+                $('#delivery_1_date').val(cookDate);
             }
         }
     }
@@ -413,7 +523,7 @@
             $(this).hide();
         }
         $('#interval_count span').text(span_value);
-        $('[data-addinputwrapper="'+ span_value +'"]').show();
+        $('[data-addinputwrapper="' + span_value + '"]').show();
     });
 
     $('#wahlen_checkable_1').on('click', function () {
@@ -422,6 +532,19 @@
         } else {
             $('#wahlen_checkable_2,#wahlen_checkable_3,#wahlen_checkable_4,#wahlen_checkable_5').prop('checked', false).prop('disabled', false);
         }
+    });
+
+    $('[data-role="from"]').on('change', function () {
+
+        $(this).parent().find('[data-role="to"]').timepicker({
+            timeFormat: 'H:i',
+            step: 15,
+            minTime: $(this).val(),
+            maxTime: '23:00',
+            startTime: '00:00',
+            disableTextInput: true
+        });
+        $(this).parent().find('[data-role="to"]').val($(this).val());
     });
 
     setValidator($('#form-creating'));
