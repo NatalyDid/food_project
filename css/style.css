@@ -1756,7 +1756,8 @@ select::-ms-expand {
 .item-author-name {
   line-height: 18px;
   width: 100%;
-  color: #7f8c8d; }
+  color: #7f8c8d;
+  word-break: break-word; }
 
 .item-author-img {
   position: relative;
