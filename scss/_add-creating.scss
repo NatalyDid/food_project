@@ -159,28 +159,28 @@
   .move-string {
     display: none;
   }
-  .cropper-body-wrapp {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    bottom: 15px;
-    right: 15px;
-  }
-  .cropper-body {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    display: block;
-  }
-  .modal-dialog {
-    width: auto;
-    max-width: 660px;
-  }
-  .modal-body {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-  }
+  //.cropper-body-wrapp {
+  //  position: absolute;
+  //  top: 15px;
+  //  left: 15px;
+  //  bottom: 15px;
+  //  right: 15px;
+  //}
+  //.cropper-body {
+  //  width: auto;
+  //  height: 100%;
+  //  max-width: 100%;
+  //  display: block;
+  //}
+  //.modal-dialog {
+  //  width: auto;
+  //  max-width: 660px;
+  //}
+  //.modal-body {
+  //  position: relative;
+  //  width: 100%;
+  //  padding-top: 56.25%;
+  //}
   .add_interval {
     width: 190px;
     & .btn-transparent{
@@ -241,4 +241,24 @@
     }
   }
 }
+
+#cropper_modal_id{
+  .cropper-body-wrapp {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .modal-dialog {
+    width: auto;
+    max-width: 660px;
+  }
+  .modal-body {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+}
+
 

@@ -40,27 +40,42 @@
                         <div class="clearfix">
                             <div class="searchForm__close" id="searchForm__close"><i class="fa fa-times"></i></div>
                             <div class="arrow"></div>
-                            <input class="searchForm__input" placeholder="PLZ oder Ort">
+                            <!--<input class="searchForm__input" placeholder="PLZ oder Ort">-->
+
+                            <!--<div class="col-xs-12 col-sm-6">-->
+                            <div class="input-wrapper searchForm__input searchForm__input_big">
+                                <div class="select_wrapper">
+                                    <select class="input-body" required name="select_type">
+                                        <option value="">PLZ oder Ort</option>
+                                        <option value="1">09337 Callenberg, Hohenstein-Ernstthal</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--</div>-->
 
                             <div class="dropdown single perimeter ">
-                                <button class="btn btn-dropdown dropdown-toggle searchForm__input" type="button"
+                                <button class="btn btn-dropdown dropdown-toggle searchForm__input searchForm__input_small"
+                                        type="button"
                                         id="dropdownMenu1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Umkreis
-                                    <span class="caret"></span>
+                                    <!--<span class="caret"></span>-->
                                 </button>
                                 <ul class="dropdown-menu single-menu ul-dropdown" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">1,5 km</a></li>
-                                    <li><a href="#">2,5 km</a></li>
-                                    <li><a href="#">3,5 km</a></li>
-                                    <li><a href="#">5 km</a></li>
-                                    <li><a href="#">7,5 km</a></li>
-                                    <li><a href="#">10 km</a></li>
-                                    <li><a href="#">15 km</a></li>
-                                    <li><a href="#">20 km</a></li>
-                                    <li><a href="#">25 km</a></li>
-                                    <li><a href="#">35 km</a></li>
-                                    <li><a href="#">50 km</a></li>
+                                    <li><span>1,5 km</span></li>
+                                    <li><span>2,5 km</span></li>
+                                    <li><span>3,5 km</span></li>
+                                    <li><span>5 km</span></li>
+                                    <li><span>7,5 km</span></li>
+                                    <li><span>10 km</span></li>
+                                    <li><span>15 km</span></li>
+                                    <li><span>20 km</span></li>
+                                    <li><span>25 km</span></li>
+                                    <li><span>35 km</span></li>
+                                    <li><span>50 km</span></li>
                                 </ul>
                             </div><!-- end div /.perimeter -->
 
@@ -73,8 +88,8 @@
                         </div><!-- end div /.clearfix -->
                     </div><!-- end div /.searchForm__wrapper -->
                 </div><!-- end div /.searchForm -->
-                <div class="col-xs-6 col-sm-5">
-                    <button class="topMenu__searchButton hidden-lg btn-common btn-orange" id="searchButton">SUCHEN
+                <div class="col-xs-6 col-sm-5 hidden-lg">
+                    <button class="topMenu__searchButton btn-common btn-orange" id="searchButton">SUCHEN
                         <div class="topMenu__searchButtonIcon"><i class="fa fa-search"></i></div>
                     </button>
                 </div><!-- end div /.col-xs-6 -->
@@ -94,16 +109,19 @@
                         <div class="visible-xs-block">
                             <div class="topMenu__icon" id="hideMenu"><i class="fa fa-times"></i></div>
                         </div>
-                        <div class="topMenu__mailbox">
-                            <div class="topMenu__mailboxicon"><i class="fa fa-envelope"></i></div>
-                            <div class="topMenu__mailboxcount">7</div>
-                        </div><!-- end div /.topMenu__mailbox -->
+                        <a href="" class="white">
+                            <div class="topMenu__mailbox">
+                                <div class="topMenu__mailboxicon"><i class="fa fa-envelope"></i></div>
+                                <div class="topMenu__mailboxcount">7</div>
+                            </div><!-- end div /.topMenu__mailbox -->
+                        </a>
                         <div class="topMenu__account hidden-xs clearfix">
                             <div class="dropdown user-img">
                                 <a href="#" class="dropdown-toggle white" id="dropdownMenu10"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="topMenu__accountPhoto" src="img/user-photo.jpg">
                                     <i class="fa fa-user" aria-hidden="true"></i>
+                                    <div class="topMenu__accountLabel">Willkommen, <br> Daniel</div>
                                 </a>
                                 <ul class="dropdown-menu ul-dropdown" aria-labelledby="dropdownMenu10">
                                     <li><a href="#" class="afterLogin">Profil</a></li>
@@ -116,7 +134,6 @@
                                     <li><a href="#" class="beforeLogin">Registrieren</a></li>
                                 </ul>
                             </div><!-- end div /.user-img -->
-                            <div class="topMenu__accountLabel">Willkommen, <br> Daniel</div>
                         </div><!-- end div /.topMenu__account -->
                     </div><!-- end div /.row -->
                 </div><!-- end div /.col-xs-6 -->
@@ -232,6 +249,12 @@
                         <div class="selection">
                             <h4 class="title-small">Fleischgerichte / Vegetarisch</h4>
 
+                            <input type="radio" name="optionsRadios20" class="selector"
+                                   id="ch01" value="option21">
+                            <div class="radio">
+                                <label for="ch01"><span>Fleischgerichte</span></label>
+                            </div>
+
                             <input type="checkbox" class="checkable hidden" id="ch11">
                             <label for="ch11" class="checkable-toggler flex-left-center">
                                 <span class="fa fa-square-o"></span>
@@ -239,7 +262,7 @@
                                 <span>kein Schwein</span>
                             </label>
 
-                            <input type="checkbox" class="checkable hidden" id="ch17" >
+                            <input type="checkbox" class="checkable hidden" id="ch17">
                             <label for="ch17" class="checkable-toggler flex-left-center">
                                 <span class="fa fa-square-o"></span>
                                 <span class="fa fa-check"></span>
@@ -267,19 +290,18 @@
                                 <span>kein Fisch und Meeresfrüchte</span>
                             </label>
 
-                            <input type="checkbox" class="checkable hidden" id="ch15">
-                            <label for="ch15" class="checkable-toggler flex-left-center">
-                                <span class="fa fa-square-o"></span>
-                                <span class="fa fa-check"></span>
-                                <span>Vegetarisch</span>
-                            </label>
+                            <input type="radio" name="optionsRadios20" class="selector"
+                                   id="ch15" value="option22">
+                            <div class="radio">
+                                <label for="ch15"><span>Vegetarisch</span></label>
+                            </div>
 
-                            <input type="checkbox" class="checkable hidden" id="ch16">
-                            <label for="ch16" class="checkable-toggler flex-left-center">
-                                <span class="fa fa-square-o"></span>
-                                <span class="fa fa-check"></span>
-                                <span>Vegan</span>
-                            </label>
+                            <input type="radio" name="optionsRadios20" class="selector"
+                                   id="ch16" value="option23">
+                            <div class="radio">
+                                <label for="ch16"><span>Vegan</span></label>
+                            </div>
+
                         </div><!-- end div /.selection -->
                         <div class="selection">
                             <h4 class="title-small">Ohne Zusatz von</h4>

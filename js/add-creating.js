@@ -355,7 +355,7 @@
                 updateDatePicker(true);
                 updateTimePicker(true);
                 updateTimePickerWillbe();
-                updateDelivery();
+                //updateDelivery();
                 $("#reverseDateId").change(function () {
                     var reverseDate_value = document.getElementById('reverseDateId').value;
                     var inputsDelivery_value = document.querySelectorAll('input[data-date]');
@@ -371,6 +371,18 @@
 
                 $('#reverseDateId').off('change', updateTimePickerAlready);
                 $('#reverseDateId').on('change', updateTimePickerWillbe);
+                $('[data-role="from"]').on('change', function () {
+
+                    $(this).parent().find('[data-role="to"]').timepicker({
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: $(this).val(),
+                        maxTime: '23:00',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                    $(this).parent().find('[data-role="to"]').val($(this).val());
+                });
             }
             if (currentValue === 'Gekochtam') {
                 title.text(coockedTitle.already);
@@ -378,7 +390,19 @@
                 updateTimePicker(false);
                 updateTimePickerAlready();
                 $('#reverseDateId').off('change', updateTimePickerWillbe);
-                $('#reverseDateId').on('change', updateTimePickerAlready)
+                $('#reverseDateId').on('change', updateTimePickerAlready);
+                $('[data-role="from"]').on('change', function () {
+
+                    $(this).parent().find('[data-role="to"]').timepicker({
+                        timeFormat: 'H:i',
+                        step: 15,
+                        minTime: $(this).val(),
+                        maxTime: '23:00',
+                        startTime: '00:00',
+                        disableTextInput: true
+                    });
+                    $(this).parent().find('[data-role="to"]').val($(this).val());
+                });
             }
             if (currentValue === 'Nach-Vorbestellug') {
                 $('.hidden-when-reserve').hide();
@@ -495,11 +519,11 @@
                 }
             }
 
-            function updateDelivery() {
+            /*function updateDelivery() {
                 var cookDate = $('#reverseDateId').val(),
                     cookTime = $('#reverseTimeId').val();
                 $('#delivery_1_date').val(cookDate);
-            }
+            }*/
         }
     }
 
