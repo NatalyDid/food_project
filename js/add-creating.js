@@ -27,6 +27,7 @@
         };
         var pickers = [];
         var timePickers = [];
+        var $reverseDateId = $("#reverseDateId");
         runDropdowns();
         runInputs();
         runTimeInputs();
@@ -307,20 +308,21 @@
             var title = $('#coockedTitleId');
             $('.hidden-when-reserve').show();
             if (currentValue === 'Wird-gekocht') {
+                console.log('change date');
                 title.text(coockedTitle.willBe);
                 updateDatePicker(true);
                 //updateTimePicker(true);
                 updateTimePickerWillbe();
                 //updateDelivery();
-                $("#reverseDateId").on('change', changeDateInterval);
+                $reverseDateId.on('change', changeDateInterval);
                 //     var reverseDate_value = document.getElementById('reverseDateId').value;
                 //     var inputsDelivery_value = document.querySelectorAll('input[data-date]');
                 //     for (var i = 0; i < inputsDelivery_value.length; i++) {
                 //         inputsDelivery_value[i].value = reverseDate_value;
                 //     }
                 // });
-                $('#reverseDateId').off('change', updateTimePickerAlready);
-                $('#reverseDateId').on('change', updateTimePickerWillbe);
+                $reverseDateId.off('change', updateTimePickerAlready);
+                $reverseDateId.on('change', updateTimePickerWillbe);
                 $('[data-role="from"]').on('change', updateDeliveryEndTime);
                 //asdf();
                 //$("#reverseTimeId").change(asdf);
@@ -330,9 +332,8 @@
                 updateDatePicker(false);
                 //updateTimePicker(false);
                 updateTimePickerAlready();
-                $("#reverseDateId").off('change', changeDateInterval);
-                $('#reverseDateId').off('change', updateTimePickerWillbe);
-                $('#reverseDateId').on('change', updateTimePickerAlready);
+                $reverseDateId.off('change');
+                $reverseDateId.on('change', updateTimePickerAlready);
                 $('[data-role="from"]').on('change', updateDeliveryEndTime);
             }
             if (currentValue === 'Nach-Vorbestellug') {
@@ -464,7 +465,7 @@
             }
 
             function changeDateInterval() {
-                console.log('change date');
+
                 var reverseDate_value = document.getElementById('reverseDateId').value;
                 var inputsDelivery_value = document.querySelectorAll('input[data-date]');
                 for (var i = 0; i < inputsDelivery_value.length; i++) {

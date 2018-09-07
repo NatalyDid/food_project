@@ -18,13 +18,13 @@
     <favorites_list name="food_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.23760581">
+    <splitter split-orientation="horizontal" split-proportion="0.35912937">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="add-creating.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/add-creating.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="945">
+                <state relative-caret-position="703">
                   <caret line="836" column="96" selection-start-line="836" selection-start-column="84" selection-end-line="836" selection-end-column="96" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -40,8 +40,8 @@
           <file leaf-file-name="add-creating.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/add-creating.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+                <state relative-caret-position="506">
+                  <caret line="334" column="45" lean-forward="true" selection-start-line="334" selection-start-column="45" selection-end-line="334" selection-end-column="45" />
                   <folding>
                     <element signature="e#1481#1541#0" />
                     <element signature="e#1646#1699#0" />
@@ -400,25 +400,25 @@
       <workItem from="1536070321117" duration="140000" />
       <workItem from="1536129613462" duration="5524000" />
       <workItem from="1536237249035" duration="1206000" />
-      <workItem from="1536301078185" duration="9021000" />
+      <workItem from="1536301078185" duration="10742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212461000" />
+    <option name="totallyTimeSpent" value="214182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" sideWeight="0.22646658" side_tool="true" visible="true" weight="0.12855637" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7735334" visible="true" weight="0.12855637" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7735334" visible="true" weight="0.12855637" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18283166" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18283166" />
       <window_info id="Structure" order="1" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.18729097" />
       <window_info id="Favorites" order="2" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
@@ -684,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1735">
-          <caret line="576" column="55" selection-start-line="576" selection-start-column="52" selection-end-line="576" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_profile-edit.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330" />
@@ -740,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_author-wrapper.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_add-creating.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -756,7 +742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add-creating.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
+        <state relative-caret-position="703">
           <caret line="836" column="96" selection-start-line="836" selection-start-column="84" selection-end-line="836" selection-end-column="96" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -764,10 +750,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_author-wrapper.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="576" column="55" selection-start-line="576" selection-start-column="52" selection-end-line="576" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/add-creating.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="506">
+          <caret line="334" column="45" lean-forward="true" selection-start-line="334" selection-start-column="45" selection-end-line="334" selection-end-column="45" />
           <folding>
             <element signature="e#1481#1541#0" />
             <element signature="e#1646#1699#0" />
