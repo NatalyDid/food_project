@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a5f7db-92a1-4f01-86e8-c9ef0833651c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/scss/_author-wrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_author-wrapper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/add-creating.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add-creating.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,103 +18,18 @@
     <favorites_list name="food_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6255591">
+    <splitter split-orientation="horizontal" split-proportion="0.23760581">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="add-creating.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="add-creating.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/add-creating.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" selection-start-line="11" selection-end-line="390" selection-end-column="31" />
+                <state relative-caret-position="945">
+                  <caret line="836" column="96" selection-start-line="836" selection-start-column="84" selection-end-line="836" selection-end-column="96" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile-edit.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/profile-edit.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="880" column="22" selection-start-line="880" selection-start-column="13" selection-end-line="880" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/registration.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="650">
-                  <caret line="551" column="70" selection-start-line="551" selection-start-column="70" selection-end-line="551" selection-end-column="70" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main_page.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main_page.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1735">
-                  <caret line="576" column="55" selection-start-line="576" selection-start-column="52" selection-end-line="576" selection-end-column="55" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile-photo-edit.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/profile-photo-edit.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="258">
-                  <caret line="560" column="43" selection-start-line="560" selection-start-column="38" selection-end-line="560" selection-end-column="43" />
-                  <folding>
-                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile_edit.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/profile_edit.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="_add-creating.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/_add-creating.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="254" column="21" lean-forward="true" selection-start-line="254" selection-start-column="21" selection-end-line="254" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_author-wrapper.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scss/_author-wrapper.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/login.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="447" column="18" lean-forward="true" selection-start-line="447" selection-start-column="18" selection-end-line="447" selection-end-column="18" />
-                  <folding>
-                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_profile-edit.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/_profile-edit.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-330" />
               </provider>
             </entry>
           </file>
@@ -125,12 +40,14 @@
           <file leaf-file-name="add-creating.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/add-creating.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+                <state relative-caret-position="440">
+                  <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
                   <folding>
                     <element signature="e#1481#1541#0" />
                     <element signature="e#1646#1699#0" />
                     <element signature="e#1756#3147#0" />
+                    <element signature="e#3486#4418#0" />
+                    <element signature="e#4452#4877#0" />
                     <element signature="e#5996#6707#0" />
                     <element signature="e#6742#7597#0" />
                     <element signature="e#7647#8234#0" />
@@ -140,6 +57,15 @@
                     <element signature="e#10222#10609#0" />
                     <element signature="e#10643#11191#0" />
                     <element signature="e#11260#11761#0" />
+                    <element signature="e#11794#12366#0" />
+                    <element signature="e#12401#12929#0" />
+                    <element signature="e#16527#18030#0" />
+                    <element signature="e#18044#19584#0" />
+                    <element signature="e#19633#20536#0" />
+                    <element signature="e#20584#21487#0" />
+                    <element signature="e#22776#23186#0" />
+                    <element signature="e#22058#22272#0" />
+                    <element signature="e#20525#22273#0" />
                     <element signature="e#21646#21991#0" />
                     <element signature="e#22051#22284#0" />
                     <element signature="e#22341#22702#0" />
@@ -172,8 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>searchForm</find>
-      <find>single</find>
       <find>perimeter</find>
       <find>dateInputs</find>
       <find>select</find>
@@ -190,7 +114,6 @@
       <find>slick</find>
       <find>sin</find>
       <find>slic</find>
-      <find>aaa</find>
       <find>data-showinterval</find>
       <find>reverse</find>
       <find>setT</find>
@@ -202,12 +125,16 @@
       <find>modal</find>
       <find>confModal</find>
       <find>add-create-block-styles</find>
+      <find>data-reverse</find>
+      <find>23:00</find>
+      <find>aaa</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>entfernt: 1,2Km</replace>
       <replace>addDateInputWrapper</replace>
       <replace>deliveryBlock</replace>
+      <replace>updateDeliveryEndTime</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\верстка\проекты\food_project</dir>
@@ -250,12 +177,12 @@
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/scss/_common.scss" />
         <option value="$PROJECT_DIR$/add-creating.html" />
-        <option value="$PROJECT_DIR$/js/add-creating.js" />
         <option value="$PROJECT_DIR$/profile-photo-edit.html" />
         <option value="$PROJECT_DIR$/profile-edit.html" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/scss/_add-creating.scss" />
         <option value="$PROJECT_DIR$/scss/_author-wrapper.scss" />
+        <option value="$PROJECT_DIR$/js/add-creating.js" />
       </list>
     </option>
   </component>
@@ -473,25 +400,25 @@
       <workItem from="1536070321117" duration="140000" />
       <workItem from="1536129613462" duration="5524000" />
       <workItem from="1536237249035" duration="1206000" />
-      <workItem from="1536301078185" duration="3734000" />
+      <workItem from="1536301078185" duration="9021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207174000" />
+    <option name="totallyTimeSpent" value="212461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" order="2" sideWeight="0.22531293" side_tool="true" visible="true" weight="0.17544784" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.77468705" visible="true" weight="0.17544784" />
+      <window_info id="Gulp" order="2" sideWeight="0.22646658" side_tool="true" visible="true" weight="0.12855637" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7735334" visible="true" weight="0.12855637" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19843924" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18283166" />
       <window_info id="Structure" order="1" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.18729097" />
       <window_info id="Favorites" order="2" sideWeight="0.33898306" side_tool="true" weight="0.14225501" />
@@ -783,30 +710,6 @@
     <entry file="file://$PROJECT_DIR$/js/profile_edit.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/add-creating.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
-          <folding>
-            <element signature="e#1481#1541#0" />
-            <element signature="e#1646#1699#0" />
-            <element signature="e#1756#3147#0" />
-            <element signature="e#5996#6707#0" />
-            <element signature="e#6742#7597#0" />
-            <element signature="e#7647#8234#0" />
-            <element signature="e#8294#8712#0" />
-            <element signature="e#8766#9816#0" />
-            <element signature="e#9856#10171#0" />
-            <element signature="e#10222#10609#0" />
-            <element signature="e#10643#11191#0" />
-            <element signature="e#11260#11761#0" />
-            <element signature="e#21646#21991#0" />
-            <element signature="e#22051#22284#0" />
-            <element signature="e#22341#22702#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_registration.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -827,16 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-creating.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="390" selection-end-column="31" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -847,6 +740,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_author-wrapper.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_add-creating.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -854,10 +754,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_author-wrapper.scss">
+    <entry file="file://$PROJECT_DIR$/add-creating.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="945">
+          <caret line="836" column="96" selection-start-line="836" selection-start-column="84" selection-end-line="836" selection-end-column="96" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/add-creating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="e#1481#1541#0" />
+            <element signature="e#1646#1699#0" />
+            <element signature="e#1756#3147#0" />
+            <element signature="e#3486#4418#0" />
+            <element signature="e#4452#4877#0" />
+            <element signature="e#5996#6707#0" />
+            <element signature="e#6742#7597#0" />
+            <element signature="e#7647#8234#0" />
+            <element signature="e#8294#8712#0" />
+            <element signature="e#8766#9816#0" />
+            <element signature="e#9856#10171#0" />
+            <element signature="e#10222#10609#0" />
+            <element signature="e#10643#11191#0" />
+            <element signature="e#11260#11761#0" />
+            <element signature="e#11794#12366#0" />
+            <element signature="e#12401#12929#0" />
+            <element signature="e#16527#18030#0" />
+            <element signature="e#18044#19584#0" />
+            <element signature="e#19633#20536#0" />
+            <element signature="e#20584#21487#0" />
+            <element signature="e#22776#23186#0" />
+            <element signature="e#22058#22272#0" />
+            <element signature="e#20525#22273#0" />
+            <element signature="e#21646#21991#0" />
+            <element signature="e#22051#22284#0" />
+            <element signature="e#22341#22702#0" />
+          </folding>
         </state>
       </provider>
     </entry>

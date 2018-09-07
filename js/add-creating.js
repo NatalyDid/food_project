@@ -293,57 +293,13 @@
                     timeFormat: 'H:i',
                     step: 15,
                     minTime: '00:00',
-                    maxTime: '23:00',
+                    maxTime: '23:59',
                     startTime: '00:00',
                     disableTextInput: true
                 });
                 // $(item).timepicker('setTime', new Date());
                 timePickers.push({timePicker: item, isChangable: item.hasAttribute('data-reverse')})
             });
-        }
-
-        function asdf() {
-            var reverseDate_value = document.getElementById('reverseDateId').value;
-            var reverseTime_value = document.getElementById('reverseTimeId').value;
-
-            $('#deliveryBlock').find('.date-input-wrapper').each(function (i) {
-               /* console.log($(this));
-                $(this).find('.time-input').val(reverseTime_value);
-                if ($(this).find('.date-input').val() === reverseDate_value) {
-                    $(this).find('.time-input').timepicker('option', {
-                        timeFormat: 'H:i',
-                        step: 15,
-                        minTime: reverseDate_value,
-                        maxTime: '23:59',
-                        startTime: '00:00',
-                        disableTextInput: true
-                    })
-                } else {
-                    $(this).find('.time-input').timepicker('option', {
-                        timeFormat: 'H:i',
-                        step: 15,
-                        minTime: '00:00',
-                        maxTime: '23:59',
-                        startTime: '00:00',
-                        disableTextInput: true
-                    })
-                }*/
-            })
-            /*
-            for (var i = 0; i < inputsDeliveryTime_value.length; i++) {
-                $(inputsDeliveryTime_value[i]).val(reverseDate_value);
-                $(inputsDeliveryTime_value[i]).timepicker('option', {
-                    timeFormat: 'H:i',
-                    step: 15,
-                    minTime: reverseDate_value,
-                    maxTime: '23:59',
-                    startTime: '00:00',
-                    disableTextInput: true
-                });
-
-           }
-           */
-
         }
 
         function coockSelectChanged(event) {
@@ -353,56 +309,31 @@
             if (currentValue === 'Wird-gekocht') {
                 title.text(coockedTitle.willBe);
                 updateDatePicker(true);
-                updateTimePicker(true);
+                //updateTimePicker(true);
                 updateTimePickerWillbe();
                 //updateDelivery();
-                $("#reverseDateId").change(function () {
-                    var reverseDate_value = document.getElementById('reverseDateId').value;
-                    var inputsDelivery_value = document.querySelectorAll('input[data-date]');
-                    for (var i = 0; i < inputsDelivery_value.length; i++) {
-                        inputsDelivery_value[i].value = reverseDate_value;
-                    }
-                });
-
-                asdf();
-
-                $("#reverseTimeId").change(asdf);
-
-
+                $("#reverseDateId").on('change', changeDateInterval);
+                //     var reverseDate_value = document.getElementById('reverseDateId').value;
+                //     var inputsDelivery_value = document.querySelectorAll('input[data-date]');
+                //     for (var i = 0; i < inputsDelivery_value.length; i++) {
+                //         inputsDelivery_value[i].value = reverseDate_value;
+                //     }
+                // });
                 $('#reverseDateId').off('change', updateTimePickerAlready);
                 $('#reverseDateId').on('change', updateTimePickerWillbe);
-                $('[data-role="from"]').on('change', function () {
-
-                    $(this).parent().find('[data-role="to"]').timepicker({
-                        timeFormat: 'H:i',
-                        step: 15,
-                        minTime: $(this).val(),
-                        maxTime: '23:00',
-                        startTime: '00:00',
-                        disableTextInput: true
-                    });
-                    $(this).parent().find('[data-role="to"]').val($(this).val());
-                });
+                $('[data-role="from"]').on('change', updateDeliveryEndTime);
+                //asdf();
+                //$("#reverseTimeId").change(asdf);
             }
             if (currentValue === 'Gekochtam') {
                 title.text(coockedTitle.already);
                 updateDatePicker(false);
-                updateTimePicker(false);
+                //updateTimePicker(false);
                 updateTimePickerAlready();
+                $("#reverseDateId").off('change', changeDateInterval);
                 $('#reverseDateId').off('change', updateTimePickerWillbe);
                 $('#reverseDateId').on('change', updateTimePickerAlready);
-                $('[data-role="from"]').on('change', function () {
-
-                    $(this).parent().find('[data-role="to"]').timepicker({
-                        timeFormat: 'H:i',
-                        step: 15,
-                        minTime: $(this).val(),
-                        maxTime: '23:00',
-                        startTime: '00:00',
-                        disableTextInput: true
-                    });
-                    $(this).parent().find('[data-role="to"]').val($(this).val());
-                });
+                $('[data-role="from"]').on('change', updateDeliveryEndTime);
             }
             if (currentValue === 'Nach-Vorbestellug') {
                 $('.hidden-when-reserve').hide();
@@ -440,11 +371,11 @@
                 }
             }
 
-            function updateTimePicker(flag) {
+            /*function updateTimePicker(flag) {
                 for (var i = 0; i < timePickers.length; i++) {
                     if (timePickers[i].isChangable) {
                         console.log(timePickers[i]);
-// flag === true - from now to future, flag === false - from now to past
+            // flag === true - from now to future, flag === false - from now to past
                         if (flag) {
                             var Time = new Date();
                             var this_Hour = Time.getHours();
@@ -471,7 +402,7 @@
                         }
                     }
                 }
-            }
+            }*/
 
             function updateTimePickerAlready() {
                 $('#reverseTimeId').val(moment().format('HH:mm'));
@@ -519,11 +450,77 @@
                 }
             }
 
+            function updateDeliveryEndTime() {
+                $(this).parent().find('[data-role="to"]').timepicker('remove');
+                $(this).parent().find('[data-role="to"]').timepicker({
+                    timeFormat: 'H:i',
+                    step: 15,
+                    minTime: $(this).val(),
+                    maxTime: '23:59',
+                    startTime: '00:00',
+                    disableTextInput: true
+                });
+                $(this).parent().find('[data-role="to"]').val($(this).val());
+            }
+
+            function changeDateInterval() {
+                console.log('change date');
+                var reverseDate_value = document.getElementById('reverseDateId').value;
+                var inputsDelivery_value = document.querySelectorAll('input[data-date]');
+                for (var i = 0; i < inputsDelivery_value.length; i++) {
+                    inputsDelivery_value[i].value = reverseDate_value;
+                }
+            }
+
             /*function updateDelivery() {
                 var cookDate = $('#reverseDateId').val(),
                     cookTime = $('#reverseTimeId').val();
                 $('#delivery_1_date').val(cookDate);
             }*/
+
+            /*function asdf() {
+           var reverseDate_value = document.getElementById('reverseDateId').value;
+           var reverseTime_value = document.getElementById('reverseTimeId').value;
+
+           $('#deliveryBlock').find('.date-input-wrapper').each(function (i) {
+              /!* console.log($(this));
+               $(this).find('.time-input').val(reverseTime_value);
+               if ($(this).find('.date-input').val() === reverseDate_value) {
+                   $(this).find('.time-input').timepicker('option', {
+                       timeFormat: 'H:i',
+                       step: 15,
+                       minTime: reverseDate_value,
+                       maxTime: '23:59',
+                       startTime: '00:00',
+                       disableTextInput: true
+                   })
+               } else {
+                   $(this).find('.time-input').timepicker('option', {
+                       timeFormat: 'H:i',
+                       step: 15,
+                       minTime: '00:00',
+                       maxTime: '23:59',
+                       startTime: '00:00',
+                       disableTextInput: true
+                   })
+               }*!/
+           })
+           /!*
+           for (var i = 0; i < inputsDeliveryTime_value.length; i++) {
+               $(inputsDeliveryTime_value[i]).val(reverseDate_value);
+               $(inputsDeliveryTime_value[i]).timepicker('option', {
+                   timeFormat: 'H:i',
+                   step: 15,
+                   minTime: reverseDate_value,
+                   maxTime: '23:59',
+                   startTime: '00:00',
+                   disableTextInput: true
+               });
+
+          }
+          *!/
+
+       }*/
         }
     }
 
@@ -558,19 +555,7 @@
         }
     });
 
-    $('[data-role="from"]').on('change', function () {
-
-        $(this).parent().find('[data-role="to"]').timepicker({
-            timeFormat: 'H:i',
-            step: 15,
-            minTime: $(this).val(),
-            maxTime: '23:00',
-            startTime: '00:00',
-            disableTextInput: true
-        });
-        $(this).parent().find('[data-role="to"]').val($(this).val());
-    });
-
     setValidator($('#form-creating'));
-})();
+})
+();
 
